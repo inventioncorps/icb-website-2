@@ -1,0 +1,41 @@
+.topbar {
+  background-color: #E95633;
+  opacity: 0.8;
+}
+
+#underline1 {
+  background: #E95633;
+}
+
+#underline2 {
+  background: #E95633;
+}
+
+#underline3 {
+  background: #E95633;
+}
+
+#underline4 {
+  background: #E95633;
+}
+
+.p1 {
+  border-color: #E06B65;
+}
+
+.p2 {
+  border-color: #FEEB96;
+}
+
+.p3 {
+  border-color: #99CC99;
+}
+
+.p4 {
+  border-color: #99CCFF;
+}
+
+.p5 {
+  border-color: #C4C4C4;
+}
+/*# sourceMappingURL=floatingblocks.css.map */

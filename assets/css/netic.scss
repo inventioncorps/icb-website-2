@@ -1,0 +1,87 @@
+//COLOR SET
+$background: #6D6D6D; // topbar color
+$underline: #F6D0E0;
+$red: #E06B65;
+$yellow: #FEEB96;
+$green: #99CC99;
+$blue: #99CCFF;
+$gray: #C4C4C4;
+$black: #343434;
+
+.topbar {
+    background-color: $background;
+    opacity: 0.8;
+}
+
+.fourth {
+    //PLACEHOLDER - will change spacing of two images in fourth deliverable
+    margin-bottom: 0;
+}
+
+.youtube {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#underline1 {
+    background: $underline;
+}
+
+#underline2 {
+    background: $underline;
+
+}
+
+#underline3 {
+    background: $underline;
+}
+
+#underline4 {
+    background: $underline;
+
+}
+
+.p1 {
+    border-color: $red; // color of first team member
+}
+
+.p2 {
+    border-color: $yellow; // color of second team member
+}
+
+.p3 {
+    border-color: $green; // color of third team member
+}
+
+.p4 {
+    border-color: $blue; // color of fourth team member
+}
+
+.p5 {
+    border-color: $gray; // color of fifth team member
+}
+
+.p6 {
+    border-color: $black; // color of fifth team member
+}
+
+.pspecial {
+    border-image: linear-gradient(to bottom, $blue 16.3%, $red 16.3%, $red 32.5%, $yellow 32.5%, $yellow 48.7%, $green 48.7%, $green 64.9%, $gray 64.9%, $gray 81.1%, $black 81.1%);
+    border-image-slice: 0% 0% 0% 100%;
+    border-top: 0;
+    border-bottom: 0;
+    z-index: -1;
+}
+
+.special {
+    border-top: solid white;
+    border-bottom: solid white;
+    border-width: medium;
+    z-index: 1;
+}
+
+@media (min-width: 992px) {
+    .pspecial {
+        border-image-slice: 0% 100% 0% 0%;
+    }
+}

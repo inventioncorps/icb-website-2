@@ -1,0 +1,77 @@
+.topbar {
+  background-color: #6D6D6D;
+  opacity: 0.8;
+}
+
+.fourth {
+  margin-bottom: 0;
+}
+
+.youtube {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#underline1 {
+  background: #F6D0E0;
+}
+
+#underline2 {
+  background: #F6D0E0;
+}
+
+#underline3 {
+  background: #F6D0E0;
+}
+
+#underline4 {
+  background: #F6D0E0;
+}
+
+.p1 {
+  border-color: #E06B65;
+}
+
+.p2 {
+  border-color: #FEEB96;
+}
+
+.p3 {
+  border-color: #99CC99;
+}
+
+.p4 {
+  border-color: #99CCFF;
+}
+
+.p5 {
+  border-color: #C4C4C4;
+}
+
+.p6 {
+  border-color: #343434;
+}
+
+.pspecial {
+  -o-border-image: linear-gradient(to bottom, #99CCFF 16.3%, #E06B65 16.3%, #E06B65 32.5%, #FEEB96 32.5%, #FEEB96 48.7%, #99CC99 48.7%, #99CC99 64.9%, #C4C4C4 64.9%, #C4C4C4 81.1%, #343434 81.1%);
+     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(16.3%, #99CCFF), color-stop(16.3%, #E06B65), color-stop(32.5%, #E06B65), color-stop(32.5%, #FEEB96), color-stop(48.7%, #FEEB96), color-stop(48.7%, #99CC99), color-stop(64.9%, #99CC99), color-stop(64.9%, #C4C4C4), color-stop(81.1%, #C4C4C4), color-stop(81.1%, #343434));
+     border-image: linear-gradient(to bottom, #99CCFF 16.3%, #E06B65 16.3%, #E06B65 32.5%, #FEEB96 32.5%, #FEEB96 48.7%, #99CC99 48.7%, #99CC99 64.9%, #C4C4C4 64.9%, #C4C4C4 81.1%, #343434 81.1%);
+  border-image-slice: 0% 0% 0% 100%;
+  border-top: 0;
+  border-bottom: 0;
+  z-index: -1;
+}
+
+.special {
+  border-top: solid white;
+  border-bottom: solid white;
+  border-width: medium;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  .pspecial {
+    border-image-slice: 0% 100% 0% 0%;
+  }
+}
+/*# sourceMappingURL=netic.css.map */

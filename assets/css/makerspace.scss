@@ -1,0 +1,53 @@
+//COLOR SET
+$background: #8C4C7E; // topbar color
+$red: #E06B65;
+$yellow: #FEEB96;
+$green: #99CC99;
+$blue: #99CCFF;
+$gray: #C4C4C4;
+$black: #202020;
+
+.topbar {
+    background-color: $background;
+    opacity: 0.8;
+}
+
+#underline1 {
+    background: $background;
+}
+
+#underline2 {
+    background: $background;
+}
+
+#underline3 {
+    background: $background;
+}
+
+#underline4 {
+    background: $background;
+}
+
+.p1 {
+    border-color: $red; //CHANGE to color of first teammember
+}
+
+.p2 {
+    border-color: $yellow; //CHANGE to color of second teammember
+}
+
+.p3 {
+    border-color: $green; //CHANGE to color of third teammember
+}
+
+.p4 {
+    border-color: $blue; //CHANGE to color of fourth teammember
+}
+
+.p5 {
+    border-color: $gray; //CHANGE to color of fifth teammember
+}
+
+.p6 {
+    border-color: $black; //CHANGE to color of fifth teammember
+}

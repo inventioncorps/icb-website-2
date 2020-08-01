@@ -1,0 +1,41 @@
+.topbar {
+  background-color: #87CC6B;
+  opacity: 0.8;
+}
+
+#underline1 {
+  background: #87CC6B;
+}
+
+#underline2 {
+  background: #87CC6B;
+}
+
+#underline3 {
+  background: #87CC6B;
+}
+
+#underline4 {
+  background: #87CC6B;
+}
+
+.p1 {
+  border-color: #E06B65;
+}
+
+.p2 {
+  border-color: #FEEB96;
+}
+
+.p3 {
+  border-color: #99CC99;
+}
+
+.p4 {
+  border-color: #99CCFF;
+}
+
+.p5 {
+  border-color: #C4C4C4;
+}
+/*# sourceMappingURL=bsfc.css.map */

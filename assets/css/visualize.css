@@ -1,0 +1,49 @@
+.topbar {
+  background-color: #D86386;
+  opacity: 0.8;
+}
+
+#underline1 {
+  background: #D86386;
+}
+
+#underline2 {
+  background: #D86386;
+}
+
+#underline3 {
+  background: #D86386;
+}
+
+#underline4 {
+  background: #D86386;
+}
+
+.p1 {
+  border-color: #E06B65;
+}
+
+.p2 {
+  border-color: #FEEB96;
+}
+
+.p3 {
+  border-color: #99CC99;
+}
+
+.p4 {
+  border-color: #99CCFF;
+}
+
+.p5 {
+  border-color: #8A9BE4;
+}
+
+.p6 {
+  border-color: #C4C4C4;
+}
+
+.p7 {
+  border-color: #202020;
+}
+/*# sourceMappingURL=visualize.css.map */

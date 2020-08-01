@@ -1,0 +1,142 @@
+//COLOR SET
+$background: #E06B65; //topbar color
+$red: #E06B65;
+$yellow: #FEEB96;
+$green: #99CC99;
+$blue: #99CCFF;
+$gray: #C4C4C4;
+$black: #202020;
+
+.square{
+    background-color: white;
+    opacity: 0.2;
+    height: 76vw;
+    width: 76vw;
+    z-index: 0;
+}
+
+.topbar-content {
+    margin-top: 15vw;
+}
+
+figcaption {
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    padding-top: 1rem;
+}
+.topbar-fig {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+}
+
+.topbar-img-2 {
+    opacity: 1;
+    height: 76vw;
+    width: 76vw;
+    object-fit: contain;
+    z-index: 1;
+    display: block;
+    margin: auto;
+}
+
+.topbar {
+    background-color: $background;
+}
+
+.youtube {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.bottom {
+    padding-bottom: 0;
+}
+
+.no-top {
+    margin-top: 2vw;
+}
+#underline1 {
+    background: $background;
+}
+
+#underline2 {
+    background: $background;
+}
+
+#underline3 {
+    background: $background;
+}
+
+#underline4 {
+    background: $background;
+}
+
+.p1 {
+    border-color: $red; //color of first team member
+}
+
+.p2 {
+    border-color: $yellow; //color of second team member
+}
+
+.p3 {
+    border-color: $green; //color of third team member
+}
+
+.p4 {
+    border-color: $blue; //color of fourth team member
+}
+
+.p5 {
+    border-color: $gray; //color of fifth team member
+}
+
+.p6 {
+    border-color: $black; //color of sixth team member
+}
+
+.pspecial {
+    border-image: linear-gradient(to bottom, $blue 16.3%, $yellow 16.3%, $yellow 32.5%, $red 32.5%, $red 48.7%, $green 48.7%, $green 64.9%, $gray 64.9%, $gray 81.1%, $black 81.1%); 
+    border-image-slice: 0% 0% 0% 100%;
+    border-top: 0;
+    border-bottom: 0;
+    z-index: -1;
+}
+
+.special {
+    border-top: solid white;
+    border-bottom: solid white;
+    border-width: medium;
+    z-index: 1;
+}
+@media (min-width: 768px) {
+    .topbar-img-2 {
+        height: 36vw;
+        width: 36vw;
+    }
+    .square{
+        background-color: white;
+        opacity: 0.2;
+        height: 36vw;
+        width: 36vw;
+    }
+    .topbar-content {
+        margin-top: 10vw;
+    }
+}
+@media (min-width: 992px) {
+    .pspecial {
+        border-image-slice: 0% 100% 0% 0%;
+    }
+    figcaption {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .topbar-content {
+        margin-top: 0;
+    }
+}

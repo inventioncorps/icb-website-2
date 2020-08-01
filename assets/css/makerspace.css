@@ -1,0 +1,45 @@
+.topbar {
+  background-color: #8C4C7E;
+  opacity: 0.8;
+}
+
+#underline1 {
+  background: #8C4C7E;
+}
+
+#underline2 {
+  background: #8C4C7E;
+}
+
+#underline3 {
+  background: #8C4C7E;
+}
+
+#underline4 {
+  background: #8C4C7E;
+}
+
+.p1 {
+  border-color: #E06B65;
+}
+
+.p2 {
+  border-color: #FEEB96;
+}
+
+.p3 {
+  border-color: #99CC99;
+}
+
+.p4 {
+  border-color: #99CCFF;
+}
+
+.p5 {
+  border-color: #C4C4C4;
+}
+
+.p6 {
+  border-color: #202020;
+}
+/*# sourceMappingURL=makerspace.css.map */

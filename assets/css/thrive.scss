@@ -1,0 +1,63 @@
+//COLOR SET
+$background: #38849A; // topbar color
+$red: #E06B65;
+$yellow: #FEEB96;
+$green: #99CC99;
+$blue: #99CCFF;
+$dark-blue:#838EBF;
+$pink: #F2D4D3;
+$purple: #D0B3F5;
+$brown: #D9A38D;
+
+.topbar {
+    background-color: $background;
+    opacity: 0.9;
+}
+
+#underline1 {
+    background: $background;
+}
+
+#underline2 {
+    background: $background;
+}
+
+#underline3 {
+    background: $background;
+}
+
+#underline4 {
+    background: $background;
+}
+
+.p1 {
+    border-color: $red; // color of first teammember
+}
+
+.p2 {
+    border-color: $yellow; // color of second teammember
+}
+
+.p3 {
+    border-color: $green; // color of third teammember
+}
+
+.p4 {
+    border-color: $blue; // color of fourth teammember
+}
+
+.p5 {
+    border-color: $dark-blue; // color of fifth teammember
+}
+
+.p6 {
+    border-color: $pink; // color of sixth teammember
+}
+
+.p7 {
+    border-color: $purple; // color of seventh teammember
+}
+
+.p8 {
+    border-color: $brown; // color of eighth teammember
+}
