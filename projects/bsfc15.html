@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168933669-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-168933669-1');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>student food collective</title> <!-- CHANGE the title-->
+    <meta name="description" content="Project" />
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon" />
+
+    <!-- Custom Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bd860f6242.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap Styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="../assets/css/stylesv15.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="../assets/css/projectsv15.css" type="text/css" /> -->
+    <link rel="stylesheet" href="../assets/css/anindividualproj15.css" type="text/css" />
+    <!-- Project specific style sheet -->
+    <link rel="stylesheet" href="../assets/css/bsfc.css" type="text/css" /> <!--the stylesheet href-->
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+        <div class="container">
+            <div class="d-flex flex-grow-1">
+                <a class="navbar-brand" href="../indexv15.html">
+                    <img src="../assets/img/logo.svg" width="55" height="55" class="d-inline-block align-top"
+                        alt="Invention Corps Logo">
+                </a>
+                <div class="w-100 text-right">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNav">
+                <ul class="navbar-nav ml-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a class="nav-link about" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link members" href="members.html">Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link projects" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact" href="https://forms.gle/dSAgFm9jpetY4B4T6"
+                            target="_blank">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- That Cool Top Bar with the image and the info introducing the project -->
+    <div class="topbar" d-flex justify-content-center>
+        <div class="container">
+            <div class="cool row">
+                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                    <img src="../assets/img/bsfc15/bsfc-landing.svg" class="topbar-img">
+                    <!--the landing image-->
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="holder">
+                        <h1 id="proj-title">student food collective</h1> <!--he title-->
+                        <h5>ensuring fair representation in the berkeley food security community</h5> <!--the text-->
+                        <br>
+                        <hr id="topbar-hr">
+                        <div class="row details">
+                            <div class="col-4">
+                                <h4 id="proj-details">Duration</h4>
+                            </div>
+                            <div class="col-8">
+                                <h6 id="proj-answers">Feb 2020 - May 2020</h6> <!-- the duration-->
+                            </div>
+                        </div>
+                        <div class="row details">
+                            <div class="col-4">
+                                <h4 id="proj-details">Focus</h4>
+                            </div>
+                            <div class="col-8">
+                                <h6 id="proj-answers">Society, Education, Accessibility</h6> <!--the focus-->
+                            </div>
+                        </div>
+                        <div class="row details">
+                            <div class="col-4">
+                                <h4 id="proj-details">Tools</h4>
+                            </div>
+                            <div class="col-8">
+                                <h6 id="proj-answers">Survey creation, User interviews</h6> <!--the tools-->
+                            </div>
+                        </div>
+                        <div class="row details">
+                            <div class="col-4">
+                                <h4 id="proj-details">Partner</h4>
+                            </div>
+                            <div class="col-8">
+                                <h6 id="proj-answers">Berkeley Student Food Collective</h6> <!--the partner-->
+                            </div>
+                        </div>
+
+                        <hr id="topbar-hr">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h2 class="team-header">Team</h2>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class="img-container d-flex justify-content-center">
+                            <img alt="brendan" src="../assets/img/bsfc15/brendan.svg" class="member" />
+                            <!-- first teammember img-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Brendan Shih</h7> <!-- CHANGE to first teammember-->
+                            <p>Project Lead</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class="img-container d-flex justify-content-center">
+                            <img alt="katrina" src="../assets/img/bsfc15/katrina.svg" class="member" />
+                            <!-- CHANGE to second teammember img-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Katrina Gonzales</h7> <!-- CHANGE to second teammember-->
+                            <p>Design Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class="img-container d-flex justify-content-center">
+                            <img alt="malena" src="../assets/img/bsfc15/malena.svg" class="member" />
+                            <!--third teammember img-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Malena Kleiven</h7> <!--third teammember-->
+                            <p>Design Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class="img-container d-flex justify-content-center">
+                            <img alt="manu" src="../assets/img/bsfc15/manu.svg" class="member" />
+                            <!-- fourth teammember-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Manooshree Patel</h7> <!--fourth teammember-->
+                            <p>Design Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <h2 class=mentors-header>Mentors</h2>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class="img-container d-flex justify-content-center">
+                            <img alt="neeknaz" src="../assets/img/bsfc15/neeknaz.svg" class="member" />
+                            <!-- first mentor img-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Neeknaz Abari</h7> <!--first mentor -->
+                            <p>Operations Associate @ BSFC</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class="img-container d-flex justify-content-center">
+                            <img alt="nate" src="../assets/img/bsfc15/jeff.svg" class="member" />
+                            <!-- second mentor img-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Jeff Noven</h7> <!-- second mentor -->
+                            <p>Executive Director @ BSFC</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <h2 class="background-header">Background</h2>
+        <div class="container">
+            <p>With the goals of attracting new members and improving member experience of the Berkeley Student Food Collective, we
+            conducted in-depth interviews and a literature review to better understand members’ experiences, the key components of
+            successful food collective organizations, and community needs.
+
+            </p> <!-- background txt -->
+
+            <div class="sectionheader">
+                <h3>Our partner</h3>
+                <div id=underline1></div>
+            </div>
+            <p>
+                <a href="" target="_blank" class="partner-link">The Berkeley Student Food Collective </a>
+                (BSFC) is a non-profit volunteer-run grocery store. It is dedicated to “providing
+                fresh, local, healthy, environmentally sustainable, and ethically produced food at affordable prices to the Berkeley
+                campus and greater community.”
+            </p> <!-- CHANGE to partner txt -->
+
+            <div class="sectionheader">
+                <h3>The problem</h3>
+                <div id=underline2></div>
+            </div>
+            <p>
+                The Berkeley Student Food Collective membership was not representative of the community it aimed to serve and its
+                leadership structures were unclear. The Collective wanted to enact effective structural changes that would lead to
+                acquiring new membership from the community and enhancing the experience for existing members.
+
+            </p> <!-- CHANGE to problem txt -->
+
+            <div class="row">
+
+                <div class="col-12 col-lg-4">
+                    <div class="sectionheader">
+                        <h3>Who is our user?</h3>
+                        <div id=underline3></div>
+                    </div>
+                    <div class="d-flex justify-content-center"> <img src="../assets/img/users.svg" id="users"> </div>
+                    <div class="user-txt">
+                        <h7 class="user"> BSFC members and patrons</h7> <!-- CHANGE to user -->
+                        <p>both prospective and current</p>
+                    </div> <!-- CHANGE to user extra details-->
+                </div>
+
+                <div class="col-12 col-lg-8">
+                    <div class="sectionheader">
+                        <h3>Our users need...</h3>
+                        <div id=underline4></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-2 col-sm-1 d-flex justify-content-center">
+                            <img src="../assets/img/number-1.svg" class="nums">
+                        </div>
+                        <div class="col-10 col-sm-11 question">
+                            <h7 id="how">
+                                Effective and standardized club leadership and membership structures.
+                            </h7> <!-- CHANGE to first user need-->
+                        </div>
+
+                        <div class="col-2 col-sm-1 d-flex justify-content-center">
+                            <img src="../assets/img/number-2.svg" class="nums">
+                        </div>
+                        <div class="col-10 col-sm-11 question">
+                            <h7 id="how">
+                                A more diverse membership body that is representative of the community.
+                            </h7> <!-- CHANGE to second user need-->
+                        </div>
+
+                        <div class="col-2 col-sm-1 d-flex justify-content-center">
+                            <img src="../assets/img/number-3.svg" class="nums">
+                        </div>
+                        <div class="col-10 col-sm-11 question">
+                            <h7 id="how">
+                                A deeper understanding of the needs and struggles of the communities being served.
+                            </h7> <!-- CHANGE to third user need-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2 class="deliverables-header">Deliverables</h2>
+        <div class="container">
+            <p>
+                Our team provided a detailed literature review of existing food cooperatives and used the resulting information to
+                design and carry out an in-depth survey of members and patrons of BSFC. We also conducted directed interviews to learn
+                more about the needs of the student community.
+            </p> <!-- deliverables overview-->
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6 order-lg-1">
+                <div class="container">
+                    <div class="container subtitle">
+                        <img class="delivtitle" src="../assets/img/bsfc15/deliv-title-1.svg">
+                        <!-- CHANGE to deliverable title 1 img-->
+                    </div>
+                    <div class="row">
+                        <div class="col-2 col-sm-1 hmw d-flex justify-content-center"> <img
+                                src="../assets/img/number-1.svg" class="nums"> </div>
+                        <div class="col-10 col-sm-11 hmw">
+                            <h7 id="how">
+                                How might we better understand the best practices of organizations that aim to provide healthy and affordable food to
+                                their communities?
+
+                            </h7> <!-- CHANGE to first hmw-->
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="p4 left">
+                            <p>
+                                We reviewed organizations with similar goals to the Collective and found that cooperative success and function seemed to
+                                generally stem from:
+                                <ul>
+                                    <li>a sense of community</li>
+                                    <li>a strict membership work requirement</li>
+                                    <li>a scaled benefits system</li>
+                                    <li>a bureaucratic leadership structure</li>
+                                    <li>partnerships with other local businesses.</li>
+                                </ul>
+                                This information allowed us to make some recommendations to the BSFC leadership. So as not to undermine the existing
+                                structures of the Collective, we were careful to consider how our changes would affect the systems that were already in
+                                place.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- CHANGE to content of first deliverable section.
+                                Use  <p class="p[x]"> for each person who contributed where x is their order in the team section.
+                                Use two breaks (<br>) within a paragraph if the same person contributes for more than one paragraph.
+                                Use right for even and left for odd deliverable sections.-->
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 order-lg-2 d-flex justify-content-center">
+                <div class="img-container deliverable-img-container">
+                    <img src="../assets/img/bsfc15/deliv-1.png" class="deliverable-img">
+                    <!-- CHANGE to first deliverable img-->
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 order-lg-4">
+                <div class="container">
+                    <div class="container subtitle">
+                        <img class="delivtitle" src="../assets/img/bsfc15/deliv-title-2.svg">
+                        <!-- CHANGE to deliverable title 2 img-->
+                    </div>
+                    <div class="row">
+                        <div class="col-2 col-sm-1 hmw d-flex justify-content-center"> <img
+                                src="../assets/img/number-2.svg" class="nums"> </div>
+                        <div class="col-10 col-sm-11 hmw">
+                            <h7 id="how">
+                                How might we provide for and engage a more representative membership especially within communities that are not
+                                currently represented?
+                            </h7> <!-- CHANGE to second hmw-->
+                        </div>
+                    </div>
+                    <div class="container">
+                        <p class="p1 right">
+                            We decided to conduct one-on-one interviews as we felt this would yield more detailed and in-depth insights compared to
+                            basic general surveys.
+                            <br>
+                            <br>
+                            It was found that members typically joined the Collective because of the principles and ideals that it upholds rather
+                            than any incentives associated with membership.
+                            <br>
+                            <br>
+                            “It’s a really big group, so it’s hard to get to know people. Meetings are not consistent and there is not
+                            accountability for attendance. These things make it really hard to see the food collective as a cohesive community.” 
+                            <br>
+                            -BSFC member
+                            <br>
+                            <br>
+                            The trend in member responsed that pointed to a non-unified collective made us give special attention to recommendations
+                            that related to this concern. Encouraging greater unity and being more strict about policies are two ways to begin
+                            addressing this issue.
+                        </p>
+                    </div>
+                    <!-- CHANGE to content of second deliverable section.
+                        Use  <p class="p[x]"> for each person who contributed where x is their order in the team section.
+                        Use two breaks (<br>) within a paragraph if the same person contributes for more than one paragraph.
+                        Use right for even and left for odd deliverable sections.-->
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 order-lg-3 d-flex justify-content-center">
+                <div class="img-container deliverable-img-container">
+                    <div class="container">
+                        <img src="../assets/img/bsfc15/deliv-2.png" class="deliverable-img">
+                        <!-- CHANGE to second deliverable img-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 order-lg-5">
+                <div class="container">
+                    <div class="container subtitle">
+                        <img class="delivtitle" src="../assets/img/bsfc15/deliv-title-3.svg">
+                        <!-- CHANGE to deliverable title 3 img-->
+                    </div>
+                    <div class="row">
+                        <div class="col-2 col-sm-1 hmw d-flex justify-content-center"> <img
+                                src="../assets/img/number-3.svg" class="nums"> </div>
+                        <div class="col-10 col-sm-11 hmw">
+                            <h7 id="how">
+                                How might we better understand and meet the needs of the community that is served by the Collective?
+                            </h7> <!-- CHANGE to third hmw-->
+                        </div>
+                    </div>
+                    <div class="container">
+                        <p class="p3 left">
+                            We spoke with the Vice President of Student Affairs for Berkeley about the student community and its relationship with
+                            the Collective. In order to improve the diversity of the Collective’s membership and users, she recommended that the
+                            Collective strive to be more intentional about serving marginalized communities. “Sometimes it's not about students
+                            coming to you, but you going to students.”
+                        </p>
+                        <div class="p2 left">
+                            <p>
+                                The director of COFED (operations), an organization that works with food co-ops and focuses on inclusion, was asked
+                                about how to better engage marginalized groups. Her suggestions included:
+                                <ul>
+                                    <li>focusing on the education of food apartheid</li>
+                                    <li>understanding that privilege plays a role in volunteer spaces</li>
+                                    <li>connecting the community through work that is inclusive and intergenerational.</li>
+                                </ul>
+
+                                This material was all included in a report on the needs of the community that is supported by the collective.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- CHANGE to content of second deliverable section.
+                        Use  <p class="p[x]"> for each person who contributed where x is their order in the team section.
+                        Use two breaks (<br>) within a paragraph if the same person contributes for more than one paragraph.
+                        Use right for even and left for odd deliverable sections.-->
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 order-lg-6 d-flex justify-content-center">
+                <div classs="img-container deliverable-img-container">
+                    <img src="../assets/img/bsfc15/deliv-3.png" class="deliverable-img">
+                    <!-- CHANGE to third deliverable img-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- Animation Libraries -->
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- Custom Scripts -->
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/members.js"></script>
+</body>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="footer-icons">
+        <div class="row" style="padding: 0;">
+            <a class="col-3 footer-icon-1" href="mailto:inventioncorps@icb.berkeley.edu" target="_blank"><i
+                    class="fas fa-envelope"></i></a>
+            <a class="col-3 footer-icon-2" href="https://www.linkedin.com/company/berkeley-invention-corps/"
+                target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a class="col-3 footer-icon-3" href="https://www.facebook.com/InventionCorps" target="_blank"><i
+                    class="fab fa-facebook-square"></i></a>
+            <a class="col-3 footer-icon-4" href="https://www.instagram.com/inventioncorps/" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    Made with ♥ by the
+    <span> <a href="webdevteam.html"> Invention Corps Web Team</a> </span>
+</footer>
+
+</html>

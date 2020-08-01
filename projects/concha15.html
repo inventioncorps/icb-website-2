@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168933669-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168933669-1');
+</script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>concha labs</title> <!--the title-->
+  <meta name="description" content="Project"/>
+  <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon" />
+
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bd860f6242.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap Styling -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="../assets/css/stylesv15.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="../assets/css/projectsv15.css" type="text/css" /> -->
+  <link rel="stylesheet" href="../assets/css/anindividualproj15.css" type="text/css" />
+<!-- Project specific style sheet -->
+<link rel="stylesheet" href="../assets/css/concha.css" type="text/css" /> <!--the stylesheet href-->
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+        <div class="container">
+            <div class="d-flex flex-grow-1">
+                <a class="navbar-brand" href="../indexv15.html">
+                    <img src="../assets/img/logo.svg" width="55" height="55" class="d-inline-block align-top" alt="Invention Corps Logo">
+                </a>
+                <div class="w-100 text-right">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNav">
+                <ul class="navbar-nav ml-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a class="nav-link about" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link members" href="members.html">Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link projects" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact" href="https://forms.gle/dSAgFm9jpetY4B4T6" target="_blank">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- That Cool Top Bar with the image and the info introducing the project -->
+    <div class="topbar"d-flex justify-content-center>
+        <div class="container">
+            <div class="cool row">
+                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                    <img src="../assets/img/concha15/concha-landing.svg" class="topbar-img"> <!--landing image-->
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="holder">
+                    <h1 id="proj-title">concha labs</h1> <!--the title-->
+                    <h5>bringing machine learning to the hearing space</h5> <!--the text-->
+                    <br>
+                    <hr id="topbar-hr">
+                        <div class="row details">
+                            <div class="col-4">
+                                <h4 id="proj-details">Duration</h4>
+                            </div>
+                            <div class="col-8">
+                                <h6 id="proj-answers">Sept 2019 - Dec 2019</h6> <!--the duration-->
+                            </div>
+                        </div>
+                        <div class="row details">
+                            <div class="col-4">
+                                <h4 id="proj-details">Focus</h4>
+                            </div>
+                            <div class="col-8">
+                                <h6 id="proj-answers">Public Health, Accessbility</h6> <!--the focus-->
+                            </div>
+                        </div>
+                        <div class="row details">
+                            <div class="col-4">
+                                <h4 id="proj-details">Tools</h4>
+                            </div>
+                            <div class="col-8">
+                                <h6 id="proj-answers">Rapid Prototyping, Arduino, Laser Cutting</h6> <!--the tools-->
+                            </div>
+                        </div>
+                        <div class="row details">
+                            <div class="col-4">
+                                <h4 id="proj-details">Partner</h4>
+                            </div>
+                            <div class="col-8">
+                                <h6 id="proj-answers">Concha Labs</h6> <!--the partner-->
+                            </div>
+                        </div>
+                   
+                    <hr id="topbar-hr">
+                </div>
+            </div>
+            </div>
+        </div> 
+    </div>
+    
+    <div class="container">
+
+        <h2 class = "team-header">Team</h2>
+        <div class="container">
+            <div class = "row">
+
+                <div class = "col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class = "img-container d-flex justify-content-center">
+                            <img alt="tanthai" src="../assets/img/concha15/tanthai.svg" class = "member"/> <!--first team member img-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Tanthai Pongstien</h7> <!--first team member-->
+                            <p>Project Lead</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class = "img-container d-flex justify-content-center">
+                            <img alt="leilani" src="../assets/img/concha15/leilani.svg" class = "member"/> <!--second team member img-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Leilani Chu</h7> <!--second team member-->
+                            <p>Design Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class = "img-container d-flex justify-content-center">
+                            <img alt="ryan" src="../assets/img/concha15/ryan.svg" class = "member"/> <!--third team member img-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Ryan Yu</h7> <!--third team member-->
+                            <p>Design Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class = "img-container d-flex justify-content-center">
+                            <img alt="sunny" src="../assets/img/concha15/sunny.svg" class = "member"/> <!--fourth team member-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Sunny Hsu</h7> <!--fourth team member-->
+                            <p>Design Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class = "img-container d-flex justify-content-center">
+                            <img alt="brendan" src="../assets/img/concha15/brendan.svg" class = "member"/> <!--fifth team member img-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Brendan Shih</h7> <!--fifth team member-->
+                            <p>Design Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <h2 class=mentors-header>Mentors</h2>
+        <div class="container">
+            <div class = "row">
+
+                <div class = "col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class = "img-container d-flex justify-content-center">
+                            <img alt="matt" src="../assets/img/concha15/matt.svg" class = "member"/> <!--first mentor img-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Matt Sorg</h7> <!--first mentor -->
+                            <p>CTO of Concha Labs</p>
+                        </div>
+                    </div>   
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <h2 class="background-header">Background</h2>
+        <div class="container">
+            <p>Concha Labs’ machine learning methodology carefully curates sentences based on the frequencies of consonants and vowels. It then optimizes your sound profile based on your perception of speech, allowing you to understand every part of every sentence in your conversations. They aim to accomplish this through a web application, which is where we came in.
+            </p> <!--background txt -->
+            
+            <div class="sectionheader">
+                <h3>Our partner</h3>
+                <div id=underline1></div>
+            </div>
+            <p>
+            <a href="https://www.conchalabs.com/#/" target="_blank" class="partner-link">Concha Labs</a> builds customized hearing aids that cost a fraction of the price of traditional devices. To calibrate the devices, users are taken through a series of hearing tests on a web app. Our team was tasked with redesigning the calibration interface to make it more accessible for people of all ages and abilities.
+            </p> <!--partner txt -->
+
+            <div class="sectionheader">
+                <h3>The problem</h3>
+                <div id=underline2></div>
+            </div>
+            <p>
+                While Concha’s underlying technology is incredibly powerful, that power means nothing if users are unable to harness it. After performing some preliminary user testing, we found that the interface was poorly designed for people who were older and lacked experience with technology. 
+            </p> <!--problem txt -->
+
+            <div class="row">
+
+                <div class="col-12 col-lg-4">
+                    <div class="sectionheader">
+                        <h3>Who is our user?</h3>
+                        <div id=underline3></div>
+                    </div>
+                    <div class="d-flex justify-content-center"> <img src="../assets/img/users.svg" id="users"> </div>
+                    <div class="user-txt"> <h7 class="user">senior citizens</h7> <!--user -->
+                    <p>who are hard of hearing and are less confident with technology</p> </div> <!--user extra details-->
+                </div>
+
+                <div class="col-12 col-lg-8">
+                    <div class="sectionheader">
+                        <h3>Our users need...</h3>
+                        <div id=underline4></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-2 col-sm-1 d-flex justify-content-center">
+                            <img src="../assets/img/number-1.svg" class="nums">
+                        </div>
+                        <div class="col-10 col-sm-11 question">
+                            <h7 id="how">
+                                A clear workflow with intuitive design and a navigable UI/UX that is easy to use and to follow.
+                            </h7> <!--first user need-->
+                        </div>
+
+                        <div class="col-2 col-sm-1 d-flex justify-content-center">
+                            <img src="../assets/img/number-2.svg" class="nums">
+                        </div>
+                        <div class="col-10 col-sm-11 question">
+                            <h7 id="how">
+                                An accessible design that takes into account a wide range of vision capabilities and increases the user’s feeling of independence.
+                            </h7> <!--second user need-->
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+    
+        <h2 class="deliverables-header">Deliverables</h2>
+            <div class="container">
+                <p>
+                    We strove to understand the pain points of an existing fringe user group through research and testing, which drove our design flow of a web application to accompany Concha’s specialized hearing aids. Through intensive usability testing, we utilized user feedback to create an overall more accessible and functional interface that allows users to create a personalized sound profile, specific to their needs. 
+                </p> <!--deliverables overview-->
+            </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6 order-lg-1">
+                <div class="container">
+                    <div class="container subtitle">
+                        <img class="delivtitle" src="../assets/img/concha15/deliv-title-1.svg"> <!--deliverable title 1 img-->
+                    </div>
+                    <div class="row">
+                        <div class="col-2 col-sm-1 hmw d-flex justify-content-center"> <img src="../assets/img/number-1.svg" class="nums"> </div>
+                        <div class="col-10 col-sm-11 hmw">
+                            <h7 id="how">
+                                How might we better understand what drives the needs of our users, and how can we create the best experience for our specific user group?
+                            </h7> <!--first hmw-->
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="p4 left">
+                            <p>
+                                After performing some preliminary user testing, we found that the interface was poorly designed for people who were older and lacked experience with technology. Some constraints we wanted to keep in mind included:
+                                <ul>
+                                    <li>Lack of visual acuity/color vision</li>
+                                    <li>Limited dexterity/fine motor controls</li>
+                                    <li>Unfamiliarity with touch screen gestures</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="p3 left">
+                            <p>
+                                After identifying specific problems with the UI and researching accessible design principles, we redesigned the interface with the following improvements in mind:
+                                <ul>
+                                    <li>Clear instructions on each page</li>
+                                    <li>Bolder + larger fonts and buttons</li>
+                                    <li>Consistent feedback on progress</li>
+                                    <li>Clear layouts with distinct calls to action</li>
+                                    <li>More meaningful icons</li>
+                                    <li>Give users ample time to complete tasks</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div> <!--content of first deliverable section.
+                                Use  <p class="p[x]"> for each person who contributed where x is their order in the team section.
+                                Use two breaks (<br>) within a paragraph if the same person contributes for more than one paragraph.
+                                Use right for even and left for odd deliverable sections.-->
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 order-lg-2 d-flex justify-content-center">
+                <div class="img-container deliverable-img-container">
+                    <img src="../assets/img/concha15/deliv-1.png" class="deliverable-img"> <!--first deliverable img-->
+                </div>
+            </div>
+        
+            <div class="col-12 col-lg-6 order-lg-4">
+                <div class="container">
+                        <div class="container subtitle">
+                            <img class="delivtitle" src="../assets/img/concha15/deliv-title-2.svg"> <!--deliverable title 2 img-->
+                        </div>
+                    <div class="row">
+                        <div class="col-2 col-sm-1 hmw d-flex justify-content-center"> <img src="../assets/img/number-2.svg" class="nums"> </div>
+                        <div class="col-10 col-sm-11 hmw">
+                            <h7 id="how">
+                                How might we create an intentional and valuable product interface by utilizing user feedback and identifying usability gains?
+                            </h7> <!--second hmw-->
+                        </div>
+                    </div>
+                    <div class="container">
+                        <p class="p2 right">
+                            We ran <strong>16 usability tests</strong>, taking into account ease of use, clarity of instructions, and the app’s aesthetic. Users were asked to score each metric on a scale of 1-10. While the data above shows aggregate scores across the entire app, certain screens had greater improvements than others.
+                        </p>
+                        <p class="p5 right">
+                            Specifically, we found that some users struggled to use the slider altogether. Our redesign to use buttons with discrete marks instead were a clear improvement, as users spent less time worrying about finding the “correct” spot, while also giving them more confidence in their results.
+                        </p>
+                        <p class="p1 right">
+                            Concha Labs has begun implementing some of the preliminary changes we’ve suggested, which should increase conversions and make users happier.
+                        </p>
+                    </div> <!--content of second deliverable section.
+                        Use  <p class="p[x]"> for each person who contributed where x is their order in the team section.
+                        Use two breaks (<br>) within a paragraph if the same person contributes for more than one paragraph.
+                        Use right for even and left for odd deliverable sections.-->
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 order-lg-3 d-flex justify-content-center">
+                <div class="img-container deliverable-img-container">
+                    <div class="container">
+                    <img src="../assets/img/concha15/deliv-2.png" class="deliverable-img"> <!--second deliverable img-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Animation Libraries -->
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- Custom Scripts -->
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/members.js"></script>
+</body>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-icons">
+            <div class="row" style="padding: 0;">
+                <a class="col-3 footer-icon-1" href="mailto:inventioncorps@icb.berkeley.edu" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a class="col-3 footer-icon-2" href="https://www.linkedin.com/company/berkeley-invention-corps/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a class="col-3 footer-icon-3" href="https://www.facebook.com/InventionCorps" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a class="col-3 footer-icon-4" href="https://www.instagram.com/inventioncorps/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        Made with ♥ by the
+        <span> <a href="webdevteam.html"> Invention Corps Web Team</a> </span>
+    </footer>
+
+</html>

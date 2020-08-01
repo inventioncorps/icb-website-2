@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168933669-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168933669-1');
+</script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>netic health</title> <!-- the title-->
+  <meta name="description" content="Project"/>
+  <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon" />
+
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bd860f6242.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap Styling -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="../assets/css/stylesv15.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="../assets/css/projectsv15.css" type="text/css" /> -->
+  <link rel="stylesheet" href="../assets/css/anindividualproj15.css" type="text/css" />
+<!-- Project specific style sheet -->
+<link rel="stylesheet" href="../assets/css/netic.css" type="text/css" /> <!-- the stylesheet href-->
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+        <div class="container">
+            <div class="d-flex flex-grow-1">
+                <a class="navbar-brand" href="../indexv15.html">
+                    <img src="../assets/img/logo.svg" width="55" height="55" class="d-inline-block align-top" alt="Invention Corps Logo">
+                </a>
+                <div class="w-100 text-right">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNav">
+                <ul class="navbar-nav ml-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a class="nav-link about" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link members" href="members.html">Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link projects" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact" href="https://forms.gle/dSAgFm9jpetY4B4T6" target="_blank">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- That Cool Top Bar with the image and the info introducing the project -->
+    <div class="topbar"d-flex justify-content-center>
+        <div class="container">
+            <div class="cool row">
+                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                    <img src="../assets/img/netic15/netic-landing.svg" class="topbar-img"> <!--the landing image-->
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="holder">
+                    <h1 id="proj-title">netic health</h1> <!-- the title-->
+                    <h5>designing a better experience for physical therapy patients</h5> <!-- the text-->
+                    <br>
+                    <hr id="topbar-hr">
+                        <div class="row details">
+                            <div class="col-4">
+                                <h4 id="proj-details">Duration</h4>
+                            </div>
+                            <div class="col-8">
+                                <h6 id="proj-answers">Feb 2020 - May 2020</h6> <!-- the duration-->
+                            </div>
+                        </div>
+                        <div class="row details">
+                            <div class="col-4">
+                                <h4 id="proj-details">Focus</h4>
+                            </div>
+                            <div class="col-8">
+                                <h6 id="proj-answers"> Health, Society, Public Health, Accessibility</h6> <!-- the focus-->
+                            </div>
+                        </div>
+                        <div class="row details">
+                            <div class="col-4">
+                                <h4 id="proj-details">Tools</h4>
+                            </div>
+                            <div class="col-8">
+                                <h6 id="proj-answers">Figma, Adobe Illustrator, TensorFlow, Python</h6> <!-- the tools-->
+                            </div>
+                        </div>
+                        <div class="row details">
+                            <div class="col-4">
+                                <h4 id="proj-details">Partner</h4>
+                            </div>
+                            <div class="col-8">
+                                <h6 id="proj-answers">Netic Health</h6> <!-- the partner-->
+                            </div>
+                        </div>
+                   
+                    <hr id="topbar-hr">
+                </div>
+            </div>
+            </div>
+        </div> 
+    </div>
+    
+    <div class="container">
+
+        <h2 class = "team-header">Team</h2>
+        <div class="container">
+            <div class = "row">
+
+                <div class = "col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class = "img-container d-flex justify-content-center">
+                            <img alt="anika" src="../assets/img/netic15/anika.svg" class = "member"/> <!-- first teammember img-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Anika Singhania</h7> <!-- first teammember-->
+                            <p>Project Lead</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class = "img-container d-flex justify-content-center">
+                            <img alt="allan" src="../assets/img/netic15/allan.svg" class = "member"/> <!--second teammember img-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Allan Lee</h7> <!-- second teammember-->
+                            <p>Design Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class = "img-container d-flex justify-content-center">
+                            <img alt="carlos" src="../assets/img/netic15/carlos.svg" class = "member"/> <!-- third teammember img-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Carlos Oriol Lopez-Tenorio</h7> <!-- third teammember-->
+                            <p>Design Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class = "img-container d-flex justify-content-center">
+                            <img alt="leilani" src="../assets/img/netic15/leilani.svg" class = "member"/> <!-- fourth teammember img-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Leilani Chu</h7> <!-- fourth teammember-->
+                            <p>Design Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class = "img-container d-flex justify-content-center">
+                            <img alt="philippa" src="../assets/img/netic15/pippa.svg" class = "member"/> <!-- fifth teammember img-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Philippa Steinberg</h7> <!-- fifth teammember-->
+                            <p>Design Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class = "img-container d-flex justify-content-center">
+                            <img alt="reid" src="../assets/img/netic15/reid.svg" class = "member"/> <!-- fifth teammember img-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Reid Johnson</h7> <!-- fifth teammember-->
+                            <p>Code Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <h2 class=mentors-header>Mentors</h2>
+        <div class="container">
+            <div class = "row">
+
+                <div class = "col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class = "img-container d-flex justify-content-center">
+                            <img alt="nik" src="../assets/img/netic15/nikhil.svg" class = "member"/> <!-- first mentor img-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Nikhil Yerasi</h7> <!-- first mentor -->
+                            <p>Main iOS Developer @ Netic Health</p>
+                        </div>
+                    </div>   
+                </div>
+
+                <div class = "col-4 col-sm-3 col-md-2">
+                    <div class="blob">
+                        <div class = "img-container d-flex justify-content-center">
+                            <img alt="mathias" src="../assets/img/netic15/mathias.svg" class = "member"/> <!-- second mentor img-->
+                        </div>
+                        <div class="team-names">
+                            <h7>Mathias Vissers</h7> <!-- second mentor -->
+                            <p>Co-Founder of Netic Health</p>
+                        </div>
+                    </div>   
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <h2 class="background-header">Background</h2>
+        <div class="container">
+            <p>
+                Our challenge was to wireframe an app to allow patients to track their physical therapy
+                all while incentivizing them to complete their exercises.
+                Additionally, we were tasked to create branding and further develop the ML basis for measuring the activity of the user. 
+            </p> <!-- background txt -->
+            
+            <div class="sectionheader">
+                <h3>Our partner</h3>
+                <div id=underline1></div>
+            </div>
+            <p>
+                We partnered with <a href="https://www.linkedin.com/company/netic-corporation/" target="_blank" class="partner-link">Netic Health</a>, a Berkeley-based startup.
+                Netic aims to provide physical therapy and rehabilitation to anyone through a smartphone. 
+            </p> <!-- partner txt -->
+
+            <div class="sectionheader">
+                <h3>The problem</h3>
+                <div id=underline2></div>
+            </div>
+            <p>
+                Current physcial therapy patients oftentimes do not finish their workouts.
+                They need a tool that will help them track their progress, chat with professionals,
+                guide them through exercises, and motivate them to continue therapy.
+            </p> <!-- problem txt -->
+
+            <div class="row">
+
+                <div class="col-12 col-lg-4">
+                    <div class="sectionheader">
+                        <h3>Who is our user?</h3>
+                        <div id=underline3></div>
+                    </div>
+                    <div class="d-flex justify-content-center"> <img src="../assets/img/users.svg" id="users"> </div>
+                    <div class="user-txt"> <h7 class="user">physical therapy patients</h7> <!-- user -->
+                    <p>who need access to physical therapy at home</p> </div> <!--user extra details-->
+                </div>
+
+                <div class="col-12 col-lg-8">
+                    <div class="sectionheader">
+                        <h3>Our users need...</h3>
+                        <div id=underline4></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-2 col-sm-1 d-flex justify-content-center">
+                            <img src="../assets/img/number-1.svg" class="nums">
+                        </div>
+                        <div class="col-10 col-sm-11 question">
+                            <h7 id="how">
+                                A cohesive brand that is representative of the company’s goals.
+                            </h7> <!-- first user need-->
+                        </div>
+
+                        <div class="col-2 col-sm-1 d-flex justify-content-center">
+                            <img src="../assets/img/number-2.svg" class="nums">
+                        </div>
+                        <div class="col-10 col-sm-11 question">
+                            <h7 id="how">
+                                Adequate instructions on excerises.
+                            </h7> <!-- second user need-->
+                        </div>
+
+                        <div class="col-2 col-sm-1 d-flex justify-content-center">
+                            <img src="../assets/img/number-3.svg" class="nums">
+                        </div>
+                        <div class="col-10 col-sm-11 question">
+                            <h7 id="how">
+                                Recovery updates.
+                            </h7> <!-- third user need-->
+                        </div>
+
+                        <div class="col-2 col-sm-1 d-flex justify-content-center">
+                            <img src="../assets/img/number-4.svg" class="nums">
+                        </div>
+                        <div class="col-10 col-sm-11 question">
+                            <h7 id="how">
+                                Motivation to finish their PT regimen.
+                            </h7> <!-- fourth user need-->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+    
+        <h2 class="deliverables-header">Deliverables</h2>
+            <div class="container">
+                <p>
+                    Our solution involved creating a brand around PT,
+                    developing the ML to follow movement, wireframing an interactive app,
+                    and user testing to see if our changes resonated.
+                </p> <!-- deliverables overview-->
+            </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6 order-lg-1">
+                <div class="container">
+                    <div class="container subtitle">
+                        <img class="delivtitle" src="../assets/img/netic15/deliv-title-1.svg"> <!-- deliverable title 1 img-->
+                    </div>
+                    <div class="row">
+                        <div class="col-2 col-sm-1 hmw d-flex justify-content-center"> <img src="../assets/img/number-1.svg" class="nums"> </div>
+                        <div class="col-10 col-sm-11 hmw">
+                            <h7 id="how">
+                                How might we design branding that portrays a path to recovery?
+                            </h7> <!-- first hmw-->
+                        </div>
+                    </div>
+                    <div class="container">
+                        <p class="p4 left">
+                            One of the essential features of the app is the AI technology
+                            that monitors how each exercise is executed by the patient.
+                            Virtual tools are set up to measure range of motion, angles, and time under pressure of their joint.
+                        </p>
+                        <p class="p5 left">
+                            We wanted to highlight the use of AI and the element of visually tracking the limbs in our logo,
+                            so we added angels and measurements to the lettering.
+                            The eventual goal of recovery is reflected by the sprinting person illustrated
+                            at the end of the logo itself. Finally, we also decided to change the name from
+                            NeoMotion AI to Netic Health.
+                        </p>
+                    </div> <!-- Content of first deliverable section.
+                                Use  <p class="p[x]"> for each person who contributed where x is their order in the team section.
+                                Use two breaks (<br>) within a paragraph if the same person contributes for more than one paragraph.
+                                Use right for even and left for odd deliverable sections.-->
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 order-lg-2 d-flex justify-content-center">
+                <div class="img-container deliverable-img-container">
+                    <img src="../assets/img/netic15/deliv-1.png" class="deliverable-img"> <!-- first deliverable img-->
+                </div>
+            </div>
+        
+            <div class="col-12 col-lg-6 order-lg-4">
+                <div class="container">
+                        <div class="container subtitle">
+                            <img class="delivtitle" src="../assets/img/netic15/deliv-title-2.svg"> <!-- deliverable title 2 img-->
+                        </div>
+                    <div class="row">
+                        <div class="col-2 col-sm-1 hmw d-flex justify-content-center"> <img src="../assets/img/number-2.svg" class="nums"> </div>
+                        <div class="col-10 col-sm-11 hmw">
+                            <h7 id="how">
+                                How might we track users’ movement in order to guide them and provide feedback?
+                            </h7> <!-- second hmw-->
+                        </div>
+                    </div>
+                    <div class="container">
+                        <p class="p6 right">
+                            Working with the Netic Tech Team,
+                            we needed to create models to learn both camera parameters
+                            and user poses with only a series of images as inputs.
+                            <br><br>
+                            In pursuit of this goal, we reviewed, learned,
+                            and implemented the basics of pose estimation via an algorithm
+                            that roughly follows the guidelines outlined in [KKA],
+                            using Python and TensorFlow for most of the heavy lifting. 
+                            <br><br>
+                            Despite the mid-semester shift, we shifted to a Unix environment
+                            for running and testing our pose estimation simulations.
+                            Ultimately, we were able to implement camera parameter estimation
+                            and many of the basics of pose estimation,
+                            and are steadily working our way toward a high fidelity real-time pose estimator.
+                        </p>
+                    </div> <!-- Content of second deliverable section.
+                        Use  <p class="p[x]"> for each person who contributed where x is their order in the team section.
+                        Use two breaks (<br>) within a paragraph if the same person contributes for more than one paragraph.
+                        Use right for even and left for odd deliverable sections.-->
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 order-lg-3 d-flex justify-content-center">
+                <div class="img-container deliverable-img-container">
+                    <div class="container">
+                    <img src="../assets/img/netic15/deliv-2.png" class="deliverable-img"> <!-- second deliverable img-->
+                    </div>
+                </div>
+            </div>
+       
+            <div class="col-12 col-lg-6 order-lg-5">
+                <div class="container">
+                <div class="container subtitle">
+                    <img class="delivtitle" src="../assets/img/netic15/deliv-title-3.svg"> <!-- deliverable title 3 img-->
+                </div>
+                    <div class="row">
+                        <div class="col-2 col-sm-1 hmw d-flex justify-content-center"> <img src="../assets/img/number-3.svg" class="nums"> </div>
+                        <div class="col-10 col-sm-11 hmw">
+                            <h7 id="how">
+                                How might we  design a user experience that motivates patients to complete their therapy? 
+                            </h7> <!-- third hmw-->
+                        </div>
+                    </div>
+                    <div class="container">
+                        <p class="p1 left">
+                            Though at first the platform was solely a place to help patients who needed help with physical therapy,
+                            unrelated to any medical entity, the coronavirus pandemic showed
+                            the need for having a medical professional at hand and gave us an
+                            insight into the growth that we will most likely experience in the Telemedicine Industry
+                            in the coming months and years.
+                        </p>
+
+                        <p class="p PLACEHOLDER left">
+                            Another feature introduced throughout the process was the idea of
+                            adding some sort of social gamification to the platform so as to make it more
+                            appealing for patients to follow-up on their treatment by encouraging healthy competition.
+                            We realized that this physical therapy app could be used for everyone.
+                            We do realize that it is usually people of an older demographic that are more likely to need knee replacements.
+                            In that regard, we wanted to make things on the app as functional and efficient as possible.
+                            Text is enlarged, the home page is strictly dedicated to workouts so one exactly knows
+                            where to go for his/her routine. We wanted to make sure that the purpose of this app does not get clouded
+                            in all the features we put in and make our intentions as clear as possible. 
+                        </p>
+                    </div> <!-- Content of second deliverable section.
+                        Use  <p class="p[x]"> for each person who contributed where x is their order in the team section.
+                        Use two breaks (<br>) within a paragraph if the same person contributes for more than one paragraph.
+                        Use right for even and left for odd deliverable sections.-->
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 order-lg-6 d-flex justify-content-center">
+                <div classs="img-container deliverable-img-container">
+                    <img src="../assets/img/netic15/deliv-3.png" class="deliverable-img"> <!-- CHANGE to third deliverable img-->
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 order-lg-8">
+                <div class="container">
+                <div class="container subtitle">
+                    <img class="delivtitle" src="../assets/img/netic15/deliv-title-4.svg"> <!-- deliverable title 4 img-->
+                </div>
+                    <div class="row">
+                        <div class="col-2 col-sm-1 hmw d-flex justify-content-center"> <img src="../assets/img/number-3.svg" class="nums"> </div>
+                        <div class="col-10 col-sm-11 hmw">
+                            <h7 id="how">
+                                How might we ensure that the product is adequately serving the needs of PT patients?
+                            </h7> <!-- fourth hmw-->
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="p4 right">
+                            <p>
+                            Some features we wanted to address were:
+                            <ul>
+                                <li>Are the color choices we made easy to read? </li>
+                                <li>Is the app easy to use? Does it make sense? </li>
+                                <li>Are you able to access all the features?  </li>
+                                <li>Do patients like these features? </li>
+                            </ul>
+                            </p>
+                        </div>
+
+                        <p class="p3 right">
+                            One thing that was found in user testing was that people
+                            were more inclined to use fitness apps if there was
+                            a social aspect involved. Thinking of a brand new patient
+                            that is struggling we wanted to hone in on the gamification
+                            aspect of the app to incentive people to keep up with their at home workouts. 
+                        </p>
+                        <div class="special">
+                            <p class="pspecial right">
+                                In the end, we were able to create a working Figma prototype
+                                that properly encompasses all the different aspects that were
+                                envisioned by Netic Health; including a new company logo,
+                                name and slogan, a mission statement, and a fully designed mobile application
+                                with features such as connecting to a PT, a way to track information,
+                                a "gamified" social connection, and a way for people to easily utilize the machine
+                                learning technology developed by the company.
+                            </p>
+                        </div>
+                    </div> <!-- Content of second deliverable section.
+                        Use  <p class="p[x]"> for each person who contributed where x is their order in the team section.
+                        Use two breaks (<br>) within a paragraph if the same person contributes for more than one paragraph.
+                        Use right for even and left for odd deliverable sections.-->
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 order-lg-7 d-flex justify-content-center">
+                <div class="row">
+
+                    <div class="col-12">
+                        <div class="img-container deliverable-img-container">
+                            <img src="../assets/img/netic15/deliv-4.png" class="deliverable-img fourth"> <!-- fourth deliverable img-->
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="img-container deliverable-img-container">
+                            <iframe class ="deliverable-img youtube" width="560" height="315" src="https://www.youtube.com/embed/S6CXAxB5x-c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- PLACEHOLDER Youtube embedded link-->
+                        </div>
+                    </div>
+
+                </div>    
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Animation Libraries -->
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- Custom Scripts -->
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/members.js"></script>
+</body>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-icons">
+            <div class="row" style="padding: 0;">
+                <a class="col-3 footer-icon-1" href="mailto:inventioncorps@icb.berkeley.edu" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a class="col-3 footer-icon-2" href="https://www.linkedin.com/company/berkeley-invention-corps/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a class="col-3 footer-icon-3" href="https://www.facebook.com/InventionCorps" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a class="col-3 footer-icon-4" href="https://www.instagram.com/inventioncorps/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        Made with ♥ by the
+        <span> <a href="webdevteam.html"> Invention Corps Web Team</a> </span>
+    </footer>
+
+</html>
