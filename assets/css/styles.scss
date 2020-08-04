@@ -15,40 +15,30 @@ $black: #202020;
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
-}
-
- #projects, #members {
-     height: 70vh;
-}
-
-#contact, #landing {
-    height: 90vh;
-}
-
-#about > .container {
-    text-align: justify;
-}
-
-#about {
-    height: auto;
+    text-align: left; //CHANGE (design?)
 }
 
 h2 {
-    font-weight: 700;
-    font-style: italic;
+    font-weight: 700; // CHANGE (check)
+    padding-bottom: 1rem;
+    padding-top: 2rem;
     text-align: center;
 }
 
+h4 {
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+}
+
 a {
-    text-decoration: none;
     color: $black;
-    transition: all 0.25s ease;
+}
+
+.underline {
+    text-decoration: underline; //CHANGE (update all footers to have this class for web team link)
 }
 
 a:hover {
@@ -57,774 +47,92 @@ a:hover {
     transition-timing-function: ease-in;
 }
 
-.navbar a:hover {
-    opacity: 0.5;
+//FOOTER
+footer {
+    // font-family: Filson Pro; CHANGE
+    background-color: white;
+    color: $black;
+    padding: 20px 10vw;
+    text-align: center;
+    margin-top: 5vw;
+    z-index: 1;
 }
 
-// .container {
-//     padding-top: 2em;
-//     padding-bottom: 2em;
-// }
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    left: 80%;
+    font-size: 2.5rem;
+    justify-content: center;
+    z-index: 1;
+}
+
+.footer-icon-1:hover {
+    color: $red;
+}
+
+.footer-icon-2:hover {
+    color: $yellow;
+}
+
+.footer-icon-3:hover {
+    color: $green;
+}
+
+.footer-icon-4:hover {
+    color: $blue;
+}
+
+//NAVBAR
+.navbar.scrolled {
+    background-color: white !important;
+    transition: background-color 200ms linear;
+    color: $black;
+}
 
 nav {
     font-weight: 500;
 }
 
-.navbar.scrolled {
-    background-color: #fff !important;
-    transition: background-color 200ms linear;
+//LANDING BANNER CHANGE (edit because we need to swap images for different screen sizes)
+.banner {
+    width: 100vw;
+    height: 100vh;
 }
 
-.nav-link.active {
-    font-weight: 700;
-}
+.banner-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; //CHANGE (how do we want this to adjust @design?) - seperate mobile and tablet versions
+} 
 
-a.about {
-    border-bottom: solid $green;
-}
-
-a.members {
-    border-bottom: solid $blue;
-}
-
-a.projects {
-    border-bottom: solid $red;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    padding-left: 0;
-    margin-left: 0.5em;
-    padding-right: 0;
-    margin-right: 0.5em;
-    padding-bottom: 0.1em;
-    margin-bottom: 0.4em;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: $gray;
-    border-color: $gray;
-}
-
-.jumptarget::before {
-    content:"";
-    display:block;
-    height:100px; /* fixed header height*/
-    margin:-100px 0 0; /* negative fixed header height */
-  }
-
-// li {
-//     content: attr(data-content);
-//     position: absolute;
-//     color: #000;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 50%;
-//     background-color: #fcf113;
-// }
-
-// a.nav-link.active {
-//     color: $red;
-// }
-
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-#landing-container {
-    height: 75%;
-}
-
-.landing-text > h3 {
-    font-weight: 800;
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-    padding-top: 3rem;
-    // background-color: white;
-}
-
-.landing-text > h1 {
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 2rem;
-    // background-color: white;
-    // border-bottom: 10px solid $blue;
-}
-
-.landing-text-bkd {
-    background: #FFFFFF;
-    padding: 0 0.75rem;
-    text-align: center;
-}
-.contact-txt > h2 {
-    font-weight: 800;
-    font-size: 7px;
-    background-color: white;
-  }
-
-#about, #projects, #contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#about {
-    padding: 2em 0;
-    flex-direction: column;
-}
-
-#about > h2, #projects {
-    text-align: center;
-    flex-direction: column;
-}
-
-// PROJECT PAGE
-
-// .article > a, .article > a:hover {
-//     text-decoration: none;
-//     color: $black;
-// }
-.article > h1 {
-    font-weight: 700;
-}
-
-h5 {
-    background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #FFD0AE 65%);
-    display: inline;
-}
-
-.half-background {
-    background: linear-gradient(to top, yellow 50%, transparent 50%);
-}
-
-// MEMBERS PAGE
-#members {
-    display: flex;
-    justify-content: top;
-    align-items: center;
-    position: relative;
-}
-
-.labels {
-    position: absolute;
-    font-size: 10px;
-}
-
-.labels.left {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    left: 0;
-    bottom: 0;
-    padding-left: 4em;
-}
-
-.labels.right {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    top: 0;
-    right: 0;
-    padding-right: 4em;
-}
-
-.label-col {
-    padding-left: 2em;
-}
-
-.label {
-    margin-bottom: 0.25rem;
-    // background: linear-gradient(180deg, #ffffff 65%, #ffffff 65%);
-    // display: inline;
-}
-
-.label > span {
-    font-style: italic;
-}
-
-.artpiece {
-    transform: rotate(90deg);
-}
-
-#overlay {
-    transform: rotate(90deg);
-}
-
-#art-container {
-    position: relative;
-    display: inline-block; /* <= shrinks container to image size */
-    transition: transform 150ms ease-in-out;
-    top: 0;
-  }
-
-  #art-container img { /* <= optional, for responsiveness */
-     display: block;
-     max-width: 100%;
-     height: auto;
-     -webkit-transition: all 300ms;
-  }
-
-  #art-container svg {
-    position: absolute;
-    // height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    z-index: 2;
-  }
-
-  .colored {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-  }
-
- .grayscale {
-    position: relative;
-    z-index: 0;
-    -webkit-filter: grayscale(100%);
-    top: 0;
-    left: 0;
-  }
-
-  .clip {
-    clip-path: url(#myClip);
-    transition: 0.5s ease clip-path;
-  }
-
-.underline {
-    background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #FFD0AE 65%);
-    display: inline;
-}
-
-// svg {
-//     height: 50vh;
-// }
-
-// .art:hover {
-//     filter: grayscale(100%);
-// }
-
-// CONTACT PAGE
-#contact {
-    position: relative;
-    text-align: center;
-}
-
-#contact > .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#red-string {
-    position: absolute;
-    top: 90px;
-    left: 0;
-
-    img {
-        height: 40vh;
-    }
-}
-
-#blue-string {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    img {
-        height: 40vh;
-    }
-}
-
-#green-string {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-    img {
-        height: 40vh;
-    }
-}
-
-#yellow-string {
-    position: absolute;
-    top: 90px;
-    right: 0;
-
-    img {
-        height: 30vh;
-    }
-}
-
-#contact-text {
-    font-size: 2rem;
-    width: 60vw;
-}
-
-.line {
-    border: none;
-    background-color: $black;
-    color: #ccc;
-    height: 1.75px;
-    width: 50px;
-    margin: 0.75em 0;
-}
-
-.social-icons {
-    font-size: 1.75rem;
-    display: flex;
-    width: 50vw;
-    justify-content: space-between;
-}
-
-.social-icons>a:nth-child(1):hover {
-    color: $red;
-}
-
-.social-icons>a:nth-child(2):hover {
-    color: $yellow;
-}
-
-.social-icons>a:nth-child(3):hover {
-    color: $green;
-}
-
-.social-icons>a:nth-child(4):hover {
-    color: $blue;
-}
-
-// FOOTER
-footer {
-    height: 10%;
-    background-color: $gray;
-}
-
-.proj-title{
-    position: absolute;
-    top: 74%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: x-small;
-}
-
-#members > .container > h2 {
-    padding-bottom: 2em;
-}
-
-// MEDIA QUERIES
-
-// Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-    #landing, #contact, #projects{
-        max-height: 50vw;
-        height: 90vh;
-    }
 
-    #members{
-        max-height: 100vw;
-        height: 100vh;
-    }
-
-    .proj-title{
-        position: absolute;
-        top: 74%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: x-small;
-    }
-    .artpiece {
-        transform: none;
-    }
-    #overlay {
-        transform: none;
-    }
-    #members > .container > h2 {
-        padding-bottom: 0px;
-    }
-    #red-string {
-        img {
-            height: auto;
-            width: 10vw;
-        }
-    }
-
-    #blue-string {
-        img {
-            height: 25vh;
-        }
-    }
-
-    #green-string {
-        img {
-            height: auto;
-            width: 10vw;
-        }
-    }
-
-    #yellow-string {
-        img {
-            height: 25vh;
-        }
-    }
 }
 
-// Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    #landing, #contact, #projects{
-        height: 90vh;
-        min-height: 50vw;
-    }
 
-    #members
-    {
-        height: 60vw;
-        min-height: 120vw;
-    }
-
-    #about {
-        height: 80vw;
-        min-height: 120vw;
-    }
-
-
-    .proj-title{
-        position: absolute;
-        top: 74%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 1.3vw;
-    }
-    .landing-text > h3 {
-        font-size: 2rem;
-    }
-
-    .landing-text > h1 {
-        font-size: 4rem;
-    }
-
-    .artpiece {
-        transform: none;
-    }
-
-    #overlay {
-        transform: none;
-    }
-
-    #red-string {
-        img {
-            height: 45vh;
-        }
-    }
-
-    #yellow-string {
-        img {
-            height: 40vh;
-        }
-    }
-
-    #contact-text {
-        font-size: 2rem;
-        width: auto;
-    }
-
-    .line {
-        height: 2px;
-        width: 70px;
-        margin: 1.5em 0;
-    }
-
-    .social-icons {
-        // font-size: 50px;
-        font-size: 2.75rem;
-        // width: 330px;
-        width: 40vw;
-    }
-
-    #members > .container > h2 {
-        padding-bottom: 0px;
-    }
-
-    #about> .container > h2 {
-        padding-bottom: 1em;
-    }
-
-    #projects> .container > h2 {
-        padding-bottom: 1em;
-    }
 }
 
-// Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-
-    #landing, #contact, #projects, #members{
-        height: 90vh;
-        min-height: 100vw;
-        max-height: 100vh;
-    }
-
-    #about {
-        padding-top: 10vh;
-        min-height: 100vw;
-        max-height: 80vh;
-    }
-
-    #members > .container {
-        width: 120vh;
-    }
-
-    .proj-title{
-        position: absolute;
-        top: 74%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .landing-text > h3 {
-        font-size: 2rem;
-    }
-
-    .landing-text > h1 {
-        font-size: 5rem;
-    }
-
-    #contact-text {
-        font-size: 2.75rem;
-    }
-
-    .line {
-        width: 80px;
-    }
-
-    .social-icons {
-        font-size: 3rem;
-        width: 25vw;
-    }
-
-    #red-string {
-        img {
-            height: auto;
-            width: 30vh;
-        }
-    }
-
-    #blue-string {
-        img {
-            height: 45vh;
-        }
-    }
-
-    #green-string {
-        img {
-            height: auto;
-            width: 40vh;
-        }
-    }
-
-    #yellow-string {
-        img {
-            height: 40vh;
-        }
-    }
-
-    #members > .container > h2 {
-        padding-bottom: 0px;
-    }
-
-    #about> .container > h2 {
-        padding-bottom: 0.5em;
-    }
-
-    #projects> .container > h2 {
-        padding-bottom: 0.5em;
-    }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
     
-    #landing, #contact, #projects, #members, #about {
-        min-height: 50vw;
-        height: 90vh;
-   }
-
-   #members {
-        min-height: 40vw;
-        height: 80vh;
-   }
-
-   #about {
-    min-height: 60vw;
-    height: 90vh;
-}
-
-   #members > .container {
-    width: 60vw;
-   }
-   
-   .proj-title{
-        position: absolute;
-        top: 74%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: medium;
+    h2 {
+        text-align: left;
     }
-    .landing-text > h3 {
-        font-size: 2rem;
+    
+    h4 {
+        text-align: left;
     }
 
-    .landing-text > h1 {
-        font-size: 6rem;
+    body {
+        text-align: left; //CHANGE (remove if top remains unchanged)
     }
 
-    #red-string {
-        img {
-            height: auto;
-            width: auto;
-        }
-    }
-
-    #blue-string {
-        img {
-            height: auto;
-        }
-    }
-
-    #green-string {
-        img {
-            height: auto;
-            width: auto;
-        }
-    }
-
-    #yellow-string {
-        img {
-            height: auto;
-        }
-    }
-
-    #members > .container > h2 {
-        padding-bottom: 0px;
-    }
-
-    #about> .container > h2 {
-        padding-bottom: 1em;
-    }
-
-    #projects> .container > h2 {
-        padding-bottom: 1em;
+    .banner { //CHANGE (swap image back to large size)
+        transform: rotate(0);
     }
 }
 
-.row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 10 10px;
-    padding-bottom: 30px;
+@media (min-width: 1200px) {
 
-  }
-
-  /* Create four equal columns that sits next to each other */
-  .column {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 10px;
-  }
-
-  .column img {
-    margin-top: 20px;
-    vertical-align: middle;
-    width: 100%;
-  }
-
-  .project-tile:hover {
-    opacity: .1%;
-  }
-
-  .grid-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto auto auto auto auto;
-        grid-template-columns: auto auto auto auto auto;
-    grid-gap: 10px;
-    padding: 10px;
-  }
-
-  .grid-container > div {
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-  }
-
-  //PROJECTS PAGE
-
-  
-
-  .col-6 col-sm-4 {
-      position: relative;
-      text-align: center;
-  }
-  #overview {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .overview-container {
-    padding-top: 4vh;
-    padding-right: 10vw;
-    padding-left: 10vw;
-  }
-
-  .overview-container > p {
-      font-size: 14px;
-  }
-
-  .project-overview-container {
-    border-top-style: solid;
-    border-top-width: 0.5px;
-    border-top-color: gray;
-    border-bottom-style: solid;
-    border-bottom-width: 0.5px;
-    border-bottom-color: gray;
-    font-style: italic;
-  }
-
-  .project-content-container {
-    border-bottom-style: solid;
-    border-bottom-width: 0.5px;
-    border-bottom-color: gray;
-    font-style: italic;
-  }
-
-  .figcaption {
-      font-size: 40px;
-      font-style: italic;
-  }
-
-  u {
-    text-decoration: none;
-  }
-
-  .project-nav-yellow:hover {
-    background-color: #FFFF99;
-  }
-  .project-nav-green:hover {
-    background-color: #99CC99;
-  }
-  .project-nav-blue:hover {
-    background-color: #99CCFF;
-  }
+}
