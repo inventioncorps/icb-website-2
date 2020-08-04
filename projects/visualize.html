@@ -42,26 +42,39 @@
             <div class="d-flex flex-grow-1">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../assets/img/logo.svg" width="55" height="55" class="d-inline-block align-top" alt="Invention Corps Logo">
+                    <img src="../assets/img/logo-name.svg" width="200" height="55" class="d-inline-block align-top" alt="Invention Corps">
                 </a>
                 <div class="w-100 text-right">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
             </div>
-            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNav">
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto flex-nowrap">
-                    <li class="nav-item">
-                        <a class="nav-link about" href="../about.html">About</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../our-story.html">Our Story</a></li>
+                            <li><a class="dropdown-item" href="../members.html">Members</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Work</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../projects.html">Projects</a></li>
+                            <li><a class="dropdown-item" href="../art.html">Art</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link members" href="../members.html">Members</a>
+                        <a class="nav-link projects" href="https://medium.com/@inventioncorps" target="_blank">Blog</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link projects" href="../projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link contact" href="https://forms.gle/dSAgFm9jpetY4B4T6" target="_blank">Contact</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../apply.html">Apply</a></li>
+                            <li><a class="dropdown-item" href="../partner.html">Partner</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -133,7 +146,7 @@
                             <img alt="iris" src="../assets/img/visualize/iris.svg" class = "member"/> <!--first team member img-->
                         </div>
                         <div class="team-names">
-                            <h7>Iris Hou</h7> <!--first tea mmember-->
+                            <h7>Iris Hou</h7> <!--first team member-->
                             <p>Project Lead</p>
                         </div>
                     </div>
@@ -310,7 +323,7 @@
                         </div>
                         <div class="col-10 col-sm-11 question">
                             <h7 id="how">
-                                As much accuracy as possible to the actual procedure to facilitate learning and practicing of VIA.
+                                As much accuracy as possible to the actual procedure while ensuring the device can adapt to on-the-move midwives.
                             </h7> <!--third user need-->
                         </div>
 
@@ -319,8 +332,8 @@
                         </div>
                         <div class="col-10 col-sm-11 question">
                             <h7 id="how">
-                                PLACEHOLDER
-                            </h7> <!--CHANGE to fourth user need-->
+                                A widely available, long-lasting device that can be used repeatedly and that is accessible through the national curriculum.
+                            </h7> <!--fourth user need-->
                         </div>
 
                     </div>
@@ -333,8 +346,8 @@
         <h2 class="deliverables-header">Deliverables</h2>
             <div class="container">
                 <p>
-                    PLACEHOLDER
-                </p> <!-- CHANGE to deliverables overview-->
+                    Over the course of two years, we transformed an early-stage prototype into a streamlined, user-validated model with wooden laser-cut housing, an accurately simulated cervical cavity, an Arduino-run electronic interface for real-time interaction from midwives, and a durable instructional flashcard set that interacts with the device and presents various VIA cases for Ghanaian midwives to learn from. 
+                </p> <!--deliverables overview-->
             </div>
 
         <div class="row">
@@ -388,8 +401,8 @@
                         <div class="col-2 col-sm-1 hmw d-flex justify-content-center"> <img src="../assets/img/number-2.svg" class="nums"> </div>
                         <div class="col-10 col-sm-11 hmw">
                             <h7 id="how">
-                                PLACEHOLDER
-                            </h7> <!-- CHANGE to second hmw-->
+                                How might we give midwives step-by-step instruction on how to conduct VIA and gamify the process to give a quantifiable rate of accuracy?
+                            </h7> <!--second hmw-->
                         </div>
                     </div>
                     <div class="container">
@@ -473,8 +486,8 @@
                         <div class="col-2 col-sm-1 hmw d-flex justify-content-center"> <img src="../assets/img/number-4.svg" class="nums"> </div>
                         <div class="col-10 col-sm-11 hmw">
                             <h7 id="how">
-                                PLACEHOLDER
-                            </h7> <!-- CHANGE to fourth hmw-->
+                                How might we integrate the Visualize device into the national midwifery curriculum by validating its design and implementing in-country manufacturing?
+                            </h7> <!--fourth hmw-->
                         </div>
                     </div>
                     <div class="container">
@@ -531,7 +544,7 @@
             </div>
         </div>
         Made with ♥ by the
-        <span> <a href="../webdevteam.html"> Invention Corps Web Team</a> </span>
+        <span> <a href="../webteam.html"> Invention Corps Web Team</a> </span>
     </footer>
 
 </html>

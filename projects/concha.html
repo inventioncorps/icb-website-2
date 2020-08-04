@@ -41,26 +41,39 @@
             <div class="d-flex flex-grow-1">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../assets/img/logo.svg" width="55" height="55" class="d-inline-block align-top" alt="Invention Corps Logo">
+                    <img src="../assets/img/logo-name.svg" width="200" height="55" class="d-inline-block align-top" alt="Invention Corps">
                 </a>
                 <div class="w-100 text-right">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
             </div>
-            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNav">
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto flex-nowrap">
-                    <li class="nav-item">
-                        <a class="nav-link about" href="../about.html">About</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../our-story.html">Our Story</a></li>
+                            <li><a class="dropdown-item" href="../members.html">Members</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Work</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../projects.html">Projects</a></li>
+                            <li><a class="dropdown-item" href="../art.html">Art</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link members" href="../members.html">Members</a>
+                        <a class="nav-link projects" href="https://medium.com/@inventioncorps" target="_blank">Blog</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link projects" href="../projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link contact" href="https://forms.gle/dSAgFm9jpetY4B4T6" target="_blank">Contact</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../apply.html">Apply</a></li>
+                            <li><a class="dropdown-item" href="../partner.html">Partner</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -395,7 +408,7 @@
             </div>
         </div>
         Made with ♥ by the
-        <span> <a href="../webdevteam.html"> Invention Corps Web Team</a> </span>
+        <span> <a href="../webteam.html"> Invention Corps Web Team</a> </span>
     </footer>
 
 </html>
