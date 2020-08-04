@@ -29,7 +29,7 @@ h2 {
 
 h4 {
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
     font-style: italic;
 }
 
@@ -47,7 +47,32 @@ a:hover {
     transition-timing-function: ease-in;
 }
 
-//FOOTER
+
+// NAV BAR
+
+.navbar.scrolled {
+    background-color: white !important;
+    transition: background-color 200ms linear;
+    color: $black;
+}
+
+nav {
+    font-weight: 500;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+} 
+
+
+// FOOTER
+
 footer {
     // font-family: Filson Pro; CHANGE
     background-color: white;
@@ -83,18 +108,9 @@ footer {
     color: $blue;
 }
 
-//NAVBAR
-.navbar.scrolled {
-    background-color: white !important;
-    transition: background-color 200ms linear;
-    color: $black;
-}
 
-nav {
-    font-weight: 500;
-}
+// LANDING BANNER CHANGE (edit because we need to swap images for different screen sizes)
 
-//LANDING BANNER CHANGE (edit because we need to swap images for different screen sizes)
 .banner {
     width: 100vw;
     height: 100vh;
@@ -106,14 +122,20 @@ nav {
     object-fit: cover; //CHANGE (how do we want this to adjust @design?) - seperate mobile and tablet versions
 } 
 
+
+// MEDIA QUERIES
+
+// Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
 
 }
 
+// Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 
 }
 
+// Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
     
     h2 {
@@ -133,6 +155,7 @@ nav {
     }
 }
 
+// Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
 
 }

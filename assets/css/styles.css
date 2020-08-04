@@ -19,7 +19,7 @@ h2 {
 
 h4 {
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   font-style: italic;
 }
 
@@ -36,6 +36,28 @@ a:hover {
   color: #787878;
   -webkit-transition-timing-function: ease-in;
           transition-timing-function: ease-in;
+}
+
+.navbar.scrolled {
+  background-color: white !important;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+  color: #202020;
+}
+
+nav {
+  font-weight: 500;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+  display: block;
+}
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+  text-decoration: underline;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 footer {
@@ -77,17 +99,6 @@ footer {
 
 .footer-icon-4:hover {
   color: #99CCFF;
-}
-
-.navbar.scrolled {
-  background-color: white !important;
-  -webkit-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
-  color: #202020;
-}
-
-nav {
-  font-weight: 500;
 }
 
 .banner {
