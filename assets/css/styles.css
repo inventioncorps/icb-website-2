@@ -53,13 +53,6 @@ nav {
   display: block;
 }
 
-/* rotate caret on hover */
-.dropdown-menu > li > a:hover:after {
-  text-decoration: underline;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-
 footer {
   background-color: white;
   color: #202020;
