@@ -13,5 +13,136 @@ $grad-2: #08102E;
     visibility: hidden;
 }
 
+.dot {
+    height: 20vw;
+    width: 20vw;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    min-height: 140px;
+    min-width: 140px;
+}
 
+.quote {
+    position: absolute;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.1rem;
+    font-weight: medium;
+    color: $black;
+    opacity: 0;
+}
 
+.team>.container,
+.exec>.container {
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+.name {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.member {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 94%;
+    width: 94%;
+}
+
+.green {
+    border: 4px solid $green;
+}
+
+.red {
+    border: 4px solid $red;
+}
+
+.blue {
+    border: 4px solid $blue;
+}
+
+.yellow {
+    border: 4px solid $yellow;
+}
+
+.dot.red:hover {
+    background-color: $red;
+    border-color: $red;
+    transition-timing-function: ease-in-out;
+}
+
+.dot.green:hover {
+    background-color: $green;
+    border-color: $green;
+    transition-timing-function: ease-in-out;
+}
+
+.dot.blue:hover {
+    background-color: $blue;
+    border-color: $blue;
+    transition-timing-function: ease-in-out;
+}
+
+.dot.yellow:hover {
+    background-color: $yellow;
+    border-color: $yellow;
+    transition-timing-function: ease-in-out;
+}
+
+.img-container:hover {
+    opacity: 0.2;
+}
+
+.here:hover {
+    cursor: grab;
+    color: $red;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .dot {
+        height: 12vw;
+        width: 12vw;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .quote {
+        font-weight: bold;
+        font-size: 0.2rem;
+    }
+
+    .role {
+        display: block;
+        visibility: visible;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+    .quote {
+        opacity: 1;
+    }
+
+    .quote:hover {
+        z-index: 1;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .quote {
+        font-size: 0.75rem;
+    }
+}

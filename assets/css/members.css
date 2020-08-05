@@ -2,4 +2,138 @@
   display: none;
   visibility: hidden;
 }
+
+.dot {
+  height: 20vw;
+  width: 20vw;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  min-height: 140px;
+  min-width: 140px;
+}
+
+.quote {
+  position: absolute;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 0.1rem;
+  font-weight: medium;
+  color: #202020;
+  opacity: 0;
+}
+
+.team > .container,
+.exec > .container {
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+.name {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.member {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  height: 94%;
+  width: 94%;
+}
+
+.green {
+  border: 4px solid #99CC99;
+}
+
+.red {
+  border: 4px solid #E06B65;
+}
+
+.blue {
+  border: 4px solid #99CCFF;
+}
+
+.yellow {
+  border: 4px solid #FEEB96;
+}
+
+.dot.red:hover {
+  background-color: #E06B65;
+  border-color: #E06B65;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.dot.green:hover {
+  background-color: #99CC99;
+  border-color: #99CC99;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.dot.blue:hover {
+  background-color: #99CCFF;
+  border-color: #99CCFF;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.dot.yellow:hover {
+  background-color: #FEEB96;
+  border-color: #FEEB96;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.img-container:hover {
+  opacity: 0.2;
+}
+
+.here:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+  color: #E06B65;
+}
+
+@media (min-width: 576px) {
+  .dot {
+    height: 12vw;
+    width: 12vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .quote {
+    font-weight: bold;
+    font-size: 0.2rem;
+  }
+  .role {
+    display: block;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 992px) {
+  .quote {
+    opacity: 1;
+  }
+  .quote:hover {
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .quote {
+    font-size: 0.75rem;
+  }
+}
 /*# sourceMappingURL=members.css.map */

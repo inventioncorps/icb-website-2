@@ -30,6 +30,8 @@ h4 {
     text-align: center;
     font-weight: 500;
     font-style: italic;
+    padding-bottom: 0.75rem;
+    padding-top: 1.5rem;
 }
 
 a {
@@ -123,7 +125,7 @@ nav {
 
 .banner-img {
     width: 100vw;
-    height: 100vh - 81px;
+    // height: 100vh - 81px;
     object-fit: cover; //CHANGE (how do we want this to adjust @design?) - seperate mobile and tablet versions
 } 
 
