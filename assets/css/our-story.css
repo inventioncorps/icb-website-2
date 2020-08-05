@@ -7,4 +7,11 @@
   padding-top: 0.5rem;
   padding-bottom: 1.5rem;
 }
+
+p {
+  text-align: justify;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
 /*# sourceMappingURL=our-story.css.map */
