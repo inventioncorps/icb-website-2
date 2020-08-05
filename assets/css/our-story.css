@@ -1,101 +1,10 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.pillars-img {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
 }
 
-.pillars1, .pillars2, .pillars3, .aboutpic1, .aboutpic2, .aboutpic3 {
-  margin-bottom: 10px;
+.founding-img {
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  background: -webkit-gradient(linear, left top, left bottom, from(#F9FCFF), color-stop(#EEF7FF), to(#CBE7FF));
-  background: linear-gradient(#F9FCFF, #EEF7FF, #CBE7FF);
-  background-image: url(../img/about/about-clouds.svg);
-  background-image: url(../img/about/about-clouds.svg), -webkit-gradient(linear, left top, left bottom, from(#F9FCFF), color-stop(#EEF7FF), to(#CBE7FF));
-  background-image: url(../img/about/about-clouds.svg), linear-gradient(#F9FCFF, #EEF7FF, #CBE7FF);
-  background-size: cover;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: #202020;
-}
-
-.navbar.scrolled {
-  background-color: #ffffff !important;
-  -webkit-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
-  color: white;
-}
-
-h1 {
-  text-align: center;
-  font-weight: bold;
-  font-style: normal;
-}
-
-h2 {
-  text-align: left;
-  font-style: normal;
-}
-
-h4 {
-  font-weight: 600;
-  font-style: italic;
-  padding-bottom: 2rem;
-}
-
-h6 {
-  text-align: center;
-  max-width: 25em;
-  margin: auto;
-  padding-bottom: 4%;
-  color: black;
-  font-weight: .1px;
-  font-style: italic;
-}
-
-figcaption {
-  font-style: italic;
-  font-size: small;
-}
-
-#end {
-  text-align: justify;
-}
-
-#origin, .aboutpic3 {
-  margin-top: 2vw;
-}
-
-.container {
-  text-align: justify;
-}
-
-a {
-  color: #202020;
-}
-
-.disappear {
-  display: none;
-  visibility: hidden;
-  position: fixed;
-}
-
-@media (min-width: 992px) {
-  .disappear {
-    display: inline;
-    visibility: visible;
-    position: relative;
-  }
-  .pillars1, .pillars2, .pillars3 {
-    margin-bottom: 0;
-  }
-}
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=our-story.css.map */
