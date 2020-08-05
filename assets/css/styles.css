@@ -19,7 +19,7 @@ h2 {
 
 h4 {
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   font-style: italic;
 }
 
@@ -36,6 +36,21 @@ a:hover {
   color: #787878;
   -webkit-transition-timing-function: ease-in;
           transition-timing-function: ease-in;
+}
+
+.navbar.scrolled {
+  background-color: white !important;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+  color: #202020;
+}
+
+nav {
+  font-weight: 500;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+  display: block;
 }
 
 footer {
@@ -79,6 +94,7 @@ footer {
   color: #99CCFF;
 }
 
+<<<<<<< HEAD
 .navbar-light .navbar-nav .nav-link {
   color: #202020;
 }
@@ -89,6 +105,8 @@ nav {
   color: #202020;
 }
 
+=======
+>>>>>>> 86fa32c7858a017160f7f5bb5399b9334fdadc77
 .banner {
   width: 100vw;
   height: 100vh;
