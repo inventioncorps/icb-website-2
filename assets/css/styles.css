@@ -55,6 +55,25 @@ nav {
   display: block;
 }
 
+.bottom-border-red {
+  border-bottom: solid #E06B65;
+}
+
+.bottom-border-green {
+  border-bottom: solid #99CC99;
+}
+
+.bottom-border-blue {
+  border-bottom: solid #99CCFF;
+}
+
+.dropdown-item:hover {
+  text-decoration: none;
+  color: #787878;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
+
 footer {
   background-color: white;
   color: #202020;

@@ -65,6 +65,24 @@ nav {
     display: block;
 }
 
+.bottom-border-red {
+    border-bottom: solid $red;
+}
+
+.bottom-border-green {
+    border-bottom: solid $green;
+}
+
+.bottom-border-blue {
+    border-bottom: solid $blue;
+}
+
+.dropdown-item:hover {
+    text-decoration: none;
+    color: $gray;
+    transition-timing-function: ease-in;
+}
+
 // /* rotate caret on hover */
 // .dropdown-menu > li > a:hover:after {
 //     text-decoration: underline;
