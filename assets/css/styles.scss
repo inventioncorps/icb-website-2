@@ -8,7 +8,6 @@ $gray: #787878;
 $black: #202020;
 
 // CSS RESET
-
 * {
     margin: 0;
     padding: 0;
@@ -84,17 +83,17 @@ footer {
 }
 
 //NAVBAR
-.navbar.scrolled {
-    background-color: white !important;
-    transition: background-color 200ms linear;
+.navbar-light .navbar-nav .nav-link {
     color: $black;
 }
 
 nav {
     font-weight: 500;
+    background-color: white;
+    color: $black;
 }
 
-//LANDING BANNER CHANGE (edit because we need to swap images for different screen sizes)
+//LANDING BANNER CHANGE (edit because we need to swap images for different screen sizes; make sure images are 100vh - 81px)
 .banner {
     width: 100vw;
     height: 100vh;
@@ -102,7 +101,7 @@ nav {
 
 .banner-img {
     width: 100vw;
-    height: 100vh;
+    height: 100vh - 81px;
     object-fit: cover; //CHANGE (how do we want this to adjust @design?) - seperate mobile and tablet versions
 } 
 

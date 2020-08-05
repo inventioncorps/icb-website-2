@@ -79,15 +79,14 @@ footer {
   color: #99CCFF;
 }
 
-.navbar.scrolled {
-  background-color: white !important;
-  -webkit-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
+.navbar-light .navbar-nav .nav-link {
   color: #202020;
 }
 
 nav {
   font-weight: 500;
+  background-color: white;
+  color: #202020;
 }
 
 .banner {
