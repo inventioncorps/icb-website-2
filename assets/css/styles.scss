@@ -69,6 +69,10 @@ a.nav-link.blog {
     color: $black;
 }
 
+.dropdown-item {
+    text-align: right;
+}
+
 .navbar-nav li:hover > ul.dropdown-menu {
     display: block;
 }
@@ -198,6 +202,10 @@ nav {
 
     .banner { //CHANGE (swap image back to large size)
         transform: rotate(0);
+    }
+
+    .dropdown-item {
+        text-align: right;
     }
 }
 

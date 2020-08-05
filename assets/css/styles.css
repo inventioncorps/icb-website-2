@@ -59,6 +59,10 @@ a.nav-link.blog {
   color: #202020;
 }
 
+.dropdown-item {
+  text-align: right;
+}
+
 .navbar-nav li:hover > ul.dropdown-menu {
   display: block;
 }
@@ -167,6 +171,9 @@ nav {
   .banner {
     -webkit-transform: rotate(0);
             transform: rotate(0);
+  }
+  .dropdown-item {
+    text-align: right;
   }
 }
 /*# sourceMappingURL=styles.css.map */
