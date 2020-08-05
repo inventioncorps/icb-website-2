@@ -96,10 +96,15 @@ footer {
   color: #99CCFF;
 }
 
+<<<<<<< Updated upstream
 nav {
   font-weight: 500;
   background-color: white;
   color: #202020;
+=======
+.footer-icon-5:hover {
+  color: #E06B65;
+>>>>>>> Stashed changes
 }
 
 .banner {
