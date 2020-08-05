@@ -59,6 +59,8 @@ a:hover {
 
 nav {
     font-weight: 500;
+    background-color: white;
+    color: $black;
 }
 
 a.nav-link.blog {
@@ -145,20 +147,10 @@ footer {
     color: $blue;
 }
 
-<<<<<<< Updated upstream
-=======
-//NAVBAR
->>>>>>> Stashed changes
 .footer-icon-5:hover {
     color: $red;
 }
 
-
-nav {
-    font-weight: 500;
-    background-color: white;
-    color: $black;
-}
 
 //LANDING BANNER CHANGE (edit because we need to swap images for different screen sizes; make sure images are 100vh - 81px)
 .banner {
@@ -173,11 +165,30 @@ nav {
 } 
 
 
+// IMAGE SWITCH FOR MOBILE
+
+.visible-mobile {
+    display: inline !important;
+}
+
+.hidden-mobile {
+    display: none !important;
+}
+
+
 // MEDIA QUERIES
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
 
+    // Switch image back to desktop version
+    .visible-mobile {
+        display: none !important;
+    }
+    
+    .hidden-mobile {
+        display: inline !important;
+    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -203,6 +214,7 @@ nav {
     .banner { //CHANGE (swap image back to large size)
         transform: rotate(0);
     }
+
 }
 
 // Extra large devices (large desktops, 1200px and up)
