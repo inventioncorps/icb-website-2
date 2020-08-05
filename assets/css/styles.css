@@ -49,6 +49,8 @@ a:hover {
 
 nav {
   font-weight: 500;
+  background-color: white;
+  color: #202020;
 }
 
 a.nav-link.blog {
@@ -57,6 +59,10 @@ a.nav-link.blog {
 
 #navbarDropdownMenuLink.nav-link.dropdown-toggle {
   color: #202020;
+}
+
+.dropdown-item {
+  text-align: right;
 }
 
 .navbar-nav li:hover > ul.dropdown-menu {
@@ -137,12 +143,6 @@ footer {
   color: #E06B65;
 }
 
-nav {
-  font-weight: 500;
-  background-color: white;
-  color: #202020;
-}
-
 .banner {
   width: 100vw;
   height: 100vh;
@@ -152,6 +152,23 @@ nav {
   width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.visible-mobile {
+  display: inline !important;
+}
+
+.hidden-mobile {
+  display: none !important;
+}
+
+@media (min-width: 576px) {
+  .visible-mobile {
+    display: none !important;
+  }
+  .hidden-mobile {
+    display: inline !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -167,6 +184,9 @@ nav {
   .banner {
     -webkit-transform: rotate(0);
             transform: rotate(0);
+  }
+  .dropdown-item {
+    text-align: right;
   }
 }
 /*# sourceMappingURL=styles.css.map */
