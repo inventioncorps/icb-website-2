@@ -8,17 +8,20 @@ $black: #202020;
 
 // SPACING
 
-.pillars-img {
+#pillars-img {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
 }
 
-.founding-img {
+#founding-img {
   padding-top: 0.5rem;
   padding-bottom: 1.5rem;
 }
 
-p {
-  text-align: justify;
-  hyphens: auto;
+.number {
+  text-align: center;
 }
+
+// p {
+//   text-align: justify;
+// }
