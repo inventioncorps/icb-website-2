@@ -94,6 +94,19 @@ footer {
   color: #99CCFF;
 }
 
+<<<<<<< HEAD
+.navbar-light .navbar-nav .nav-link {
+  color: #202020;
+}
+
+nav {
+  font-weight: 500;
+  background-color: white;
+  color: #202020;
+}
+
+=======
+>>>>>>> 86fa32c7858a017160f7f5bb5399b9334fdadc77
 .banner {
   width: 100vw;
   height: 100vh;
