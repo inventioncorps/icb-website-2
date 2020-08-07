@@ -1,17 +1,14 @@
-.pillars-img {
+#pillars-img {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
 }
 
-.founding-img {
+#founding-img {
   padding-top: 0.5rem;
   padding-bottom: 1.5rem;
 }
 
-p {
-  text-align: justify;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+.number {
+  text-align: center;
 }
 /*# sourceMappingURL=our-story.css.map */

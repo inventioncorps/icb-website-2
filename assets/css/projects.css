@@ -1,14 +1,13 @@
-h1 {
-  font-size: 10vh;
+.tag-blue {
+  background-color: #CCE6FF;
 }
 
-h3 {
-  text-align: center;
-  padding-bottom: 1.75rem;
+.tag-yellow {
+  background-color: #FFF6A9;
 }
 
-h4 {
-  font-size: 1.25rem;
+.tag-green {
+  background-color: #CCF4D5;
 }
 
 .project-content-container img {
@@ -38,6 +37,7 @@ h4 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 70%;
 }
 
 .xs-img {
@@ -80,11 +80,6 @@ iframe {
   transition: all .1s linear;
 }
 
-footer {
-  color: #202020;
-  height: 6vh;
-}
-
 .project-overview-container p {
   font-size: 0.6rem;
 }
@@ -97,6 +92,8 @@ figcaption {
   color: #545454;
   text-align: center;
   font-size: 0.8rem;
+  width: 70%;
+  padding-top: 3%;
 }
 
 .logo-container {
@@ -144,13 +141,24 @@ ol > ul {
   display: inline;
 }
 
-h7 {
-  font-size: 0.85rem;
-  text-align: center;
-}
-
 a {
   color: #202020;
+}
+
+.border-radius-10 {
+  border-radius: 10%;
+}
+
+.project-tile {
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.14);
+  width: 70%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.project-tile:hover {
+  opacity: 0.5;
 }
 
 @media (min-width: 576px) {

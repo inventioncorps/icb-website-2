@@ -182,17 +182,13 @@ h5 {
 }
 
 footer {
-  background-color: #202020;
-  color: white;
+  background-color: white;
+  color: #202020;
   padding: 20px;
   text-align: center;
   position: relative;
   vertical-align: top;
   z-index: 1;
-}
-
-a {
-  color: white;
 }
 
 p {

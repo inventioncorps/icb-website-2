@@ -1,3 +1,12 @@
+// COLOR SET
+
+$red: #E06B65;
+$yellow: #FEEB96;
+$green: #99CC99;
+$blue: #99CCFF;
+$gray: #787878;
+$black: #202020;
+
 .topbar {
     color: white;
 }
@@ -12,7 +21,7 @@
 }
 
 .team-header {
-    color: #202020;
+    color: $black;
     padding-top: 4rem;
     padding-bottom: 1rem;
 }
@@ -178,17 +187,13 @@ h5 {
 }
 
 footer {
-    background-color: #202020;
-    color: white;
+    background-color: white;
+    color: $black;
     padding: 20px;
     text-align: center;
     position: relative;
     vertical-align: top;
     z-index: 1;
-}
-
-a {
-    color: white;
 }
 
 p {
@@ -197,7 +202,7 @@ p {
 }
 
 .partner-link {
-    color: #202020;
+    color: $black;
     text-decoration: underline;
 }
 
