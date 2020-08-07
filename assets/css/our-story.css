@@ -17,4 +17,12 @@
 .carousel-multi-item-2 .card img {
   border-radius: 2px;
 }
+
+@media (min-width: 576px) {
+  .hidden-mobile {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
 /*# sourceMappingURL=our-story.css.map */

@@ -30,6 +30,16 @@ $black: #202020;
   border-radius: 2px; }
 
 
+// MEDIA QUERIES
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  
+  .hidden-mobile {
+      display: flex !important;
+  }
+}
+
 // // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 
