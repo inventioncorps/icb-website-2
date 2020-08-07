@@ -2,6 +2,11 @@
   background-color: #373737;
 }
 
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 #underline1 {
   background: #373737;
 }
@@ -16,6 +21,21 @@
 
 #underline4 {
   background: #373737;
+}
+
+#underline5 {
+  background: #FEEB96;
+  width: 15.5em;
+}
+
+#underline6 {
+  background: #99CC99;
+  width: 21.75rem;
+}
+
+#underline7 {
+  background: #99CCFF;
+  width: 13.7rem;
 }
 
 .p1 {
