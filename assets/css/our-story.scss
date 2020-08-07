@@ -18,6 +18,23 @@ $black: #202020;
   padding-bottom: 1.5rem;
 }
 
+
+// TEAM GALLERY
+
+.carousel-multi-item-2 .col-md-3 {
+  float: left;
+  width: 25%;
+  max-width: 100%; }
+  
+  .carousel-multi-item-2 .card img {
+  border-radius: 2px; }
+
+
+// // Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
 
