@@ -9,7 +9,11 @@ $black: #202020;
 
 .topbar {
     background-color: $background;
+}
 
+.no-padding {
+    padding-left: 0;
+    padding-right:0;
 }
 
 #underline1 {
@@ -26,6 +30,21 @@ $black: #202020;
 
 #underline4 {
     background: $background;
+}
+
+#underline5 {
+    background: $yellow;
+    width: 15.5em;
+}
+
+#underline6 {
+    background: $green;
+    width: 21.75rem;
+}
+
+#underline7 {
+    background: $blue;
+    width: 13.7rem;
 }
 
 .p1 {
