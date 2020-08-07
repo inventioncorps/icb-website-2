@@ -48,8 +48,23 @@
           align-items: center;
 }
 
-h7 {
-  font-weight: 600;
+.initials {
+  padding-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-top: 2rem;
+}
+
+.initials-img {
+  height: 2.5rem;
+}
+
+.title {
+  text-align: left;
 }
 
 .team-names {
@@ -271,6 +286,50 @@ ul {
           transform: translate(-3px, -28px);
 }
 
+#underline5 {
+  opacity: 0.4;
+  border-radius: 50px;
+  width: 12.2rem;
+  height: 20px;
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: translate(-3px, -28px);
+          transform: translate(-3px, -28px);
+}
+
+#underline6 {
+  opacity: 0.4;
+  border-radius: 50px;
+  width: 12.2rem;
+  height: 20px;
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: translate(-3px, -28px);
+          transform: translate(-3px, -28px);
+}
+
+#underline7 {
+  opacity: 0.4;
+  border-radius: 50px;
+  width: 12.2rem;
+  height: 20px;
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: translate(-3px, -28px);
+          transform: translate(-3px, -28px);
+}
+
+#underline8 {
+  opacity: 0.4;
+  border-radius: 50px;
+  width: 12.2rem;
+  height: 20px;
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: translate(-3px, -28px);
+          transform: translate(-3px, -28px);
+}
+
 .bubbles {
   width: 25%;
   padding-left: 1.5rem;
@@ -324,6 +383,23 @@ ul {
   .subtitle {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .initials {
+    padding-right: 0;
+    display: block;
+    margin-left: auto;
+    margin-top: 0;
+  }
+  .initials-img {
+    display: block;
+    margin-left: auto;
+    height: auto;
+  }
+  .title {
+    text-align: left;
+  }
+  .underline {
+    position: absolute;
   }
 }
 

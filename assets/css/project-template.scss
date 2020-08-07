@@ -52,8 +52,19 @@ $black: #202020;
     align-items: center;
 }
 
-h7 {
-    font-weight: 600;
+.initials {
+    padding-right: 15px;
+    display: flex;
+    justify-content: left;
+    margin-top: 2rem;
+}
+
+.initials-img {
+    height: 2.5rem;
+}
+
+.title {
+    text-align: left;
 }
 
 .team-names {
@@ -80,7 +91,6 @@ h7 {
 .user-txt {
     margin-left: auto;
     margin-right: auto;
-    // width: 20vw;
     text-align: center;
     max-width: 95%;
 }
@@ -172,6 +182,7 @@ h5 {
 .delivtitle {
  max-width: 100%;
 }
+
 .topbar-img {
     height: 80vw;
     margin-top: 5vh;
@@ -272,6 +283,46 @@ ul {
     transform: translate(-3px, -28px);
 }
 
+#underline5 {
+    opacity: 0.4;
+    border-radius: 50px;
+    width: 12.2rem;
+    height: 20px;
+    position: absolute;
+    z-index: -1;
+    transform: translate(-3px, -28px);
+}
+
+#underline6 {
+    opacity: 0.4;
+    border-radius: 50px;
+    width: 12.2rem;
+    height: 20px;
+    position: absolute;
+    z-index: -1;
+    transform: translate(-3px, -28px);
+}
+
+#underline7 {
+    opacity: 0.4;
+    border-radius: 50px;
+    width: 12.2rem;
+    height: 20px;
+    position: absolute;
+    z-index: -1;
+    transform: translate(-3px, -28px);
+}
+
+#underline8 {
+    opacity: 0.4;
+    border-radius: 50px;
+    width: 12.2rem;
+    height: 20px;
+    position: absolute;
+    z-index: -1;
+    transform: translate(-3px, -28px);
+}
+
 .bubbles {
     width: 25%;
     padding-left: 1.5rem;
@@ -341,6 +392,27 @@ ul {
     .subtitle {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .initials {
+        padding-right: 0;
+        display: block;
+        margin-left: auto;
+        margin-top: 0;
+    }
+
+    .initials-img {
+        display: block;
+        margin-left: auto;
+        height: auto;
+    }
+
+    .title {
+        text-align: left;
+    }
+
+    .underline {
+        position: absolute;
     }
 }
 
