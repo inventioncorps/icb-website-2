@@ -14,14 +14,26 @@ $tag-green: #CCF4D5;
 
 .tag-blue {
   background-color: $tag-blue;
+  padding: 0.12em;
+  text-align: left;
+  display: none;
+  visibility: hidden;
 }
 
 .tag-yellow {
   background-color: $tag-yellow;
+  padding: 0.12em;
+  text-align: left;
+  display: none;
+  visibility: hidden;
 }
 
 .tag-green {
   background-color: $tag-green;
+  padding: 0.12em;
+  text-align: left;
+  display: none;
+  visibility: hidden;
 }
 
 .project-content-container img {
@@ -51,7 +63,7 @@ $tag-green: #CCF4D5;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 85%;
 }
 
 .xs-img {
@@ -166,7 +178,7 @@ a {
 
 .project-tile {
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.14);
-  width: 70%;
+  width: 95%;
   height: 100%;
   border-radius: 5%;
 }
@@ -175,6 +187,15 @@ a {
   opacity: 0.5;
 }
 
+.proj-section {
+  color: gray;
+  font-weight: 600;
+}
+
+.no-padding-mobile {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
 
 @media (min-width: 576px) {
   #teaminfo {
@@ -182,6 +203,11 @@ a {
     display: none;
     font-size: .1rem;
     text-align: center;
+  }
+
+  .no-padding-mobile {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -222,6 +248,10 @@ a {
     display: inline;
     font-size: .85rem;
   }
+
+  .project-tile {
+    width: 85%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -242,5 +272,38 @@ a {
   .mobile-team {
     visibility: hidden;
     display: none;
+  }
+
+  .tag-blue {
+    padding: 0.3em;
+    display: inline;
+    visibility: visible;
+    margin-top: 10px;
+    padding-top: 5px;
+    border-radius: 15%;
+    width: 8em;
+    height: 1em;
+  }
+
+  .tag-yellow {
+    padding: 0.3em;
+    display: inline;
+    visibility: visible;
+    margin-top: 10px;
+    padding-top: 5px;
+    border-radius: 15%;
+    width: 8em;
+    height: 1em;
+  }
+
+  .tag-green {
+    padding: 0.3em;
+    display: inline;
+    visibility: visible;
+    margin-top: 10px;
+    padding-top: 5px;
+    border-radius: 15%;
+    width: 8em;
+    height: 1em;
   }
 }

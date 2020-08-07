@@ -179,7 +179,7 @@ footer {
 // IMAGE SWITCH FOR MOBILE
 
 .visible-mobile {
-    display: inline !important;
+    display: block !important;
 }
 
 .hidden-mobile {
@@ -198,7 +198,7 @@ footer {
     }
     
     .hidden-mobile {
-        display: inline !important;
+        display: block !important;
     }
 }
 

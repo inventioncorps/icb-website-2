@@ -162,7 +162,7 @@ footer {
 }
 
 .visible-mobile {
-  display: inline !important;
+  display: block !important;
 }
 
 .hidden-mobile {
@@ -174,7 +174,7 @@ footer {
     display: none !important;
   }
   .hidden-mobile {
-    display: inline !important;
+    display: block !important;
   }
 }
 
