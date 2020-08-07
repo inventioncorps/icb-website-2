@@ -111,13 +111,6 @@ a.nav-link.blog:hover {
     background-color: white;
 }
 
-// /* rotate caret on hover */
-// .dropdown-menu > li > a:hover:after {
-//     text-decoration: underline;
-//     transform: rotate(180deg);
-// } 
-
-
 // FOOTER
 
 footer {
@@ -179,9 +172,7 @@ footer {
 // IMAGE SWITCH FOR MOBILE
 
 .visible-mobile {
-    display: block !important;
-    margin-left: auto;
-    margin-right: auto;
+    display: inline !important;
 }
 
 .hidden-mobile {
