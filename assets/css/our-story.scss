@@ -21,13 +21,29 @@ $black: #202020;
 
 // TEAM GALLERY
 
-.carousel-multi-item-2 .col-md-3 {
+.carousel-multi-item .col-md-3 {
   float: left;
   width: 25%;
-  max-width: 100%; }
+  max-width: 100%;
+}
   
-  .carousel-multi-item-2 .card img {
-  border-radius: 2px; }
+.carousel-multi-item-5 .card img {
+border-radius: 2px;
+}
+
+.carousel {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.carousel-indicators {
+  
+}
+
+.icon-gray {
+  color: $gray;
+}
 
 
 // MEDIA QUERIES

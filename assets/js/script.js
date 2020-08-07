@@ -39,6 +39,11 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   });
 
+// MDB Lightbox Init
+$(function () {
+  $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+  });
+
 //Using basicScroll to create parallax scrolling on landing
 document.querySelectorAll('.scene').forEach((elem) => {
   

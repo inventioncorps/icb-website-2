@@ -8,14 +8,24 @@
   padding-bottom: 1.5rem;
 }
 
-.carousel-multi-item-2 .col-md-3 {
+.carousel-multi-item .col-md-3 {
   float: left;
   width: 25%;
   max-width: 100%;
 }
 
-.carousel-multi-item-2 .card img {
+.carousel-multi-item-5 .card img {
   border-radius: 2px;
+}
+
+.carousel {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.icon-gray {
+  color: #787878;
 }
 
 @media (min-width: 576px) {
