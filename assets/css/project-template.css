@@ -212,6 +212,11 @@ p {
   margin-top: 0px;
 }
 
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .partner-link {
   color: #202020;
   text-decoration: underline;

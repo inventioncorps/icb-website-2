@@ -38,7 +38,27 @@ $black: #343434;
 
 #underline4 {
     background: $underline;
+    width: 13rem;
+}
 
+#underline5 {
+    background: $underline;
+    width: 13rem;
+}
+
+#underline6 {
+    background: $underline;
+    width: 13rem;
+}
+
+#underline7 {
+    background: $underline;
+    width: 13rem;
+}
+
+#underline8 {
+    background: $underline;
+    width: 13rem;
 }
 
 .p1 {
@@ -67,6 +87,14 @@ $black: #343434;
 
 .pspecial {
     border-image: linear-gradient(to bottom, $blue 16.3%, $red 16.3%, $red 32.5%, $yellow 32.5%, $yellow 48.7%, $green 48.7%, $green 64.9%, $gray 64.9%, $gray 81.1%, $black 81.1%);
+    border-image-slice: 0% 0% 0% 100%;
+    border-top: 0;
+    border-bottom: 0;
+    z-index: -1;
+}
+
+.pspecial2 {
+    border-image: linear-gradient(to bottom, $yellow 20%, $blue 20%, $blue 40%, $gray 40%, $gray 60%, $green 60%, $green 80%, $red 80%, $red 100%);
     border-image-slice: 0% 0% 0% 100%;
     border-top: 0;
     border-bottom: 0;

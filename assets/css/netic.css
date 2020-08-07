@@ -26,6 +26,27 @@
 
 #underline4 {
   background: #F6D0E0;
+  width: 13rem;
+}
+
+#underline5 {
+  background: #F6D0E0;
+  width: 13rem;
+}
+
+#underline6 {
+  background: #F6D0E0;
+  width: 13rem;
+}
+
+#underline7 {
+  background: #F6D0E0;
+  width: 13rem;
+}
+
+#underline8 {
+  background: #F6D0E0;
+  width: 13rem;
 }
 
 .p1 {
@@ -56,6 +77,16 @@
   -o-border-image: linear-gradient(to bottom, #99CCFF 16.3%, #E06B65 16.3%, #E06B65 32.5%, #FEEB96 32.5%, #FEEB96 48.7%, #99CC99 48.7%, #99CC99 64.9%, #C4C4C4 64.9%, #C4C4C4 81.1%, #343434 81.1%);
      border-image: -webkit-gradient(linear, left top, left bottom, color-stop(16.3%, #99CCFF), color-stop(16.3%, #E06B65), color-stop(32.5%, #E06B65), color-stop(32.5%, #FEEB96), color-stop(48.7%, #FEEB96), color-stop(48.7%, #99CC99), color-stop(64.9%, #99CC99), color-stop(64.9%, #C4C4C4), color-stop(81.1%, #C4C4C4), color-stop(81.1%, #343434));
      border-image: linear-gradient(to bottom, #99CCFF 16.3%, #E06B65 16.3%, #E06B65 32.5%, #FEEB96 32.5%, #FEEB96 48.7%, #99CC99 48.7%, #99CC99 64.9%, #C4C4C4 64.9%, #C4C4C4 81.1%, #343434 81.1%);
+  border-image-slice: 0% 0% 0% 100%;
+  border-top: 0;
+  border-bottom: 0;
+  z-index: -1;
+}
+
+.pspecial2 {
+  -o-border-image: linear-gradient(to bottom, #FEEB96 20%, #99CCFF 20%, #99CCFF 40%, #C4C4C4 40%, #C4C4C4 60%, #99CC99 60%, #99CC99 80%, #E06B65 80%, #E06B65 100%);
+     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #FEEB96), color-stop(20%, #99CCFF), color-stop(40%, #99CCFF), color-stop(40%, #C4C4C4), color-stop(60%, #C4C4C4), color-stop(60%, #99CC99), color-stop(80%, #99CC99), color-stop(80%, #E06B65), to(#E06B65));
+     border-image: linear-gradient(to bottom, #FEEB96 20%, #99CCFF 20%, #99CCFF 40%, #C4C4C4 40%, #C4C4C4 60%, #99CC99 60%, #99CC99 80%, #E06B65 80%, #E06B65 100%);
   border-image-slice: 0% 0% 0% 100%;
   border-top: 0;
   border-bottom: 0;
