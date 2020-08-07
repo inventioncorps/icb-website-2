@@ -52,6 +52,13 @@ a:hover {
     margin: 0 15vw;
 }
 
+.really-centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
 
 // NAV BAR
 
@@ -110,13 +117,6 @@ a.nav-link.blog:hover {
     opacity: 1;
     background-color: white;
 }
-
-// /* rotate caret on hover */
-// .dropdown-menu > li > a:hover:after {
-//     text-decoration: underline;
-//     transform: rotate(180deg);
-// } 
-
 
 // FOOTER
 
