@@ -28,9 +28,9 @@ h4 {
 
 // TEAM GALLERY
 
-.carousel-multi-item .col-md-3 {
+.carousel-multi-item .col-12 {
   float: left;
-  width: 25%;
+  width: 50%;
   max-width: 100%;
 }
   
@@ -39,18 +39,18 @@ border-radius: 3px;
 }
 
 .carousel {
-  width: 90%;
+  width: 100%;
   display: block;
   margin: auto;
 }
 
 .carousel-inner > .carousel-item {
-  -webkit-transition: -webkit-transform 2s ease-in-out !important;
-  -o-transition: -o-transform 2s ease-in-out !important;
-  transition: transform 2s ease-in-out !important;
+  -webkit-transition: -webkit-transform 1.5s ease-in-out !important;
+  -o-transition: -o-transform 1.5s ease-in-out !important;
+  transition: transform 1.5s ease-in-out !important;
 }
 
-// .icon-gray {
+// .icon-color {
 //   color: $gray;
 // }
 
@@ -67,16 +67,27 @@ border-radius: 3px;
   .two-col-img {
     margin-top: 1.2rem;
   }
+
 }
 
-// // Medium devices (tablets, 768px and up)
+// Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+
+  .carousel-multi-item .col-md-3 {
+    float: left;
+    width: 25%;
+    max-width: 100%;
+  }
 
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
 
+  .carousel {
+    width: 90%;
+  }
+  
 }
 
 // Extra large devices (large desktops, 1200px and up)

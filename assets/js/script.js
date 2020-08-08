@@ -39,10 +39,11 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   });
 
-// MDB Lightbox Init
-$(function () {
-  $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-  });
+// Lightbox functionality for photo gallery
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
 
 //Using basicScroll to create parallax scrolling on landing
 document.querySelectorAll('.scene').forEach((elem) => {
