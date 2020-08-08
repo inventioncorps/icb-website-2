@@ -170,12 +170,12 @@ footer {
 //LANDING BANNER CHANGE (edit because we need to swap images for different screen sizes; make sure images are 100vh - 81px)
 .banner {
     width: 100vw;
-    height: 100vh;
+    // height: 100vh;
 }
 
 .banner-img {
     width: 100vw;
-    // height: 100vh - 81px;
+    // height: 100vh;
     object-fit: cover; //CHANGE (how do we want this to adjust @design?) - seperate mobile and tablet versions
 } 
 
