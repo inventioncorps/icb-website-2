@@ -31,6 +31,13 @@ h4 {
   margin: auto;
 }
 
+.carousel-inner > .carousel-item {
+  -webkit-transition: -webkit-transform 2s ease-in-out !important;
+  transition: -webkit-transform 2s ease-in-out !important;
+  transition: transform 2s ease-in-out !important;
+  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out !important;
+}
+
 @media (min-width: 576px) {
   .hidden-mobile {
     display: -webkit-box !important;

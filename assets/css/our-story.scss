@@ -44,6 +44,12 @@ border-radius: 3px;
   margin: auto;
 }
 
+.carousel-inner > .carousel-item {
+  -webkit-transition: -webkit-transform 2s ease-in-out !important;
+  -o-transition: -o-transform 2s ease-in-out !important;
+  transition: transform 2s ease-in-out !important;
+}
+
 // .icon-gray {
 //   color: $gray;
 // }
