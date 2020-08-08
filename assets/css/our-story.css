@@ -1,11 +1,18 @@
+h4 {
+  padding-top: 0;
+}
+
 #pillars-img {
   padding-top: 1.5rem;
-  padding-bottom: 1rem;
 }
 
 #founding-img {
   padding-top: 0.5rem;
   padding-bottom: 1.5rem;
+}
+
+.bottom-padding {
+  padding-bottom: 0.5rem;
 }
 
 .carousel-multi-item .col-md-3 {
@@ -14,8 +21,8 @@
   max-width: 100%;
 }
 
-.carousel-multi-item-5 .card img {
-  border-radius: 2px;
+.carousel-multi-item .card img {
+  border-radius: 3px;
 }
 
 .carousel {
@@ -24,15 +31,14 @@
   margin: auto;
 }
 
-.icon-gray {
-  color: #787878;
-}
-
 @media (min-width: 576px) {
   .hidden-mobile {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+  }
+  .two-col-img {
+    margin-top: 1.2rem;
   }
 }
 /*# sourceMappingURL=our-story.css.map */

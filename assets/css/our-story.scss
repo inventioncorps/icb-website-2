@@ -8,14 +8,21 @@ $black: #202020;
 
 // SPACING
 
+h4 {
+  padding-top: 0;
+}
+
 #pillars-img {
   padding-top: 1.5rem;
-  padding-bottom: 1rem;
 }
 
 #founding-img {
   padding-top: 0.5rem;
   padding-bottom: 1.5rem;
+}
+
+.bottom-padding {
+  padding-bottom: 0.5rem;
 }
 
 
@@ -27,8 +34,8 @@ $black: #202020;
   max-width: 100%;
 }
   
-.carousel-multi-item-5 .card img {
-border-radius: 2px;
+.carousel-multi-item .card img {
+border-radius: 3px;
 }
 
 .carousel {
@@ -37,13 +44,9 @@ border-radius: 2px;
   margin: auto;
 }
 
-.carousel-indicators {
-  
-}
-
-.icon-gray {
-  color: $gray;
-}
+// .icon-gray {
+//   color: $gray;
+// }
 
 
 // MEDIA QUERIES
@@ -54,6 +57,10 @@ border-radius: 2px;
   .hidden-mobile {
       display: flex !important;
   }
+
+  .two-col-img {
+    margin-top: 1.2rem;
+  }
 }
 
 // // Medium devices (tablets, 768px and up)
@@ -63,5 +70,10 @@ border-radius: 2px;
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
 
 }
