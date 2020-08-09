@@ -38,6 +38,25 @@ h4 {
   transition: transform 1.5s ease-in-out, -webkit-transform 1.5s ease-in-out !important;
 }
 
+.lightboximage {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+}
+
+.caption {
+  font-family: sans-serif;
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+  padding-top: .5em;
+}
+
 @media (min-width: 576px) {
   .hidden-mobile {
     display: -webkit-box !important;
