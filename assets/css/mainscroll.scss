@@ -43,6 +43,49 @@ body {
     bottom: 0;
 }
 
+// LANDING TEXT OVERLAP
+
+.overlapping-text {
+    font-size: 72px;
+    font-weight: 700;
+    position:absolute;
+}
+
+.bottom {
+    color: $black;
+    z-index: 1;
+}
+
+.middle {
+    color: white;
+    margin: 0 5px 0 5px;
+    z-index: 2;
+}
+
+.top {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px $black;
+    color: none;
+    margin: 0 10px 0 10px;
+    z-index: 3;
+}
+
+.red {
+    color: $red;
+}
+
+.yellow {
+    color: $yellow;
+}
+
+.green {
+    color: $green;
+}
+
+.blue {
+    color: $blue;
+}
+
 // VIEWS
 
 // hr {
