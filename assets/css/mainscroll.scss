@@ -1,0 +1,84 @@
+// COLOR SET
+
+$red: #E06B65;
+$yellow: #FEEB96;
+$green: #99CC99;
+$blue: #99CCFF;
+$gray: #787878;
+$black: #202020;
+$grad-1: #99CCFF;
+$grad-2: #E58F7C;
+$grad-3: #FFD775;
+
+// LANDING
+
+body {
+    height: fit-content;
+    position: relative;
+}
+
+.landing {
+    background: linear-gradient($grad-1, $grad-2, $grad-3) no-repeat;
+    height: auto;
+}
+
+.clouds {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.landscape {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+}
+
+.scene {
+    width: 100%;
+    height: auto;
+	transform: translateY(var(--translateY));
+    will-change: transform;
+    bottom: 0;
+}
+
+// VIEWS
+
+// hr {
+//     border: 2px;
+// }
+
+.button {
+    color: $black;
+    font-size: 1.25vw;
+    border-radius: 1em;
+    padding: 0.75em 2em;
+    margin-top: 2.5em;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+// MEDIA QUERIES
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
