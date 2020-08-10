@@ -17,11 +17,42 @@ h4 {
   font-size: 1.3rem;
 }
 
+h5 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-style: italic;
+}
+
 .process-img {
   padding-top: 1rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 5rem;
+}
+
+.padding {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .bottom-padding {
   padding-bottom: 0.5rem;
+}
+
+.challenge-container {
+  width: 75%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $black;
+  padding: 20px;
+  text-align: center;
+}
+
+hr {
+  width: 85%;
+  margin-left: 10%;
+  height: 0.5px;
+  background-color: $black;
+}
+
+#invite {
+  margin-left: 30%;
 }

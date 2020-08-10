@@ -190,6 +190,23 @@ footer {
     display: none !important;
 }
 
+// BUTTONS
+
+.button {
+    text-align: center!important;
+    display: inline-block;
+    font-size: 1.25vw;
+    border-style: solid;
+    border-color: $black;
+    border-radius: 1em;
+    padding: 0.75em 2em;
+    margin-top: 0.8rem;
+  }
+  
+  .button:hover {
+    cursor: pointer;
+  }
+
 
 // MEDIA QUERIES
 
