@@ -45,29 +45,63 @@ body {
 
 // LANDING TEXT OVERLAP
 
-.overlapping-text {
+#title-box {
+    position: absolute;
+    z-index: 5;
+    transform: translate(0, 17vh);
+    width: fit-content;
+}
+
+.large-title-text {
     font-size: 72px;
     font-weight: 700;
-    position:absolute;
 }
 
-.bottom {
-    color: $black;
-    z-index: 1;
+.overlap-text {
+    position: absolute;
 }
 
-.middle {
+.black-shadow {
     color: white;
-    margin: 0 5px 0 5px;
-    z-index: 2;
+    letter-spacing: 0.04em;
+    text-shadow: -5px 4px $black;
 }
 
-.top {
+.white-shadow {
+    color: $black;
+    letter-spacing: 0.04em;
+    text-shadow: -4px 3px white;
+}
+
+.stroke-text {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 2px $black;
     color: none;
-    margin: 0 10px 0 10px;
-    z-index: 3;
+    letter-spacing: 0.04em;
+    transform: translate(5px, -113px);
+}
+
+#we-are-text {
+    font-size: 40px;
+    font-weight: 700;
+    transform: translate(-55px, 12px);
+}
+
+#invention-text {
+    position: relative;
+    transform: translate(-55px, 0);
+}
+
+#corps-text {
+    position: relative;
+    transform: translate(230px, -20px);
+}
+
+#berkeley-ca-text {
+    font-size: 32px;
+    font-weight: 700;
+    transform: translate();
+    transform: translate(285px, -30px);
 }
 
 .red {
@@ -92,17 +126,6 @@ body {
 //     border: 2px;
 // }
 
-.button {
-    color: $black;
-    font-size: 1.25vw;
-    border-radius: 1em;
-    padding: 0.75em 2em;
-    margin-top: 2.5em;
-}
-
-.button:hover {
-    cursor: pointer;
-}
 
 // MEDIA QUERIES
 
