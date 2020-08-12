@@ -33,29 +33,72 @@ body {
   bottom: 0;
 }
 
-.overlapping-text {
+#title-box {
+  position: absolute;
+  z-index: 5;
+  -webkit-transform: translate(0, 17vh);
+          transform: translate(0, 17vh);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.large-title-text {
   font-size: 72px;
   font-weight: 700;
+}
+
+.overlap-text {
   position: absolute;
 }
 
-.bottom {
-  color: #202020;
-  z-index: 1;
-}
-
-.middle {
+.black-shadow {
   color: white;
-  margin: 0 5px 0 5px;
-  z-index: 2;
+  letter-spacing: 0.04em;
+  text-shadow: -5px 4px #202020;
 }
 
-.top {
+.white-shadow {
+  color: #202020;
+  letter-spacing: 0.04em;
+  text-shadow: -4px 3px white;
+}
+
+.stroke-text {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px #202020;
   color: none;
-  margin: 0 10px 0 10px;
-  z-index: 3;
+  letter-spacing: 0.04em;
+  -webkit-transform: translate(5px, -113px);
+          transform: translate(5px, -113px);
+}
+
+#we-are-text {
+  font-size: 40px;
+  font-weight: 700;
+  -webkit-transform: translate(-55px, 12px);
+          transform: translate(-55px, 12px);
+}
+
+#invention-text {
+  position: relative;
+  -webkit-transform: translate(-55px, 0);
+          transform: translate(-55px, 0);
+}
+
+#corps-text {
+  position: relative;
+  -webkit-transform: translate(230px, -20px);
+          transform: translate(230px, -20px);
+}
+
+#berkeley-ca-text {
+  font-size: 32px;
+  font-weight: 700;
+  -webkit-transform: translate();
+          transform: translate();
+  -webkit-transform: translate(285px, -30px);
+          transform: translate(285px, -30px);
 }
 
 .red {
@@ -72,17 +115,5 @@ body {
 
 .blue {
   color: #99CCFF;
-}
-
-.button {
-  color: #202020;
-  font-size: 1.25vw;
-  border-radius: 1em;
-  padding: 0.75em 2em;
-  margin-top: 2.5em;
-}
-
-.button:hover {
-  cursor: pointer;
 }
 /*# sourceMappingURL=mainscroll.css.map */
