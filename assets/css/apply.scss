@@ -1,0 +1,54 @@
+//COLOR SET
+$red: #E06B65;
+$yellow: #FEEB96;
+$green:#99CC99;
+$blue: #99CCFF;
+$gray: #787878;
+$black: #202020;
+
+// SPACING
+
+h3 {
+  font-weight: 600;
+  padding-top: 1.5rem;
+}
+
+h4 {
+  padding-top: 0;
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.padding {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.bottom-padding {
+  padding-bottom: 0.5rem;
+}
+
+.challenge-container {
+  width: 75%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $black;
+  padding: 20px;
+  text-align: center;
+}
+
+hr {
+  width: 85%;
+  margin-left: 10%;
+  height: 0.5px;
+  background-color: $black;
+}
+
+#invite {
+  margin-left: 30%;
+}

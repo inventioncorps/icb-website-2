@@ -25,6 +25,10 @@
   <script src="https://kit.fontawesome.com/bd860f6242.js" crossorigin="anonymous"></script>
   <!-- Bootstrap Styling -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- Fullpage Styling -->
+  <link rel="stylesheet" href="assets/css/fullpage.css" type="text/css" />
   <!-- Custom Styling -->
   <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
   <link rel="stylesheet" href="assets/css/mainscroll.css" type="text/css" />
@@ -90,120 +94,98 @@
 
     <div class="main">
 
-        <!-- Background Images-->
-        <div class = "clouds">
-            <img class="scene" data-modifier="85" src="assets/img/index/scroll-level-2b.png">
-        </div>
-        <div class = "planets">
-            <img class="scene" data-modifier="110" src="assets/img/index/bottom-planets.png">
-        </div>
-
         <!-- Landing Section -->
         <div class="landing">
             <div class="container">
-                <div class="social-icons">
-                    <a href="mailto:inventioncorps@icb.berkeley.edu" target="_blank"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/company/berkeley-invention-corps/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/InventionCorps" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                    <a href="https://www.instagram.com/inventioncorps/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <div class="overlapping-text bottom">
+                    INVENTION
+                </div>
+                <div class="overlapping-text middle">
+                    IN<span class="red">V</span>EN<span class="yellow">T</span>I<span class="green">O</span>N
+                </div>
+                <div class="overlapping-text top">
+                    INVENTION
                 </div>
             </div>
-            <div class = "img-container">
-                <img class="scene" data-modifier="150" src="assets/img/index/scroll-level-2a.png">
+            <!-- <div class="container">
+                <div class="overlapping-text bottom">
+                    CORPS
+                </div>
+                <div class="overlapping-text middle">
+                    C<span class="blue">O</span>RPS
+                </div>
+                <div class="overlapping-text top">
+                    CORPS
+                </div>
+            </div> -->
+            <div class="img-container">
+                <img class="scene landscape" data-modifier="85" src="assets/img/mainscroll/foreground.png">
+                <img class="scene clouds" data-modifier="150" src="assets/img/mainscroll/background.png">
             </div>
             <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
             <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
         </div>
 
-        <!-- About Section -->
-        <div class="about-section">
-            <div class="about-content container">
-                <h2 id ="about-header">Inventing ways to make a better world.</h2>
-                <p class="about-txt">
-                    We are Invention Corps of Berkeley. As a collective,
-                    we are an interdisciplinary group of students driven to create meaningful global impact
-                    through human-centered design. We partner with people and organizations with the objective
-                    of creating tangible solutions in the realms of society, health, poverty, and the environment.
-                </p>
-            </div>
-            <div class="about-img img-container">
-                <img class="scene" data-modifier="0" src="assets/img/index/scroll-level-1.png">
-            </div>
-        </div>
+        <!-- <div id="fullpage"> -->
 
-        <!-- Mission and Members -->
-        <div class="members-section">
-            <div class="container members">
-                <div class="container">
-                    <h2 id="about-title" class="d-flex justify-content-center">Our Story</h2>
-                    <p class="container"> Learn more about our mission, values, and founding principles. </p>
-                </div>
-                <div class="button" id="about-button" onclick="window.location.href='v1.5/about.html';">About</div>
-
-                <img src="assets/img/index/pencil.svg" class="pencil d-flex justify-content-center" alt="Drawing a better future.">
-
-                <div class="container">
-                    <h2 id="members-title" class="d-flex justify-content-center">Who We Are</h2>
-                    <p class="container"> Introducing the hearts and creative minds behind our work. </p>
-                </div>
-                <div class="button" id="members-button" onclick="window.location.href='v1.5/members.html';">Members</div>
-                
-                <img src="assets/img/index/pencil.svg" class="pencil d-flex justify-content-center" alt="Drawing a better future.">
-
-                <div class="container">
-                    <h2 id="projects-title" class="d-flex justify-content-center">Work With Us</h2>
-                    <p class="container"> Gain insight into our design process and project capabilities. </p>
-                </div>
-                <div class="button" id="projects-button" onclick="window.location.href='v1.5/projects.html';">Projects</div>
-            </div>
-        </div>
-
-        <!-- Featured Projects -->
-        <div class="projects-section">
-            <div class="container projects-div">
-                <div class="row">
-                    <div class="project-icon col-5 d-flex justify-content-center">
-                        <a href="v1.5/alemany.html">
-                            <img src="assets/img/index/alemany.svg" class="project-link img-fluid" alt="Alemany Farms">
-                        </a>
-                    </div>
-                    <div class="col-2 space">
-                    </div>  
-                    <div class="project-icon col-5 d-flex justify-content-center">
-                        <a href="v1.5/groupsource.html">
-                            <img src="assets/img/index/groupsource.svg" class="project-link img-fluid" alt="Groupsource">
-                        </a>
-                    </div>  
-                    <div class="project-icon col-5 d-flex justify-content-center">
-                        <a href="v1.5/makerspace.html">
-                            <img src="assets/img/index/makerspace.svg" class="project-link img-fluid" alt="Moffitt Makerspace">
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <div class="container">
-                            <img src="assets/img/index/project-planet.svg" class="project-planet" alt="Exploring our recent projects.">
+            <!-- OUR STORY -->
+            <!-- <section class="section view">
+                <div class="container animated fadeIn">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-6 align-self-center" id="about-text">
+                        <h1>About Us</h1>
+                        <hr>
+                        <p>
+                            Learn more about our mission, values, and founding principles.
+                        </p>
+                        <div class="button" onclick="window.location.href='our-story.html';">Our Story</div>
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex justify-content-center">
+                            <img src="assets/img/mainscroll/view-1.svg" />
                         </div>
                     </div>
-                    <div class="project-icon col-5 d-flex justify-content-center">
-                        <a href="v1.5/netic15.html">
-                            <img src="assets/img/index/netic.svg" class="project-link img-fluid" alt="Netic Health">
-                        </a>
-                    </div>  
-                    <div class="project-icon col-5 d-flex justify-content-center">
-                        <a href="v1.5/bsfc.html">
-                            <img src="assets/img/index/bsfc.svg" class="project-link img-fluid" alt="Student Food Collective">
-                        </a>
-                    </div>
-                    <div class="col-2 space">
-                    </div>
-                    <div class="project-icon col-5 d-flex justify-content-center">
-                        <a href="v1.5/commcafe.html">
-                            <img src="assets/img/index/commcafe.svg" class="project-link img-fluid" alt="Community Cafe">
-                        </a>
+                </div>
+            </section> -->
+
+            <!-- MEMBERS -->
+            <!-- <section class="section view">
+                <div class="container animated fadeIn">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-6 d-flex justify-content-center">
+                            <img src="assets/img/mainscroll/view-2.svg" />
+                        </div>
+                        <div class="col-12 col-lg-6 align-self-center" id="members-text">
+                        <h1>Who are we?</h1>
+                        <hr>
+                        <p>
+                            Discover the hearts and creative minds behind our work.
+                        </p>
+                        <div class="button" onclick="window.location.href='members.html';">Members</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section> -->
+
+            <!-- PROJECTS -->
+            <!-- <section class="section view">
+                <div class="container animated fadeIn">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-6 align-self-center" id="projects-text">
+                        <h1>Our Work</h1>
+                        <hr>
+                        <p>
+                            Gain insight into our design process and project experience.
+                        </p>
+                        <div class="button" onclick="window.location.href='y.html';">Projects</div>
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex justify-content-center">
+                            <img src="assets/img/mainscroll/view-3.svg" />
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+        <!-- </div> -->
         
     </div>
 

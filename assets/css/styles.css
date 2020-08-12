@@ -179,6 +179,21 @@ footer {
   display: none !important;
 }
 
+.button {
+  text-align: center !important;
+  display: inline-block;
+  font-size: 1.25vw;
+  border-style: solid;
+  border-color: #202020;
+  border-radius: 1em;
+  padding: 0.75em 2em;
+  margin-top: 0.8rem;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 576px) {
   .visible-mobile {
     display: none !important;
