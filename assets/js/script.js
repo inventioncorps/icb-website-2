@@ -71,13 +71,12 @@ var myFullpage = new fullpage('#fullpage', {
 	//Navigation
 	menu: '#menu',
 	lockAnchors: false,
-  anchors: ['story', 'members', 'projects'],
+  anchors: ['story', 'members', 'projects', 'featured'],
 	navigation: false,
 	// navigationPosition: 'right',
-	navigationTooltips: ['Story', 'Members', 'Projects'],
-	showActiveTooltip: false,
-	slidesNavigation: false,
-	slidesNavPosition: 'bottom',
+	// navigationTooltips: ['Story', 'Members', 'Projects', 'Featured'],
+	// slidesNavigation: false,
+	// slidesNavPosition: 'bottom',
 
 	//Scrolling
 	css3: true,
@@ -111,8 +110,8 @@ var myFullpage = new fullpage('#fullpage', {
 	//Design
 	controlArrows: true,
 	verticalCentered: true,
-	sectionsColor: ['#99CC99', '#FEEB96', '#E06B65'],
-	// fixedElements: '#header, .footer',
+	sectionsColor: ['#99CC99', '#FEEB96', '#E06B65', '#99CCFF'],
+	// fixedElements: '#footer',
 	responsiveWidth: 0,
 	responsiveHeight: 0,
 	responsiveSlides: false,
