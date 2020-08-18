@@ -3,7 +3,11 @@ body {
   position: relative;
 }
 
-.role {
+a {
+  color: white;
+}
+
+.role, .name {
   color: white;
   text-align: center;
 }
