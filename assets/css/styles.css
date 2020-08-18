@@ -192,6 +192,8 @@ footer {
 
 .button:hover {
   cursor: pointer;
+  color: white;
+  background-color: #202020;
 }
 
 @media (min-width: 576px) {
