@@ -1,0 +1,103 @@
+//COLOR SET
+$red: #E06B65;
+$yellow: #FEEB96;
+$green:#99CC99;
+$blue: #99CCFF;
+$gray: #787878;
+$black: #202020;
+$grad-1: #436394;
+$grad-2: #08102E;
+
+body {
+    background-color: $black;
+    position: relative;
+}
+
+.role {
+    color: white;
+    text-align: center;
+}
+
+.web {
+    overflow: auto;
+}
+
+.hearts {
+    height: 3rem;
+}
+
+.heart-container {
+    height: 3rem;
+}
+
+.navbar.scrolled {
+    background-color: #202020 !important;
+    transition: background-color 200ms linear;
+    color: white;
+}
+
+.navbar {
+    background-color: #202020 !important;
+    transition: background-color 200ms linear;
+    color: white !important;
+}
+
+h6 {
+    color: white;
+    font-style: italic;
+}
+
+.header {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 7vw;
+    margin-top: 7vw;
+}
+
+p.header {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+footer {
+    background-color: #202020;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    vertical-align: top;
+    z-index: 1;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-style: normal;
+    font-size: 25;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+
+.web>.cont {
+    text-align: center;
+    overflow: auto;
+    margin-bottom: 1vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+@media (min-width: 768px) {
+    .hearts {
+        height: 2rem;
+    }
+    
+    .heart-container {
+        height: 2rem;
+    }
+}
