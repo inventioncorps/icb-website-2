@@ -71,7 +71,7 @@ var myFullpage = new fullpage('#fullpage', {
 	//Navigation
 	menu: '#menu',
 	lockAnchors: false,
-  anchors: ['story', 'members', 'projects', 'featured'],
+	anchors: ['story', 'members', 'projects', 'featured'],
 	navigation: false,
 	// navigationPosition: 'right',
 	// navigationTooltips: ['Story', 'Members', 'Projects', 'Featured'],
