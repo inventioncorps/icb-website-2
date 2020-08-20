@@ -1,0 +1,41 @@
+body {
+  background-color: #202020;
+  position: relative;
+  color: white;
+}
+
+h1 {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+.quote {
+  text-align: left;
+  color: #202020;
+}
+
+.overlap {
+  position: absolute;
+}
+
+.quoter {
+  text-align: right;
+}
+
+.banner-div {
+  height: 80vh;
+  width: 100vw;
+}
+
+.yellow {
+  background-color: #FEEB96;
+}
+
+.blue {
+  background-color: #99CCFF;
+}
+/*# sourceMappingURL=art.css.map */

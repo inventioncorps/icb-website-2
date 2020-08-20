@@ -1,0 +1,50 @@
+//COLOR SET
+$red: #E06B65;
+$yellow: #FEEB96;
+$green:#99CC99;
+$blue: #99CCFF;
+$gray: #787878;
+$black: #202020;
+$grad-1: #436394;
+$grad-2: #08102E;
+
+body {
+    background-color: $black;
+    position: relative;
+    color: white;
+}
+
+h1 {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.quote {
+    text-align: left;
+    color: $black;
+}
+
+.overlap {
+    position: absolute;
+}
+
+.quoter {
+    text-align: right;
+}
+
+.banner-div { //FIXME
+    height: 80vh;
+    width: 100vw;
+}
+
+.yellow {
+    background-color: $yellow;
+}
+
+.blue {
+    background-color: $blue;
+}
