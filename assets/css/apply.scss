@@ -28,6 +28,10 @@ h5 {
   font-style: italic;
 }
 
+#top-of-page {
+  margin-bottom: 2rem;
+}
+
 .padding {
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -35,6 +39,14 @@ h5 {
 
 .bottom-padding {
   padding-bottom: 0.5rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.img-center {
+  vertical-align: middle;
 }
 
 .challenge-container {
@@ -94,15 +106,16 @@ button {
 	height: auto;
 	background: white;
 	border-radius: 5px;
-	font-size: .8rem;
+  font-size: .8rem;
+  text-align: left;
 
 	.popup-close {
 		position: absolute;
-		top: 1rem;
+		top: 0;
 		right: 1rem;
 		z-index: 999;
-		color: #000;
-		font-size: 1rem;
+		color: $black;
+		font-size: 3rem;
 		text-decoration: none;
 
 		&:hover {
