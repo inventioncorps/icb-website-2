@@ -72,7 +72,7 @@ button {
   opacity: 1;
 }
 
-.challenge-details {
+.popup-box {
   position: relative;
   z-index: 999;
   top: 50%;
@@ -80,14 +80,14 @@ button {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 3rem;
-  width: 50%;
+  width: 70%;
   height: auto;
   background: white;
   border-radius: 5px;
   font-size: .8rem;
 }
 
-.challenge-details .popup-close {
+.popup-box .popup-close {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -97,7 +97,7 @@ button {
   text-decoration: none;
 }
 
-.challenge-details .popup-close:hover {
+.popup-box .popup-close:hover {
   color: white;
   -webkit-transition: color 500ms ease;
   transition: color 500ms ease;
