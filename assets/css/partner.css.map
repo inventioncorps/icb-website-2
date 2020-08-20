@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACT,YAAY,EAAE,IAAI;CACrB",
+    "sources": [
+        "partner.scss"
+    ],
+    "names": [],
+    "file": "partner.css"
+}
