@@ -7,6 +7,7 @@ $gray: #787878;
 $black: #202020;
 $grad-1: #436394;
 $grad-2: #08102E;
+$gray2: #DADADA;
 
 body {
     background-color: $black;
@@ -28,6 +29,44 @@ h4 {
     color: $black;
 }
 
+.square {
+    background-color: $black;
+    border-radius: 5%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 33vw;
+    height: 28vw;
+}
+
+.blurb {
+    position: absolute;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    font-weight: medium;
+    color: $black;
+    opacity: 0;
+}
+
+.organization {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.square:hover {
+    background-color: $gray2;
+    transition-timing-function: ease-in-out;
+}
+
+.organization:hover {
+    opacity: 0.2;
+}
+
 .overlap {
     position: absolute;
     display: flex;
@@ -38,7 +77,8 @@ h4 {
     text-align: right;
 }
 
-.banner-div { //FIXME
+.banner-div {
+    //FIXME
     height: 80vh;
     width: 100vw;
 }
@@ -49,4 +89,58 @@ h4 {
 
 .blue {
     background-color: $blue;
+}
+
+.art-tile {
+    width: auto;
+    height: 20%;
+    z-index: 2;
+}
+
+.byline-width {
+    width: auto;
+    padding-top: 2rem;
+    height: 6%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.art-tile:hover {
+    opacity: 0.3;
+}
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .square {
+        height: 25vw;
+        width: 35vw;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+    .blurb {
+        opacity: 1;
+    }
+
+    .blurb:hover {
+        z-index: 1;
+    }
+
+    .square {
+        height: 20vw;
+        width: 25vw;
+    }
 }

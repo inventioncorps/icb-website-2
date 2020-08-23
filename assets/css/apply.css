@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 h3 {
   font-weight: 600;
   padding-top: 1.5rem;
@@ -14,6 +18,10 @@ h5 {
   font-style: italic;
 }
 
+#top-of-page {
+  margin-bottom: 2rem;
+}
+
 .padding {
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -21,6 +29,14 @@ h5 {
 
 .bottom-padding {
   padding-bottom: 0.5rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.img-center {
+  vertical-align: middle;
 }
 
 .challenge-container {
@@ -41,5 +57,67 @@ hr {
 
 #invite {
   margin-left: 30%;
+}
+
+button {
+  background-color: white;
+}
+
+.popup-bg {
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.popup-bg:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-box {
+  position: relative;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 3rem;
+  width: 70%;
+  height: auto;
+  background: white;
+  border-radius: 5px;
+  font-size: .8rem;
+  text-align: left;
+}
+
+.popup-box .popup-close {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  z-index: 999;
+  color: #202020;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.popup-box .popup-close:hover {
+  color: white;
+  -webkit-transition: color 500ms ease;
+  transition: color 500ms ease;
+}
+
+#popup-title {
+  padding-top: 0;
+  text-align: left;
 }
 /*# sourceMappingURL=apply.css.map */

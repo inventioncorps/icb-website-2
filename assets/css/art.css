@@ -18,6 +18,47 @@ h4 {
   color: #202020;
 }
 
+.square {
+  background-color: #202020;
+  border-radius: 5%;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 33vw;
+  height: 28vw;
+}
+
+.blurb {
+  position: absolute;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1rem;
+  font-weight: medium;
+  color: #202020;
+  opacity: 0;
+}
+
+.organization {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.square:hover {
+  background-color: #DADADA;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.organization:hover {
+  opacity: 0.2;
+}
+
 .overlap {
   position: absolute;
   display: -webkit-box;
@@ -43,5 +84,49 @@ h4 {
 
 .blue {
   background-color: #99CCFF;
+}
+
+.art-tile {
+  width: auto;
+  height: 20%;
+  z-index: 2;
+}
+
+.byline-width {
+  width: auto;
+  padding-top: 2rem;
+  height: 6%;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.art-tile:hover {
+  opacity: 0.3;
+}
+
+.button {
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+@media (min-width: 576px) {
+  .square {
+    height: 25vw;
+    width: 35vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .blurb {
+    opacity: 1;
+  }
+  .blurb:hover {
+    z-index: 1;
+  }
+  .square {
+    height: 20vw;
+    width: 25vw;
+  }
 }
 /*# sourceMappingURL=art.css.map */
