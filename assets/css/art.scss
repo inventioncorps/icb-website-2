@@ -38,7 +38,8 @@ h4 {
     text-align: right;
 }
 
-.banner-div { //FIXME
+.banner-div {
+    //FIXME
     height: 80vh;
     width: 100vw;
 }
@@ -49,4 +50,28 @@ h4 {
 
 .blue {
     background-color: $blue;
+}
+
+.art-tile {
+    width: auto;
+    height: 20%;
+    z-index: 2;
+}
+
+.byline-width {
+    width: auto;
+    padding-top: 2rem;
+    height: 6%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.art-tile:hover {
+    opacity: 0.3;
+}
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
 }
