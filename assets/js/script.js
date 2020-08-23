@@ -71,7 +71,7 @@ var myFullpage = new fullpage('#fullpage', {
 	//Navigation
 	menu: '#menu',
 	lockAnchors: false,
-	anchors: ['story', 'members', 'projects', 'featured'],
+	anchors: ['landing', 'story', 'members', 'projects', 'featured'],
 	navigation: false,
 	// navigationPosition: 'right',
 	// navigationTooltips: ['Story', 'Members', 'Projects', 'Featured'],
@@ -96,7 +96,7 @@ var myFullpage = new fullpage('#fullpage', {
 	offsetSections: false,
 	resetSliders: false,
 	fadingEffect: false,
-	scrollOverflow: false,
+	scrollOverflow: true,
 	scrollOverflowReset: false,
 	scrollOverflowOptions: null,
 	touchSensitivity: 15,
@@ -110,7 +110,7 @@ var myFullpage = new fullpage('#fullpage', {
 	//Design
 	controlArrows: true,
 	verticalCentered: true,
-	sectionsColor: ['#99CC99', '#FEEB96', '#E06B65', '#99CCFF'],
+	sectionsColor: ['#000000', '#99CC99', '#FEEB96', '#E06B65', '#99CCFF'],
 	// fixedElements: '#footer',
 	responsiveWidth: 0,
 	responsiveHeight: 0,
