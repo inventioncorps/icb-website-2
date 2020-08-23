@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #202020;
+  position: center;
+  color: white;
+  width: 80%;
+  height: 1112px;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.button {
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  color:#FFFFFF;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 40%;
+  padding-top: 10%;
+  padding-left: 30px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 40%;
+  padding-top: 10%;
+  padding-left: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.descriptioncontainer {
+  padding-left:20%;
+  padding-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* The donation description and button */
+.donate {
+   align-content: center;
+   padding: 20px;
+   font-family: 'Montserrat', sans-serif;
+   position:center;
+}
+
+.normaltext {
+font-size: 16px;
+line-height: 150%;
+
+}
+
+.headertext {
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+
+}
+
+.titletext {
+font-style: italic;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+}
+
+.donationtext {
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+}
+
+.descriptionboldtext {
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+}
+
+.descriptiontext {
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+}
+
+.instructiontext {
+font-style: italic;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+}
+
+
+.line-break {
+
+position: absolute;
+height: 0px;
+width:90%;
+padding-left: 30;
+
+border: 1px solid #FFFFFF;
+}
+
+.challenge-container {
+  width: 75%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #202020;
+  padding: 20px;
+  text-align: center;
+}
+
+.popup-bg {
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 1;
+}
+
+.popup-bg:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-box {
+  position: relative;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 3rem;
+  width: 70%;
+  height: auto;
+  background: #202020;
+  border-radius: 5px;
+  font-size: .8rem;
+  text-align: left;
+}
+
+.table {
+  padding: 15px;
+  font-size:14px;
+  align-items:center;
+  position:center;
+}
+
+.popup-box .popup-close {
+  position: absolute;
+  top: 10%;
+  right: 1rem;
+  z-index: 999;
+  color: #FFFFFF;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.popup-box .popup-close:hover {
+  color: #202020;
+  -webkit-transition: color 500ms ease;
+  transition: color 500ms ease;
+}
+
+#popup-title {
+  padding-top: 0;
+  text-align: left;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 80px;
+  left: 15px;
+  color: white;
+  font-size: 12px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="challenge-container">
+  <div class="button">
+  <a class="button" href="#popup"> <i>Test Button</i> </a>
+  </div>
+
+  <!-- MODAL BOX (POP-UP) -->
+  <div class="popup-bg" id="popup">
+      <div class="popup-box">
+          <a href="#" class="popup-close">&times;</a>
+          <div class="row">
+
+<div class="leftcolumn"> 
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="reset();" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+
+  <div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <template>
+    <div class="column">
+      <img src="assets/img/art/logo-1.png" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </template>
+  <div class="column">
+    <img src="assets/img/art/logo-1.png" alt="Nature" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/img/art/logo-2.png" alt="Snow" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/img/art/logo-3.png" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/img/art/logo-4.png" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<script>
+  showContent();
+  var images = ["assets/img/art/logo-1.png", "assets/img/art/logo-2.png", "assets/img/art/logo-3.png", "assets/img/art/logo-4.png"];
+  function showContent() {
+    var temp, item, a, i;
+  temp = document.getElementsByTagName("template")[0];
+  item = temp.content.querySelector("div");
+  for (i = 0; i < myArr.length; i++) {
+    a = document.importNode(item, true);
+    a.textContent += myArr[i];
+    document.body.appendChild(a);
+  }
+</script>
+
+
+</div>
+
+</div>
+
+<div class="rightcolumn">
+       <div class="descriptioncontainer">
+          <div class="titletext">
+            <p>TITLE 1</p>
+          </div>
+          <div class="descriptionboldtext">
+            <p>Can be used as:</p>
+          </div>
+          <div class="descriptiontext">
+            <p>     Zoom/ Virtual meeting background</p>
+            <p>     Desktop Screensaver</p>
+            <p>     Facebook Background</p>
+          </div>
+          <div class="instructiontext">
+            <p>Will be emailed as a PNG or JPEG to the address of your choice.</p>
+          </div>
+       </div>
+ 
+</div>
+</div>
+
+<div class="line-break"></div>
+
+ <div class="donate">
+        <!-- Page Content -->
+        <div class = "headertext">
+          <div class="donationtext">Complete your donation</div>
+        </div>
+        <div class = "normaltext">
+          <p>To finalize you donation, please click the Paypal button to be taken to the final payment stage. You will recieve an emailed receipt upon completion.</p>
+        </div>
+        
+</div>
+
+<div class="donate">     
+  <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+<input type="hidden" name="cmd" value="_s-xclick">
+<table>
+<tr><td><input type="hidden" name="on0" value="Donation Amount">Donation Amount</td></tr><tr><td><select name="os0">
+	<option value="Donate">Donate $5.00 USD</option>
+	<option value="Donate">Donate $10.00 USD</option>
+	<option value="Donate">Donate $1,000.00 USD</option>
+</select> </td></tr>
+<tr><td><input type="hidden" name="on1" value="Organization">Organization</td></tr><tr><td><select name="os1">
+	<option value="RYSE">RYSE </option>
+	<option value="Oakland LGBTQ">Oakland LGBTQ </option>
+	<option value="Techbridge Girls">Techbridge Girls </option>
+</select> </td></tr>
+<tr><td><input type="hidden" name="on2" value="Art piece">Art piece</td></tr><tr><td><select name="os2">
+	<option value="Option 1">Option 1 </option>
+	<option value="Option 2">Option 2 </option>
+	<option value="Option 3">Option 3 </option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
+
+</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+           
+<script>
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = "assets/img/art/logo-1.png";
+  imgText.innerHTML = "Nature";
+  expandImg.parentElement.style.display = "block";
+
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+
+
+function reset(){
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = "assets/img/art/logo" + myImages[0];
+  imgText.innerHTML = "Nature";
+  expandImg.parentElement.style.display = "block";
+}
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
