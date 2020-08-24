@@ -70,6 +70,17 @@ h4 {
     opacity: 0;
 }
 
+.large-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: solid $black;
+    border-radius: 0.4em;
+    margin: 0rem 0.3rem;
+    background-color: $black;
+    color: white;
+    width: 65%;
+}
+
 .organization {
     position: absolute;
     top: 50%;
