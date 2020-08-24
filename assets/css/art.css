@@ -4,6 +4,21 @@ body {
   color: white;
 }
 
+button {
+  border: none;
+  background: none;
+  color: white;
+}
+
+#more {
+  display: none;
+}
+
+#read-more {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 a {
   color: white;
 }
