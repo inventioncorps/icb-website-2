@@ -4,6 +4,14 @@ body {
   color: white;
 }
 
+a {
+  color: white;
+}
+
+.justify {
+  text-align: justify;
+}
+
 h1 {
   padding-top: 2rem;
   text-align: center;
