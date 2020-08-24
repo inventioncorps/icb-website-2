@@ -28,6 +28,27 @@ h4 {
   height: 28vw;
 }
 
+.art-square {
+  background-color: #202020;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 33vw;
+  height: 24vw;
+}
+
+.square:hover {
+  background-color: #DADADA;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.art-square:hover {
+  background-color: #DADADA;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
 .blurb {
   position: absolute;
   width: 85%;
@@ -47,12 +68,6 @@ h4 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
-
-.square:hover {
-  background-color: #DADADA;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
 }
 
 .organization:hover {
@@ -86,22 +101,13 @@ h4 {
   background-color: #99CCFF;
 }
 
-.art-tile {
-  width: auto;
-  height: 20%;
-  z-index: 2;
-}
-
 .byline-width {
   width: auto;
   padding-top: 2rem;
-  height: 6%;
+  height: 55%;
   padding-bottom: 0px;
   margin-bottom: 0px;
-}
-
-.art-tile:hover {
-  opacity: 0.3;
+  padding-left: 0.5rem;
 }
 
 .button {
