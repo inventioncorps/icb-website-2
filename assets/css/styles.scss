@@ -80,10 +80,12 @@ nav {
 
 a.nav-link.blog {
     color: $black !important;
+    margin-right: 30px; //MOBILE/TABLET//
 }
 
 #navbarDropdownMenuLink.nav-link.dropdown-toggle {
     color: $black;
+    margin-right: 15px; //MOBILE/TABLET//
 }
 
 .navbar-nav li:hover > ul.dropdown-menu {
@@ -118,7 +120,16 @@ a.nav-link.blog:hover {
     background-color: white;
 }
 
+.dropdown-menu {
+    border-style: none;
+    border-radius: 0;
+    text-align: right; //MOBILE/TABLET//
+}
 
+.navbar-toggler {
+    border-style: none;
+    padding-top: 15px;
+}
 
 
 // FOOTER
@@ -246,6 +257,21 @@ footer {
 
     .banner { //CHANGE (swap image back to large size)
         transform: rotate(0);
+    }
+
+    // NAV BAR
+    a.nav-link.blog {
+        margin-right: 0px;
+    }
+    
+    #navbarDropdownMenuLink.nav-link.dropdown-toggle {
+        margin-right: 0px;
+    }
+
+    .dropdown-menu {
+        border-style: none;
+        border-radius: 0;
+        text-align: left;
     }
 
 }
