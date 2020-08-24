@@ -140,6 +140,10 @@ ul > li > a.nav-link.blog {
     background-color: $black;
 }
 
+.navbar-toggler-icon {
+    color: white;
+}
+
 
 @media (min-width: 768px) {
     .hearts {
