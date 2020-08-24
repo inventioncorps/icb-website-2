@@ -86,10 +86,6 @@ a.nav-link.blog {
     color: $black;
 }
 
-.dropdown-item {
-    text-align: right;
-}
-
 .navbar-nav li:hover > ul.dropdown-menu {
     display: block;
 }
@@ -121,6 +117,9 @@ a.nav-link.blog:hover {
     opacity: 1;
     background-color: white;
 }
+
+
+
 
 // FOOTER
 

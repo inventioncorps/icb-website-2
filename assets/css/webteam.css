@@ -88,6 +88,47 @@ h2 {
   margin-right: 10vw;
 }
 
+.navbar.scrolled {
+  background-color: #202020 !important;
+  color: white;
+}
+
+nav {
+  background-color: #202020;
+  color: white;
+}
+
+ul > li > a.nav-link.blog {
+  color: white !important;
+}
+
+#navbarDropdownMenuLink.nav-link.dropdown-toggle {
+  color: white;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+  background-color: #202020;
+  color: white;
+}
+
+#navbarDropdownMenuLink.nav-link.dropdown-toggle:hover {
+  background-color: #202020;
+}
+
+.dropdown-menu {
+  background-color: #202020;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  color: #787878 !important;
+  opacity: 1;
+  background-color: #202020;
+}
+
 @media (min-width: 768px) {
   .hearts {
     height: 2rem;

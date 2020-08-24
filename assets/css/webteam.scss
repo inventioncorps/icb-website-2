@@ -96,6 +96,51 @@ h2 {
     margin-right: 10vw;
 }
 
+
+// NAV BAR
+
+.navbar.scrolled {
+    background-color: $black !important;
+    color: white;
+}
+
+nav {
+    background-color: $black;
+    color: white;
+}
+
+ul > li > a.nav-link.blog {
+    color: white !important;
+}
+
+#navbarDropdownMenuLink.nav-link.dropdown-toggle {
+    color: white;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+    background-color: $black;
+    color: white;
+}
+
+#navbarDropdownMenuLink.nav-link.dropdown-toggle:hover{
+    background-color: $black;
+}
+
+.dropdown-menu {
+    background-color: $black;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover {
+    color: $gray !important;
+    opacity: 1;
+    background-color: $black;
+}
+
+
 @media (min-width: 768px) {
     .hearts {
         height: 2rem;
