@@ -179,6 +179,46 @@
     </div>
     <!--/.Carousel Wrapper-->
 
+    <!--BLM-SOLIDARITY-->
+    <div class="container">
+        <h2> Black Lives Matter.</h2>
+        <p class="justify"> Recognizing the ongoing tensions as part of an enduring history of racial injustice is only the first step. We, as an organization for social impact, would like to devote our responsibility toward and state our solidarity in uplifting and supporting Black communities. The loss of innocent Black lives like George Floyd, Breonna Taylor, Ahmaud Arbery, Tony McDade, and many more whose names deserve to be remembered is deeply felt. May they Rest In Power.
+        <p class="justify" id="more">
+        Given that the rampant and obvious police brutality against Black citizens is only a single facet of the extensive systems of oppression we are fighting against, we would like to add to the reparations owed to a variety of Black communities by donating the proceeds from our collective artwork to the selection of non-profits below. We realize it is not enough to denounce police brutality—it is equally crucial to oppose educational, employment, housing, health, and voting discrimination that remains present across this nation. Let this be a reminder that the fight for a truly equitable future is a persistent practice of un-learning, decolonizing, advocacy, and action.
+        <br></p>
+        <a onclick="expand()" id="read-more">read more</a>
+
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="row">
+                    <div class="col-4">
+                        <img alt="BLM" src="assets/img/art/blm-solidarity.svg"> 
+                    </div>
+                    <div class="col-8">
+                        <p>In Solidarity, <br> Invention Corps of Berkeley</p>
+                        <p class="italic">For our full Solidarity Statement & BLM Resource Document, click <a href="http://bit.ly/blmxicbstatement"><b>here</b></a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function expand() {
+            var readMore = document.getElementById("read-more");
+            var moreText = document.getElementById("more");
+
+            if (readMore.style.display === "inline") {
+            readMore.style.display = "flex";
+            readMore.innerHTML = "read more"; 
+            moreText.style.display = "none";
+            } else {
+            readMore.style.display = "inline";
+            readMore.innerHTML = "read less";
+            moreText.style.display = "inline";
+            }
+        }
+    </script>
     <!--NON-PROFITS-->
     <div class="container">
 
@@ -195,6 +235,7 @@
                     <div class = "img-container">
                         <a href="PLACEHOLDER">
                             <img src="assets/img/art/logo-1.png" alt="Afrotecpia" class="img-fluid organization">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -209,6 +250,7 @@
                     <div class = "img-container">
                         <a href="PLACEHOLDER">
                             <img src="assets/img/art/logo-2.png" alt="RYSE Center" class="img-fluid organization">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -223,6 +265,7 @@
                     <div class = "img-container">
                         <a href="PLACEHOLDER">
                             <img src="assets/img/art/logo-3.png" alt="Oakland LGBTQ Community Center" class="img-fluid organization">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -237,6 +280,7 @@
                     <div class = "img-container d-flex justify-content-center">
                         <a href="PLACEHOLDER">
                             <img src="assets/img/art/logo-4.png" alt="Techbridge Girls" class="img-fluid organization">
+                        </a>
                     </div>
                 </div>
             </div>

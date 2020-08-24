@@ -70,14 +70,12 @@ nav {
 
 a.nav-link.blog {
   color: #202020 !important;
+  margin-right: 30px;
 }
 
 #navbarDropdownMenuLink.nav-link.dropdown-toggle {
   color: #202020;
-}
-
-.dropdown-item {
-  text-align: right;
+  margin-right: 15px;
 }
 
 .navbar-nav li:hover > ul.dropdown-menu {
@@ -111,6 +109,17 @@ a.nav-link.blog:hover {
   color: #787878 !important;
   opacity: 1;
   background-color: white;
+}
+
+.dropdown-menu {
+  border-style: none;
+  border-radius: 0;
+  text-align: right;
+}
+
+.navbar-toggler {
+  border-style: none;
+  padding-top: 15px;
 }
 
 footer {
@@ -218,6 +227,17 @@ footer {
   .banner {
     -webkit-transform: rotate(0);
             transform: rotate(0);
+  }
+  a.nav-link.blog {
+    margin-right: 0px;
+  }
+  #navbarDropdownMenuLink.nav-link.dropdown-toggle {
+    margin-right: 0px;
+  }
+  .dropdown-menu {
+    border-style: none;
+    border-radius: 0;
+    text-align: left;
   }
 }
 /*# sourceMappingURL=styles.css.map */

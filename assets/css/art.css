@@ -4,6 +4,35 @@ body {
   color: white;
 }
 
+button {
+  border: none;
+  background: none;
+  color: white;
+}
+
+#more {
+  display: none;
+}
+
+#read-more {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#read-more:hover {
+  color: #787878;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+}
+
+.justify {
+  text-align: justify;
+}
+
 h1 {
   padding-top: 2rem;
   text-align: center;
