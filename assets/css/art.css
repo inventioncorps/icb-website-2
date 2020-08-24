@@ -19,6 +19,12 @@ button {
   text-decoration: underline;
 }
 
+#read-more:hover {
+  color: #787878;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 a {
   color: white;
 }

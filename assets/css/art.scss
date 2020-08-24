@@ -30,6 +30,12 @@ button {
     text-decoration: underline;
 }
 
+#read-more:hover {
+    color: $gray;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 a {
     color: white;
 }
