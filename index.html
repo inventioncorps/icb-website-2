@@ -20,7 +20,7 @@
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
 
   <!-- Custom Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/bd860f6242.js" crossorigin="anonymous"></script>
   <!-- Bootstrap Styling -->
@@ -96,46 +96,61 @@
     <div id="fullpage">
 
         <!-- Landing Section -->
-            <div class="section landing d-flex justify-content-center">
+        <div class="section landing d-flex justify-content-center">
 
-                <div class="container" id="title-box">
-                    <div class="container" id="we-are-text">
-                        <div class="white-shadow">
-                            We are
-                        </div>
-                    </div>
-                    <div class="container" id="invention-text">
-                        <div class="large-title-text black-shadow">
-                            IN<span class="red">V</span>EN<span class="yellow">T</span>I<span class="green">O</span>N
-                        </div>
-                        <div class="large-title-text stroke-text overlap-text">
-                            INVENTION
-                        </div>
-                    </div>
-                    <div class="container" id="corps-text">
-                        <div class="large-title-text black-shadow">
-                            CO<span class="blue">R</span>PS
-                        </div>
-                        <div class="large-title-text stroke-text overlap-text">
-                            CORPS
-                        </div>
-                    </div>
-                    <div class="container" id="berkeley-ca-text">
-                        <div class="small-title-text white-shadow">
-                            Berkeley, CA
-                        </div>
+            <div class="container" id="title-box">
+                <div class="container" id="we-are-text">
+                    <div class="white-shadow">
+                        We are
                     </div>
                 </div>
-
-                <div class="img-container">
-                    <img class="scene landscape" data-modifier="85" src="assets/img/mainscroll/foreground.png">
-                    <img class="scene clouds" data-modifier="150" src="assets/img/mainscroll/background.png">
-                    <img class="scene" data-modifier="150" src="assets/img/mainscroll/lower-island.png">
+                <div class="container" id="invention-text">
+                    <div class="large-title-text black-shadow">
+                        IN<span class="red">V</span>EN<span class="yellow">T</span>I<span class="green">O</span>N
+                    </div>
+                    <div class="large-title-text stroke-text overlap-text">
+                        INVENTION
+                    </div>
                 </div>
-                <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
-                <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
-           
+                <div class="container" id="corps-text">
+                    <div class="large-title-text black-shadow">
+                        CO<span class="blue">R</span>PS
+                    </div>
+                    <div class="large-title-text stroke-text overlap-text">
+                        CORPS
+                    </div>
+                </div>
+                <div class="container" id="berkeley-ca-text">
+                    <div class="small-title-text white-shadow">
+                        Berkeley, CA
+                    </div>
+                </div>
             </div>
+
+            <!-- <div class="img-container">
+                <img id="static-landing-img" src="assets/img/mainscroll/static-landing.svg">
+            </div> -->
+
+            <!-- ATTEMPTED PARALLAX -->
+            <!-- <div class="img-container">
+                <img class="scene landscape" data-modifier="85" src="assets/img/mainscroll/foreground.png">
+                <img class="scene clouds" data-modifier="150" src="assets/img/mainscroll/background.png">
+                <img class="scene" data-modifier="150" src="assets/img/mainscroll/lower-island.png">
+            </div>
+            <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
+            <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script> -->
+
+            <div class = "img-container">
+                <img class="scene clouds" data-modifier="85" src="assets/img/mainscroll/background.png">
+            </div>
+
+            <div class = "img-container">
+                <img class="scene landscape" data-modifier="150" src="assets/img/mainscroll/foreground.png">
+            </div>
+            <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
+            <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+           
+        </div>
 
             <!-- OUR STORY -->
             <section class="section story fp-auto-height-responsive">
@@ -144,7 +159,7 @@
                         <div class="col-12 col-lg-6 align-self-center text-center">
                         <h1>About Us</h1>
                         <hr>
-                        <p>
+                        <p class="view-text">
                             Learn more about our mission, values, and founding principles.
                         </p>
                         <div class="button" onclick="window.location.href='our-story.html';">Our Story</div>
@@ -166,7 +181,7 @@
                         <div class="col-12 col-lg-6 align-self-center text-center">
                         <h1>Who are we?</h1>
                         <hr>
-                        <p>
+                        <p class="view-text">
                             Discover the hearts and creative minds behind our work.
                         </p>
                         <div class="button" onclick="window.location.href='members.html';">Members</div>
@@ -182,7 +197,7 @@
                         <div class="col-12 col-lg-6 align-self-center text-center">
                         <h1>Our Work</h1>
                         <hr>
-                        <p>
+                        <p class="view-text">
                             Gain insight into our design process and project experience.
                         </p>
                         <div class="button" onclick="window.location.href='projects.html';">Projects</div>
@@ -199,7 +214,7 @@
                 <div class="container animated fadeIn">
                     <div class="d-flex justify-content-center">
                         <div class="text-center">
-                            <h1>Fall 2020 Recruitment</h1>
+                            <h1 id="feature-title">Fall 2020 Recruitment</h1>
                             <div class="button" onclick="window.location.href='apply.html';">Learn More</div>
                         </div>
                     </div>

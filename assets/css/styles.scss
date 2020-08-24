@@ -42,6 +42,10 @@ a {
     color: $black;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .underline {
     text-decoration: underline; //CHANGE (update all footers to have this class for web team link)
 }

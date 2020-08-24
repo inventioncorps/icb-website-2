@@ -33,6 +33,10 @@ a {
   color: #202020;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .underline {
   text-decoration: underline;
 }

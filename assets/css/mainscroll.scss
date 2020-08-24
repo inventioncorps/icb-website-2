@@ -22,6 +22,20 @@ body {
     height: auto;
 }
 
+// #static-landing-img {
+//     width: 100%;
+//     height: auto;
+//     z-index: -2;
+// }
+
+.scene {
+    width: 100%;
+    height: auto;
+	transform: translateY(var(--translateY));
+    will-change: transform;
+    bottom: 0;
+}
+
 .clouds {
     width: 100%;
     height: auto;
@@ -35,19 +49,12 @@ body {
     z-index: 1;
 }
 
-.scene {
-    width: 100%;
-    height: auto;
-	transform: translateY(var(--translateY));
-    will-change: transform;
-    bottom: 0;
-}
 
 // LANDING TEXT OVERLAP
 
 #title-box {
     // position: absolute;
-    z-index: 5;
+    z-index: 100;
     transform: translate(0, 17vh);
     width: fit-content;
 }
@@ -122,6 +129,40 @@ body {
 
 // VIEWS
 
+h1 {
+    font-size: 2.9rem;
+    font-weight: 600;
+}
+
+hr {
+    display: block;
+    margin: auto;
+    width: 20%;
+    height: 1.2px;
+    background-color: $black;
+    margin-bottom: 1.5rem;
+    margin-top: 0.75rem;
+}
+
+.view-text {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 500;
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+#feature-title {
+    font-size: 3.1rem;
+    color: white;
+    text-shadow: 2px 3px 10px $gray;
+    font-weight: 700;
+}
+
+.featured {
+  background-image: url(../img/mainscroll/featured-bg.svg);
+  background-size: cover;
+}
 
 
 // MEDIA QUERIES

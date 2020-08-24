@@ -4,6 +4,51 @@ body {
   color: white;
 }
 
+.navbar.scrolled {
+  background-color: #202020 !important;
+  color: white;
+}
+
+nav {
+  background-color: #202020;
+  color: white;
+}
+
+ul > li > a.nav-link.blog {
+  color: white !important;
+}
+
+#navbarDropdownMenuLink.nav-link.dropdown-toggle {
+  color: white;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+  background-color: #202020;
+  color: white;
+}
+
+#navbarDropdownMenuLink.nav-link.dropdown-toggle:hover {
+  background-color: #202020;
+}
+
+.dropdown-menu {
+  background-color: #202020;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  color: #787878 !important;
+  opacity: 1;
+  background-color: #202020;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
 button {
   border: none;
   background: none;
@@ -153,6 +198,16 @@ h4 {
 .button {
   margin-left: auto;
   margin-right: auto;
+  z-index: 1;
+}
+
+footer {
+  background-color: #202020;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  vertical-align: top;
   z-index: 1;
 }
 

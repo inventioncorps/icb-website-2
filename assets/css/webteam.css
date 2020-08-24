@@ -24,20 +24,6 @@ a {
   height: 3rem;
 }
 
-.navbar.scrolled {
-  background-color: #202020 !important;
-  -webkit-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
-  color: white;
-}
-
-.navbar {
-  background-color: #202020 !important;
-  -webkit-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
-  color: white !important;
-}
-
 h6 {
   color: white;
   font-style: italic;

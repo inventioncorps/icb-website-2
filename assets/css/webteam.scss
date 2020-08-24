@@ -34,18 +34,6 @@ a {
     height: 3rem;
 }
 
-.navbar.scrolled {
-    background-color: #202020 !important;
-    transition: background-color 200ms linear;
-    color: white;
-}
-
-.navbar {
-    background-color: #202020 !important;
-    transition: background-color 200ms linear;
-    color: white !important;
-}
-
 h6 {
     color: white;
     font-style: italic;
@@ -143,6 +131,8 @@ ul > li > a.nav-link.blog {
 .navbar-toggler-icon {
     color: white;
 }
+
+//
 
 
 @media (min-width: 768px) {

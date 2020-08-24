@@ -1,3 +1,8 @@
+.banner {
+  background-image: url(../img/our-story/our-story-banner.png);
+  background-size: cover;
+}
+
 h4 {
   padding-top: 0;
 }
