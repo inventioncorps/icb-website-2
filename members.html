@@ -89,21 +89,23 @@
     </nav>
 
     <!-- Landing Banner -->
-
-    <div class="banner d-flex justify-content-center" id="banner-div">
-        <img src="assets/img/our-story/our-story-banner.png" class="banner-img center-img hidden-mobile" id="banner-img-desktop">
-        <img src="assets/img/members/skills-graph-mobile.svg" class="banner-img center-img visible-mobile really-centered" id="banner-img-mobile">
+        
+    <div id="banner-div">
+        <img src="assets/img/our-story/our-story-banner.png" class="banner-img center-img hidden-mobile"
+            id="banner-img-desktop">
+        <img src="assets/img/members/skills-graph-mobile.svg" class="banner-img center-img visible-mobile really-centered"
+            id="banner-img-mobile">
     </div>
-
+    
     <script>
         function bannerHeightFunction() {
-            var bannerHeight = (screen.height - 81).toString() + "px";
+            var bannerHeight = (window.innerHeight - 81).toString() + "px";
             document.getElementById("banner-div").style.height = bannerHeight;
             document.getElementById("banner-img-desktop").style.height = bannerHeight;
             document.getElementById("banner-img-mobile").style.height = bannerHeight;
         };
-        window.onload = bannerHeightFunction;
         window.onresize = bannerHeightFunction;
+        window.onload = bannerHeightFunction;
     </script>
 
 

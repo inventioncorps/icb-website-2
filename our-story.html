@@ -103,7 +103,7 @@
         
         <script>
             function bannerHeightFunction() {
-                var bannerHeight = (screen.height - 81).toString() + "px";
+                var bannerHeight = (window.innerHeight - 81).toString() + "px";
                 document.getElementById("banner-div").style.height = bannerHeight;
                 document.getElementById("banner-img-desktop").style.height = bannerHeight;
                 document.getElementById("banner-img-mobile").style.height = bannerHeight;
