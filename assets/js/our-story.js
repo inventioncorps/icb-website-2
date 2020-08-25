@@ -45,7 +45,7 @@ var myFullpage = new fullpage('#fullpage', {
 	//Navigation
 	menu: '#menu',
 	lockAnchors: false,
-	anchors: ['banner', 'content'],
+	anchors: ['banner', 'content', 'footer'],
 	navigation: false,
 
 	//Scrolling
@@ -74,7 +74,7 @@ var myFullpage = new fullpage('#fullpage', {
 	//Design
 	controlArrows: true,
 	verticalCentered: true,
-	sectionsColor: ['#FFFFFF', '#FFFFFF'],
+	sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF'],
 	// fixedElements: '#footer',
 	responsiveWidth: 0,
 	responsiveHeight: 0,
