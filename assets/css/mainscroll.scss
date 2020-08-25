@@ -168,6 +168,8 @@ hr {
 
 .dismissible {
     color:white;
+    text-align: center;
+    padding: 10px;
     font-size: 16px;
     line-height: 22px;
     position: relative;
@@ -181,14 +183,10 @@ hr {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0);
     box-sizing: border-box;
     display: block;
-    margin: 0 auto 20px auto;
-    padding: 10px;
     position: relative;
-
 }
 
 .dismissible button {
-    background: rgba(0, 0, 0, .4);
     border: 0;
     border-radius: 100%;
     color: white;
@@ -201,13 +199,16 @@ hr {
     right: 10px;
     position: absolute;
     top: 50%;
-    width: 24px;
+    width: 15px;
 }
 
 .dismissible button:focus {
     outline: none;
 }
 
+.close {
+    color: white;
+}
 
 
 
