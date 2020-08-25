@@ -31,7 +31,7 @@ body {
 .scene {
     width: 100%;
     height: auto;
-	transform: translateY(var(--translateY));
+    transform: translateY(var(--translateY));
     will-change: transform;
     bottom: 0;
 }
@@ -160,29 +160,67 @@ hr {
 }
 
 .featured {
-  background-image: url(../img/mainscroll/featured-bg.svg);
-  background-size: cover;
+    background-image: url(../img/mainscroll/featured-bg.svg);
+    background-size: cover;
 }
+
+// BLM DISMISSABLE BANNER
+
+.dismissible {
+    color:white;
+    font-size: 16px;
+    line-height: 22px;
+    position: relative;
+    overflow: hidden;
+    background-color: $black;
+}
+
+.dismissible span {
+    background:$black;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    position: relative;
+
+}
+
+.dismissible button {
+    background: rgba(0, 0, 0, .4);
+    border: 0;
+    border-radius: 100%;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 20px;
+    margin-top: -12px;
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    width: 24px;
+}
+
+.dismissible button:focus {
+    outline: none;
+}
+
+
 
 
 // MEDIA QUERIES
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-
-}
+@media (min-width: 576px) {}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-
-}
+@media (min-width: 768px) {}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-
-}
+@media (min-width: 992px) {}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-
-}
+@media (min-width: 1200px) {}
