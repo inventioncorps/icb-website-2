@@ -49,6 +49,34 @@ ul > li > a.nav-link.blog {
   color: white;
 }
 
+section {
+  background-color: #2D2D2D;
+}
+
+.carousel-multi-item .col-12 {
+  float: left;
+  width: 33%;
+  max-width: 100%;
+}
+
+.carousel-multi-item .card img {
+  border-radius: 3px;
+}
+
+.carousel {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.carousel-inner > .carousel-item {
+  -webkit-transition: -webkit-transform 1.5s ease-in-out !important;
+  -webkit-transition: -webkit-transform 2.2s ease-in-out !important;
+  transition: -webkit-transform 2.2s ease-in-out !important;
+  transition: transform 2.2s ease-in-out !important;
+  transition: transform 2.2s ease-in-out, -webkit-transform 2.2s ease-in-out !important;
+}
+
 button {
   border: none;
   background: none;
@@ -81,10 +109,16 @@ a {
 h1 {
   padding-top: 2rem;
   text-align: center;
+  font-weight: 600;
 }
 
 h4 {
   text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding-top: 0.4rem;
+  margin-bottom: 1.5rem;
 }
 
 .quote {
@@ -107,8 +141,8 @@ h4 {
   display: inline-block;
   position: relative;
   text-align: center;
-  width: 33vw;
-  height: 24vw;
+  width: 25vw;
+  height: 25vw;
 }
 
 .square:hover {
@@ -133,15 +167,17 @@ h4 {
   font-size: 1rem;
   font-weight: medium;
   color: #202020;
+  text-align: left;
   opacity: 0;
 }
 
 .large-text {
+  text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
   border: solid #202020;
   border-radius: 0.4em;
-  margin: 0rem 0.3rem;
+  padding: 0.4rem 0rem;
   background-color: #202020;
   color: white;
   width: 65%;
@@ -189,7 +225,7 @@ h4 {
 .byline-width {
   width: auto;
   padding-top: 2rem;
-  height: 55%;
+  height: 120%;
   padding-bottom: 0px;
   margin-bottom: 0px;
   padding-left: 0.5rem;
