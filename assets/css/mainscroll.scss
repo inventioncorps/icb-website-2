@@ -10,6 +10,16 @@ $grad-1: #99CCFF;
 $grad-2: #E58F7C;
 $grad-3: #FFD775;
 
+hr {
+    display: block;
+    margin: auto;
+    width: 20%;
+    height: 1.2px;
+    background-color: $black;
+    margin-bottom: 1.5rem;
+    margin-top: 0.75rem;
+}
+
 // LANDING
 
 body {
@@ -27,8 +37,8 @@ body {
 .scene {
     width: 100%;
     height: auto;
-	transform: translateY(var(--translateY));
-    will-change: transform;
+	// transform: translateY(var(--translateY));
+    // will-change: transform;
     z-index: -1;
     bottom: 0;
 }
@@ -40,7 +50,12 @@ body {
 }
 
 .about-content {
-    width: 50%;
+    width: 70%;
+    text-align: center;
+}
+
+.txt-box {
+    width: 60%;
 }
 
 p.about-txt {
@@ -53,7 +68,25 @@ p.about-txt {
     width: 100%;
     height: auto;
     top: -25vw;
-    z-index: 2;
+    z-index: -1;
+}
+
+#about-header {
+    color: white;
+    font-style: italic;
+    text-align: center;
+    padding-top: 0;
+}
+
+.about-hr {
+    background-color: white;
+    width: 40%;
+    height: 0.8px;
+}
+
+#pillars-img {
+    width: 100%;
+    transform: translateY(-80px);
 }
 
 // #static-landing-img {
@@ -80,7 +113,7 @@ p.about-txt {
 
 #title-box {
     // position: absolute;
-    z-index: 100;
+    z-index: 9999;
     transform: translate(0, 17vh);
     width: fit-content;
 }
@@ -158,16 +191,6 @@ p.about-txt {
 h1 {
     font-size: 2.9rem;
     font-weight: 600;
-}
-
-hr {
-    display: block;
-    margin: auto;
-    width: 20%;
-    height: 1.2px;
-    background-color: $black;
-    margin-bottom: 1.5rem;
-    margin-top: 0.75rem;
 }
 
 .view-text {
