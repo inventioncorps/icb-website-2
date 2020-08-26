@@ -207,6 +207,16 @@ footer {
     display: none !important;
 }
 
+.left-align {
+    display: flex;
+    justify-content: center;
+}
+
+.right-align {
+    display: flex;
+    justify-content: center;
+}
+
 // BUTTONS
 
 .button {
@@ -239,6 +249,23 @@ footer {
 
     .hidden-mobile {
         display: block !important;
+    }
+
+    .left-align {
+        display: inline;
+        padding-left:0;
+
+    }
+    
+    .right-align {
+        display: inline;
+        padding-right: 0;
+        align-items: right;
+    }
+
+    .right-align-self {
+        display: block;
+        margin-left: auto;
     }
 }
 
