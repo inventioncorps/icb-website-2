@@ -197,6 +197,24 @@ footer {
   display: none !important;
 }
 
+.left-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.right-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .button {
   text-align: center !important;
   display: inline-block;
@@ -220,6 +238,21 @@ footer {
   }
   .hidden-mobile {
     display: block !important;
+  }
+  .left-align {
+    display: inline;
+    padding-left: 0;
+  }
+  .right-align {
+    display: inline;
+    padding-right: 0;
+    -webkit-box-align: right;
+        -ms-flex-align: right;
+            align-items: right;
+  }
+  .right-align-self {
+    display: block;
+    margin-left: auto;
   }
 }
 
