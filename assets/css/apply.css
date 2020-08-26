@@ -122,6 +122,10 @@ button {
   transition: color 500ms ease;
 }
 
+.button {
+  padding: 0.75em 0.5em;
+}
+
 #popup-title {
   padding-top: 0;
   text-align: left;
