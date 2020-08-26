@@ -9,8 +9,10 @@ hr {
 }
 
 .navy-div {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
   background-color: #0D202E;
-  margin-bottom: 6rem;
+  height: 6rem;
 }
 
 .fp-tableCell {
@@ -210,6 +212,11 @@ h1 {
   color: white;
   text-shadow: 0.5px 0.5px 3px #787878;
   border-color: white;
+}
+
+#featured-button:hover {
+  color: #0D202E;
+  background-color: rgba(255, 255, 255, 0.65);
 }
 
 .alert {
