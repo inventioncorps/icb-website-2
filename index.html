@@ -37,7 +37,7 @@
 <body> 
     <!--BLM Banner-->
     <div class="blm-banner sticky-top alert alert-warning alert-dismissible fade show" role="alert" class="alert-link">
-        Black Lives Matter. View our statement and learn about how we’re taking action  <a class="blm-banner underline thicker" href="http://bit.ly/blmxicbstatement"> here</a>.
+        Black Lives Matter. View our statement and learn about how we’re taking action <a class="blm-banner underline thicker" href="http://bit.ly/blmxicbstatement">here</a>.
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -104,43 +104,47 @@
     <div id="fullpage">
 
         <!-- Landing Section -->
-        <div class="section landing fp-auto-height-responsive">
-            <div class="container" id="title-box">
-                <div class="container" id="we-are-text">
-                    <div class="white-shadow">
-                        We are
+        <div class="section landing fp-auto-height-responsive row">
+            <div class="d-flex justify-content-center">
+                <div class="container hidden-mobile" id="title-box">
+                    <div class="container" id="we-are-text">
+                        <div class="white-shadow">
+                            We are
+                        </div>
+                    </div>
+                    <div class="container" id="invention-text">
+                        <div class="large-title-text black-shadow">
+                            IN<span class="red">V</span>EN<span class="yellow">T</span>I<span class="green">O</span>N
+                        </div>
+                        <div class="large-title-text stroke-text overlap-text">
+                            INVENTION
+                        </div>
+                    </div>
+                    <div class="container" id="corps-text">
+                        <div class="large-title-text black-shadow">
+                            CO<span class="blue">R</span>PS
+                        </div>
+                        <div class="large-title-text stroke-text overlap-text">
+                            CORPS
+                        </div>
+                    </div>
+                    <div class="container" id="berkeley-ca-text">
+                        <div class="small-title-text white-shadow">
+                            Berkeley, CA
+                        </div>
                     </div>
                 </div>
-                <div class="container" id="invention-text">
-                    <div class="large-title-text black-shadow">
-                        IN<span class="red">V</span>EN<span class="yellow">T</span>I<span class="green">O</span>N
-                    </div>
-                    <div class="large-title-text stroke-text overlap-text">
-                        INVENTION
-                    </div>
-                </div>
-                <div class="container" id="corps-text">
-                    <div class="large-title-text black-shadow">
-                        CO<span class="blue">R</span>PS
-                    </div>
-                    <div class="large-title-text stroke-text overlap-text">
-                        CORPS
-                    </div>
-                </div>
-                <div class="container" id="berkeley-ca-text">
-                    <div class="small-title-text white-shadow">
-                        Berkeley, CA
-                    </div>
-                </div>
+                <img class="visible-mobile" src="assets/img/mainscroll/mobile-title.svg" id="mobile-title" />
             </div>
             <div class="img-container top-scene">
-                <img class="scene top-scene-img" data-modifier="150" src="assets/img/mainscroll/top-scene.png">
+                <img class="scene top-scene-img hidden-mobile" data-modifier="150" src="assets/img/mainscroll/top-scene.png">
+                <img class="scene top-scene-img visible-mobile" data-modifier="150" src="assets/img/mainscroll/top-scene-mobile.png">
             </div>
             <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
             <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
 
             <!-- About Section -->
-            <div class="about">
+            <div class="about navy-div">
                 <div class="about-content container">
                     <h2 id ="about-header">Inventing ways to make a better world.</h2>
                     <hr class="about-hr">
@@ -153,10 +157,12 @@
                         </p>
                     </div>
                     <hr class="about-hr">
-                    <img id="pillars-img" src="assets/img/mainscroll/four-pillars.svg" />
+                    <img id="pillars-img" class="hidden-mobile" src="assets/img/mainscroll/four-pillars.svg" />
+                    <img id="pillars-img" class="visible-mobile" src="assets/img/mainscroll/four-pillars-mobile.svg" />
                 </div>
                 <div class="about-bg img-container">
-                    <img class="scene" data-modifier="0" src="assets/img/mainscroll/lower-island.png">
+                    <img class="scene hidden-mobile" data-modifier="0" src="assets/img/mainscroll/lower-island.png">
+                    <img class="scene visible-mobile" data-modifier="0" src="assets/img/mainscroll/lower-island-mobile.png">
                 </div>
             </div>
 
@@ -165,7 +171,7 @@
             <!-- OUR STORY -->
             <section class="section story fp-auto-height-responsive">
                 <div class="container animated fadeIn">
-                    <div class="row align-items-center">
+                    <div class="row align-items-center less-padding">
                         <div class="col-12 col-lg-6 align-self-center text-center">
                         <h1>About Us</h1>
                         <hr>
@@ -175,7 +181,7 @@
                         <div class="button" onclick="window.location.href='our-story.html';">Our Story</div>
                         </div>
                         <div class="col-12 col-lg-6 d-flex justify-content-center">
-                            <img src="assets/img/mainscroll/view-1.svg" />
+                            <img src="assets/img/mainscroll/view-1.svg" class="blob-person"/>
                         </div>
                     </div>
                 </div>
@@ -183,10 +189,10 @@
 
             <!-- MEMBERS -->
             <section class="section members fp-auto-height-responsive">
-                <div class="container animated fadeIn">
+                <div class="container animated fadeIn less-padding">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-6 d-flex justify-content-center">
-                            <img src="assets/img/mainscroll/view-2.svg" />
+                            <img src="assets/img/mainscroll/view-2.svg" class="blob-person"/>
                         </div>
                         <div class="col-12 col-lg-6 align-self-center text-center">
                         <h1>Who are we?</h1>
@@ -202,7 +208,7 @@
 
             <!-- PROJECTS -->
             <section class="section projects fp-auto-height-responsive">
-                <div class="container animated fadeIn">
+                <div class="container animated fadeIn less-padding">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-6 align-self-center text-center">
                         <h1>Our Work</h1>
@@ -213,7 +219,7 @@
                         <div class="button" onclick="window.location.href='projects.html';">Projects</div>
                         </div>
                         <div class="col-12 col-lg-6 d-flex justify-content-center">
-                            <img src="assets/img/mainscroll/view-3.svg" />
+                            <img src="assets/img/mainscroll/view-3.svg" class="blob-person"/>
                         </div>
                     </div>
                 </div>
