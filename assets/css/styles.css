@@ -124,6 +124,11 @@ a.nav-link.blog:hover {
 .navbar-toggler {
   border-style: none;
   padding-top: 15px;
+  color: hotpink;
+}
+
+.navbar-toggler:focus {
+  outline: none;
 }
 
 footer {
