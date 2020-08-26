@@ -52,6 +52,10 @@ a:hover {
   margin: 0 15vw;
 }
 
+.top-margin {
+  margin-top: 1rem;
+}
+
 .really-centered {
   display: block;
   margin-left: auto;
