@@ -20,6 +20,7 @@ $(document).ready(function () {
     // }).parent().addClass('active');
 });
 
+
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
     $('#navbarNav a').each(function () {

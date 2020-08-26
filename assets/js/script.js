@@ -45,6 +45,18 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
   $(this).ekkoLightbox();
 });
 
+$('#open-image').click(function (e) {
+	e.preventDefault();
+	$(this).ekkoLightbox();
+});
+
+
+var closeImage = new fullpage('#close-image', {
+	alwaysShowClose: true,
+});
+
+
+
 // Using basicScroll to create parallax scrolling on landing
 document.querySelectorAll('.scene').forEach((elem) => {
   
