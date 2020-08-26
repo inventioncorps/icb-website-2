@@ -293,11 +293,11 @@ border: 1px solid #FFFFFF;
 
 <!-- The four columns -->
 <div class="row">
-  <template>
+  <!-- <template id="mytablerow">
     <div class="column">
       <img src="assets/img/art/logo-1.png" alt="Nature" style="width:100%" onclick="myFunction(this);">
     </div>
-  </template>
+  </template> -->
   <div class="column">
     <img src="assets/img/art/logo-1.png" alt="Nature" style="width:100%" onclick="myFunction(this);">
   </div>
@@ -310,20 +310,64 @@ border: 1px solid #FFFFFF;
   <div class="column">
     <img src="assets/img/art/logo-4.png" alt="Lights" style="width:100%" onclick="myFunction(this);">
   </div>
+
+  <!-- <button onclick="showContent()">Use me</button> -->
+<div id="container"></div>
+<script>
+  function useIt() {
+    var content = document.querySelector('template').content;
+    // Update something in the template DOM.
+    var span = content.querySelector('span');
+    span.textContent = parseInt(span.textContent) + 1;
+    document.querySelector('#container').appendChild(
+        document.importNode(content, true));
+  }
+</script>
+
+<template>
+  <div>Template used: <span>0</span></div>
+  <script>alert('Thanks!')</script>
+</template>
 </div>
 
 <script>
-  showContent();
   var images = ["assets/img/art/logo-1.png", "assets/img/art/logo-2.png", "assets/img/art/logo-3.png", "assets/img/art/logo-4.png"];
+  var title = ["Nature", "Snow", "Mountains", "Lights"];
+  
   function showContent() {
-    var temp, item, a, i;
-  temp = document.getElementsByTagName("template")[0];
-  item = temp.content.querySelector("div");
-  for (i = 0; i < myArr.length; i++) {
-    a = document.importNode(item, true);
-    a.textContent += myArr[i];
-    document.body.appendChild(a);
+    var temp, item, a;
+    temp = document.getElementsByTagName("template")[0]
+
+    //modify row data
+    item = temp.content.querySelector("div");
+    for (i = 0; i < images.length; i++) {
+      a = document.importNode(item, true);
+      // var clon = t.content.cloneNode(true);
+      a.getElementsByTagName("img").src = images[i];
+      a.getElementsByTagName("img").alt = title[i];
+      t.appendChild(clon);
+    }
+    
+
+
   }
+  
+  
+  // function showContent() {
+  //   var temp, item, a, i;
+  // temp = document.getElementsByTagName("template")[0];
+  // var t = temp.content.querySelector('div');
+  // for (i = 0; i < myArr.length; i++) {
+  //   a = document.importNode(t, true);
+  //   document.body.appendChild(a);
+  //   // Populate the src at runtime.
+  //   a.content.querySelector('img').src = images[i];
+  //   a.content.querySelector('img').alt = title[i];
+
+  //   var clone = document.importNode(a.content, true);
+  //   document.body.appendChild(clone);
+  // }
+  // function showContent();
 </script>
 
 
@@ -367,29 +411,40 @@ border: 1px solid #FFFFFF;
 
 <div class="donate">     
   <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
-<input type="hidden" name="cmd" value="_s-xclick">
-<table>
-<tr><td><input type="hidden" name="on0" value="Donation Amount">Donation Amount</td></tr><tr><td><select name="os0">
-	<option value="Donate">Donate $5.00 USD</option>
-	<option value="Donate">Donate $10.00 USD</option>
-	<option value="Donate">Donate $1,000.00 USD</option>
-</select> </td></tr>
-<tr><td><input type="hidden" name="on1" value="Organization">Organization</td></tr><tr><td><select name="os1">
-	<option value="RYSE">RYSE </option>
-	<option value="Oakland LGBTQ">Oakland LGBTQ </option>
-	<option value="Techbridge Girls">Techbridge Girls </option>
-</select> </td></tr>
-<tr><td><input type="hidden" name="on2" value="Art piece">Art piece</td></tr><tr><td><select name="os2">
-	<option value="Option 1">Option 1 </option>
-	<option value="Option 2">Option 2 </option>
-	<option value="Option 3">Option 3 </option>
-</select> </td></tr>
-</table>
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <table>
+    <tr><td><input type="hidden" name="on0" value="Donation Amount">Donation Amount</td></tr><tr><td><select name="os0">
+      <option value="Donate">Donate $5.00 USD</option>
+      <option value="Donate">Donate $10.00 USD</option>
+      <option value="Donate">Donate $15.00 USD</option>
+      <option value="Donate">Donate $20.00 USD</option>
+      <option value="Donate">Donate $25.00 USD</option>
+      <option value="Donate">Donate $30.00 USD</option>
+      <option value="Donate">Donate $35.00 USD</option>
+      <option value="Donate">Donate $40.00 USD</option>
+      <option value="Donate">Donate $45.00 USD</option>
+      <option value="Donate">Donate $100.00 USD</option>
+    </select> </td></tr>
+    <tr><td><input type="hidden" name="on1" value="Non-profit">Non-profit</td></tr><tr><td><select name="os1">
+      <option value="Afrotectopia">Afrotectopia </option>
+      <option value="Oakland LGBTQ Center">Oakland LGBTQ Center </option>
+      <option value="Techbridge Girls">Techbridge Girls </option>
+      <option value="Roots Community Center">Roots Community Center </option>
+      <option value="TGI Justice">TGI Justice </option>
+      <option value="RYSE Center">RYSE Center </option>
+    </select> </td></tr>
+    <tr><td><input type="hidden" name="on2" value="Artwork">Artwork</td></tr><tr><td><select name="os2">
+      <option value="Space Mountain">Space Mountain </option>
+      <option value="Option 2">Option 2 </option>
+      <option value="Option 3">Option 3 </option>
+    </select> </td></tr>
+    <tr><td><input type="hidden" name="on3" value="How did you hear about us?">How did you hear about us?</td></tr><tr><td><input type="text" name="os3" maxlength="200"></td></tr>
+    </table>
+    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+    
 
 
 </div>
@@ -407,6 +462,7 @@ border: 1px solid #FFFFFF;
   expandImg.src = "assets/img/art/logo-1.png";
   imgText.innerHTML = "Nature";
   expandImg.parentElement.style.display = "block";
+  // showContent();
 
 function myFunction(imgs) {
   var expandImg = document.getElementById("expandedImg");
