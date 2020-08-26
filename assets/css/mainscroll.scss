@@ -112,10 +112,10 @@ p.about-txt {
 // LANDING TEXT OVERLAP
 
 #title-box {
-    // position: absolute;
-    z-index: 9999;
+    position: absolute;
     transform: translate(0, 17vh);
     width: fit-content;
+    display: inline;
 }
 
 .large-title-text {

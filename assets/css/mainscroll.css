@@ -78,12 +78,13 @@ p.about-txt {
 }
 
 #title-box {
-  z-index: 9999;
+  position: absolute;
   -webkit-transform: translate(0, 17vh);
           transform: translate(0, 17vh);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  display: inline;
 }
 
 .large-title-text {
