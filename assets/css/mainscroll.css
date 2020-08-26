@@ -78,6 +78,7 @@ p.about-txt {
 }
 
 #title-box {
+  position: absolute;
   z-index: 9999;
   -webkit-transform: translate(0, 17vh);
           transform: translate(0, 17vh);

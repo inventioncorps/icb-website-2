@@ -37,11 +37,11 @@ body {
 .scene {
     width: 100%;
     height: auto;
-	// transform: translateY(var(--translateY));
-    // will-change: transform;
     z-index: -1;
     bottom: 0;
 }
+
+
 
 .about {
     position: relative;
@@ -112,7 +112,7 @@ p.about-txt {
 // LANDING TEXT OVERLAP
 
 #title-box {
-    // position: absolute;
+    position: absolute;
     z-index: 9999;
     transform: translate(0, 17vh);
     width: fit-content;
