@@ -4,6 +4,7 @@ $red: #E06B65;
 $yellow: #FEEB96;
 $green: #99CC99;
 $blue: #99CCFF;
+$navy: #0D202E;
 $gray: #787878;
 $black: #202020;
 $grad-1: #99CCFF;
@@ -20,6 +21,15 @@ hr {
     margin-top: 0.75rem;
 }
 
+.navy-div{
+    background-color: $navy;
+    margin-bottom: 6rem;
+}
+
+.fp-tableCell {
+    padding-top: 0;
+}
+
 // LANDING
 
 body {
@@ -32,6 +42,7 @@ body {
     position: relative;
     width: 100%;
     height: auto;
+    margin: 0;
 }
 
 .scene {
@@ -49,13 +60,12 @@ body {
     width: 100%;
 }
 
-.about-content {
-    width: 70%;
-    text-align: center;
+.txt-box {
+    width: 90%;
 }
 
-.txt-box {
-    width: 60%;
+.about-content {
+    text-align: center;
 }
 
 p.about-txt {
@@ -86,28 +96,12 @@ p.about-txt {
 
 #pillars-img {
     width: 100%;
-    transform: translateY(-80px);
 }
 
-// #static-landing-img {
-//     width: 100%;
-//     height: auto;
-//     z-index: -2;
-// }
-
-// .clouds {
-//     width: 100%;
-//     height: auto;
-//     z-index: -1;
-// }
-
-// .landscape {
-//     width: 100%;
-//     height: auto;
-//     position: absolute;
-//     z-index: 1;
-// }
-
+#mobile-title {
+    position: absolute;
+    transform: translate(0, 17vh);
+}
 
 // LANDING TEXT OVERLAP
 
@@ -201,6 +195,12 @@ h1 {
     margin-right: 10%
 }
 
+.blob-person {
+    width: 75vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 .featured {
     background-image: url(../img/mainscroll/featured-bg.svg);
     background-size: cover;
@@ -220,6 +220,7 @@ h1 {
     border-color: white;
 }
 
+
 // BLM DISMISSABLE BANNER
 
 .alert{
@@ -236,16 +237,39 @@ h1 {
     font-weight: 500;
 }
 
+
 // MEDIA QUERIES
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+
+    #pillars-img {
+        transform: translateY(-80px);
+    }
+
+}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+
+
+    .txt-box {
+        width: 60%;
+    }
+
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+
+
+}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+
+
+}

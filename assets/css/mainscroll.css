@@ -8,6 +8,15 @@ hr {
   margin-top: 0.75rem;
 }
 
+.navy-div {
+  background-color: #0D202E;
+  margin-bottom: 6rem;
+}
+
+.fp-tableCell {
+  padding-top: 0;
+}
+
 body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -21,6 +30,7 @@ body {
   position: relative;
   width: 100%;
   height: auto;
+  margin: 0;
 }
 
 .scene {
@@ -36,13 +46,12 @@ body {
   width: 100%;
 }
 
-.about-content {
-  width: 70%;
-  text-align: center;
+.txt-box {
+  width: 90%;
 }
 
-.txt-box {
-  width: 60%;
+.about-content {
+  text-align: center;
 }
 
 p.about-txt {
@@ -73,8 +82,12 @@ p.about-txt {
 
 #pillars-img {
   width: 100%;
-  -webkit-transform: translateY(-80px);
-          transform: translateY(-80px);
+}
+
+#mobile-title {
+  position: absolute;
+  -webkit-transform: translate(0, 17vh);
+          transform: translate(0, 17vh);
 }
 
 #title-box {
@@ -174,6 +187,12 @@ h1 {
   margin-right: 10%;
 }
 
+.blob-person {
+  width: 75vw;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .featured {
   background-image: url(../img/mainscroll/featured-bg.svg);
   background-size: cover;
@@ -205,5 +224,18 @@ h1 {
 
 .thicker {
   font-weight: 500;
+}
+
+@media (min-width: 576px) {
+  #pillars-img {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+}
+
+@media (min-width: 768px) {
+  .txt-box {
+    width: 60%;
+  }
 }
 /*# sourceMappingURL=mainscroll.css.map */
