@@ -138,12 +138,14 @@ h4 {
 
 .art-square {
   background-color: #202020;
-  display: inline-block;
+  display: block;
   position: relative;
   text-align: center;
   width: 25vw;
   height: 25vw;
   margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .square:hover {
@@ -165,7 +167,7 @@ h4 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 1rem;
+  font-size: 0.5rem;
   font-weight: medium;
   color: #202020;
   text-align: left;
@@ -193,6 +195,20 @@ h4 {
 }
 
 .organization:hover {
+  opacity: 0.2;
+}
+
+.artist {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+.artist:hover {
   opacity: 0.2;
 }
 
@@ -265,6 +281,7 @@ footer {
 @media (min-width: 992px) {
   .blurb {
     opacity: 1;
+    font-size: 1rem;
   }
   .blurb:hover {
     z-index: 1;
@@ -272,6 +289,13 @@ footer {
   .square {
     height: 20vw;
     width: 25vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .art-square {
+    height: 18vw;
+    width: 18vw;
   }
 }
 /*# sourceMappingURL=art.css.map */
