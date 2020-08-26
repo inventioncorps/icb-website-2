@@ -151,50 +151,17 @@ hr {
   background-size: cover;
 }
 
-.dismissible {
+.alert {
+  margin: 0px;
+}
+
+.blm-banner {
   color: white;
-  text-align: center;
-  padding: 10px;
-  font-size: 16px;
-  line-height: 22px;
-  position: relative;
-  overflow: hidden;
   background-color: #202020;
-  cursor: pointer;
+  text-align: center;
 }
 
-.dismissible span {
-  background: #202020;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0);
-          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: block;
-  position: relative;
-}
-
-.dismissible button {
-  border: 0;
-  border-radius: 100%;
-  color: white;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
-  height: 24px;
-  line-height: 20px;
-  margin-top: -12px;
-  right: 10px;
-  position: absolute;
-  top: 50%;
-  width: 15px;
-}
-
-.dismissible button:focus {
-  outline: none;
-}
-
-.close {
-  color: white;
+.thicker {
+  font-weight: 500;
 }
 /*# sourceMappingURL=mainscroll.css.map */
