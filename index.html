@@ -35,6 +35,7 @@
 </head>
 
 <body> 
+<<<<<<< Updated upstream
     <!--BLM Banner-->
     <div class="blm-banner sticky-top alert alert-warning alert-dismissible fade show" role="alert" class="alert-link">
         Black Lives Matter. View our statement and learn about how we’re taking action  <a class="blm-banner underline thicker" href="http://bit.ly/blmxicbstatement"> here</a>.
@@ -42,6 +43,14 @@
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
+=======
+
+    <!-- BLM Dismissable Banner -->
+        <div class="sticky-top">
+            <a href="http://bit.ly/blmxicbstatement" target="_blank"> 
+            <div data-component="dismissible-item" data-type="info" data-value="Black Lives Matter. Click to view our statement and learn about how we’re taking action."></div>
+        </div>
+>>>>>>> Stashed changes
 
     <!-- Navigation Bar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light">
@@ -104,7 +113,7 @@
     <div id="fullpage">
 
         <!-- Landing Section -->
-        <div class="section landing d-flex justify-content-center">
+        <!-- <div class="section landing d-flex justify-content-center">
 
             <div class="container" id="title-box">
                 <div class="container" id="we-are-text">
@@ -133,7 +142,7 @@
                         Berkeley, CA
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- <div class="img-container">
                 <img id="static-landing-img" src="assets/img/mainscroll/static-landing.svg">
@@ -148,7 +157,7 @@
             <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
             <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script> -->
 
-            <div class = "img-container">
+            <!-- <div class = "img-container">
                 <img class="scene clouds" data-modifier="85" src="assets/img/mainscroll/background.png">
             </div>
 
@@ -158,6 +167,60 @@
             <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
             <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
            
+        </div> -->
+
+        <!-- Landing Section -->
+        <div class="section landing fp-auto-height-responsive">
+            <div class="container" id="title-box">
+                <div class="container" id="we-are-text">
+                    <div class="white-shadow">
+                        We are
+                    </div>
+                </div>
+                <div class="container" id="invention-text">
+                    <div class="large-title-text black-shadow">
+                        IN<span class="red">V</span>EN<span class="yellow">T</span>I<span class="green">O</span>N
+                    </div>
+                    <div class="large-title-text stroke-text overlap-text">
+                        INVENTION
+                    </div>
+                </div>
+                <div class="container" id="corps-text">
+                    <div class="large-title-text black-shadow">
+                        CO<span class="blue">R</span>PS
+                    </div>
+                    <div class="large-title-text stroke-text overlap-text">
+                        CORPS
+                    </div>
+                </div>
+                <div class="container" id="berkeley-ca-text">
+                    <div class="small-title-text white-shadow">
+                        Berkeley, CA
+                    </div>
+                </div>
+            </div>
+            <div class = "img-container">
+                <img class="scene" data-modifier="150" src="assets/img/mainscroll/top-scene.png">
+            </div>
+            <script src="https://s.electerious.com/basicScroll/dist/basicScroll.min.js"></script>
+            <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+            <!-- About Section -->
+            <div class="about">
+                <div class="about-content container">
+                    <h2 id ="about-header">Inventing ways to make a better world.</h2>
+                    <p class="about-txt">
+                        We are Invention Corps of Berkeley. As a collective,
+                        we are an interdisciplinary group of students driven to create meaningful global impact
+                        through human-centered design. We partner with people and organizations with the objective
+                        of creating tangible solutions in the realms of society, health, poverty, and the environment.
+                    </p>
+                </div>
+                <div class="about-bg img-container">
+                    <img class="scene" data-modifier="0" src="assets/img/mainscroll/lower-island.png">
+                </div>
+            </div>
+
         </div>
 
             <!-- OUR STORY -->
@@ -222,8 +285,8 @@
                 <div class="container animated fadeIn">
                     <div class="d-flex justify-content-center">
                         <div class="text-center">
-                            <h1 id="feature-title">Fall 2020 Recruitment</h1>
-                            <div class="button" onclick="window.location.href='apply.html';">Learn More</div>
+                            <h1 id="featured-title">Fall 2020 Recruitment</h1>
+                            <div id="featured-button" class="button" onclick="window.location.href='apply.html';">Learn More</div>
                         </div>
                     </div>
                 </div>

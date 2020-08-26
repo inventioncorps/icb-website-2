@@ -19,7 +19,41 @@ body {
 
 .landing {
     background: linear-gradient($grad-1, $grad-2, $grad-3) no-repeat;
+    position: relative;
+    width: 100%;
     height: auto;
+}
+
+.scene {
+    width: 100%;
+    height: auto;
+	transform: translateY(var(--translateY));
+    will-change: transform;
+    z-index: -1;
+    bottom: 0;
+}
+
+.about {
+    position: relative;
+    margin-top: 2vw;
+    width: 100%;
+}
+
+.about-content {
+    width: 50%;
+}
+
+p.about-txt {
+    text-align: center;
+    color: white;
+}
+
+.about-bg {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -25vw;
+    z-index: 2;
 }
 
 // #static-landing-img {
@@ -28,26 +62,18 @@ body {
 //     z-index: -2;
 // }
 
-.scene {
-    width: 100%;
-    height: auto;
-    transform: translateY(var(--translateY));
-    will-change: transform;
-    bottom: 0;
-}
+// .clouds {
+//     width: 100%;
+//     height: auto;
+//     z-index: -1;
+// }
 
-.clouds {
-    width: 100%;
-    height: auto;
-    z-index: -1;
-}
-
-.landscape {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    z-index: 1;
-}
+// .landscape {
+//     width: 100%;
+//     height: auto;
+//     position: absolute;
+//     z-index: 1;
+// }
 
 
 // LANDING TEXT OVERLAP
@@ -152,16 +178,23 @@ hr {
     margin-right: 10%
 }
 
-#feature-title {
+.featured {
+    background-image: url(../img/mainscroll/featured-bg.svg);
+    background-size: cover;
+}
+
+#featured-title {
     font-size: 3.1rem;
     color: white;
     text-shadow: 2px 3px 10px $gray;
     font-weight: 700;
 }
 
-.featured {
-    background-image: url(../img/mainscroll/featured-bg.svg);
-    background-size: cover;
+#featured-button {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    text-shadow: 0.5px 0.5px 3px $gray;
+    border-color: white;
 }
 
 // BLM DISMISSABLE BANNER

@@ -8,6 +8,8 @@ body {
 .landing {
   background: -webkit-gradient(linear, left top, left bottom, from(#99CCFF), color-stop(#E58F7C), to(#FFD775)) no-repeat;
   background: linear-gradient(#99CCFF, #E58F7C, #FFD775) no-repeat;
+  position: relative;
+  width: 100%;
   height: auto;
 }
 
@@ -17,20 +19,31 @@ body {
   -webkit-transform: translateY(var(--translateY));
           transform: translateY(var(--translateY));
   will-change: transform;
+  z-index: -1;
   bottom: 0;
 }
 
-.clouds {
+.about {
+  position: relative;
+  margin-top: 2vw;
   width: 100%;
-  height: auto;
-  z-index: -1;
 }
 
-.landscape {
+.about-content {
+  width: 50%;
+}
+
+p.about-txt {
+  text-align: center;
+  color: white;
+}
+
+.about-bg {
+  position: absolute;
   width: 100%;
   height: auto;
-  position: absolute;
-  z-index: 1;
+  top: -25vw;
+  z-index: 2;
 }
 
 #title-box {
@@ -139,16 +152,23 @@ hr {
   margin-right: 10%;
 }
 
-#feature-title {
+.featured {
+  background-image: url(../img/mainscroll/featured-bg.svg);
+  background-size: cover;
+}
+
+#featured-title {
   font-size: 3.1rem;
   color: white;
   text-shadow: 2px 3px 10px #787878;
   font-weight: 700;
 }
 
-.featured {
-  background-image: url(../img/mainscroll/featured-bg.svg);
-  background-size: cover;
+#featured-button {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  text-shadow: 0.5px 0.5px 3px #787878;
+  border-color: white;
 }
 
 .alert {
