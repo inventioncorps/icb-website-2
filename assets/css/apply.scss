@@ -37,16 +37,20 @@ h5 {
   padding-bottom: 3rem;
 }
 
+.some-padding {
+	padding-bottom: 1.5rem;
+}
+
 .bottom-padding {
   padding-bottom: 0.5rem;
 }
 
-.center {
-  text-align: center;
+.remove-padding {
+	padding: 0;
 }
 
-.img-center {
-  vertical-align: middle;
+.center {
+  text-align: center;
 }
 
 .challenge-container {
@@ -61,12 +65,13 @@ h5 {
 hr {
   width: 85%;
   margin-left: 10%;
+  margin-top: 2rem;
   height: 0.5px;
   background-color: $black;
 }
 
 #invite {
-  margin-left: 30%;
+  margin-left: 25%;
 }
 
 button {
@@ -102,12 +107,13 @@ button {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	padding: 3rem;
-	width: 70%;
-	height: auto;
+	width: 80%;
+	height: 70%;
+	overflow: auto;
 	background: white;
 	border-radius: 5px;
-  font-size: .8rem;
-  text-align: left;
+  	font-size: .8rem;
+  	text-align: left;
 
 	.popup-close {
 		position: absolute;
@@ -121,7 +127,7 @@ button {
 		&:hover {
 			color: white;
 			transition: color 500ms ease;
-    }
+    	}
 	}
 }
 
@@ -129,3 +135,38 @@ button {
   padding-top: 0;
   text-align: left;
 }
+
+#prompt-title {
+	margin-bottom: 0;
+	padding-top: 1rem;
+}
+
+#gift {
+	padding: 0;
+	vertical-align: middle;
+}
+
+#prompt-text {
+	margin-bottom: 0;
+}
+
+// MEDIA QUERIES
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+	.popup-box {
+		width: 70%;
+		height: auto;
+	}
+	
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

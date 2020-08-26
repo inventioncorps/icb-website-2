@@ -189,7 +189,7 @@ h4 {
     font-weight: medium;
     color: $black;
     text-align: left;
-    opacity: 0;
+    opacity: 0; 
 }
 
 .large-text {
@@ -242,7 +242,7 @@ h4 {
 .byline-img {
     width: auto;
     padding-top: 1.4rem;
-    height: 120%;
+    height: 4rem;
     padding-bottom: 0px;
     margin-bottom: 0px;
     padding-left: 0.5rem;
@@ -252,6 +252,7 @@ h4 {
     padding-top: 2.1rem;
     padding-left: 0.8rem;
     font-size: 0.8rem;
+    width: 100%;
 }
 
 .button {

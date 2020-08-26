@@ -27,16 +27,20 @@ h5 {
   padding-bottom: 3rem;
 }
 
+.some-padding {
+  padding-bottom: 1.5rem;
+}
+
 .bottom-padding {
   padding-bottom: 0.5rem;
 }
 
-.center {
-  text-align: center;
+.remove-padding {
+  padding: 0;
 }
 
-.img-center {
-  vertical-align: middle;
+.center {
+  text-align: center;
 }
 
 .challenge-container {
@@ -51,12 +55,13 @@ h5 {
 hr {
   width: 85%;
   margin-left: 10%;
+  margin-top: 2rem;
   height: 0.5px;
   background-color: #202020;
 }
 
 #invite {
-  margin-left: 30%;
+  margin-left: 25%;
 }
 
 button {
@@ -92,8 +97,9 @@ button {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 3rem;
-  width: 70%;
-  height: auto;
+  width: 80%;
+  height: 70%;
+  overflow: auto;
   background: white;
   border-radius: 5px;
   font-size: .8rem;
@@ -119,5 +125,26 @@ button {
 #popup-title {
   padding-top: 0;
   text-align: left;
+}
+
+#prompt-title {
+  margin-bottom: 0;
+  padding-top: 1rem;
+}
+
+#gift {
+  padding: 0;
+  vertical-align: middle;
+}
+
+#prompt-text {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .popup-box {
+    width: 70%;
+    height: auto;
+  }
 }
 /*# sourceMappingURL=apply.css.map */
