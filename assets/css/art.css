@@ -4,18 +4,446 @@ body {
   color: white;
 }
 
+.challenge-container {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #202020;
+  position: center;
+  width: 75%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #202020;
+  padding: 20px;
+  text-align: center;
+}
+
+.popup-bg {
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.popup-bg:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-box {
+  overflow: auto;
+  position: relative;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 3rem;
+  width: 70%;
+  height: auto;
+  background: #202020;
+  border-radius: 5px;
+  font-size: .8rem;
+  text-align: left;
+}
+
+.table {
+  padding: 15px;
+  font-size:14px;
+  align-items:center;
+  position:center;
+}
+
+.popup-box .popup-close {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  z-index: 999;
+  color: #202020;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.popup-box .popup-close:hover {
+  color: white;
+  -webkit-transition: color 500ms ease;
+  transition: color 500ms ease;
+}
+
+
+#popup-title {
+  padding-top: 0;
+  text-align: left;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: rgb(230, 203, 203);
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 40%;
+  padding-left: 30px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 40%;
+  padding-left: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.biocontainer {
+  padding-top: 30%;
+  padding-left: 30px;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 30px;
+}
+
+.descriptioncontainer {
+  padding-left:20%;
+  padding-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* The donation description and button */
+.donate {
+   align-content: center;
+   padding: 20px;
+   font-family: 'Montserrat', sans-serif;
+   position:center;
+}
+
+.normaltext {
+font-size: 16px;
+line-height: 150%;
+padding-top: 30px;
+padding-bottom: 30px;
+
+}
+
+.headertext {
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+
+}
+
+.titletext {
+font-style: italic;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+}
+
+.donationtext {
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+}
+
+.descriptionboldtext {
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+}
+
+.descriptiontext {
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+}
+
+.instructiontext {
+font-style: italic;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+}
+
+.meettheartisttext {
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 32px;
+}
+
+.artistpic{
+    padding-top: 30px;
+    width:10%;
+    float: left;
+}
+
+.artistintro iframe{
+   width:100%;
+}
+.artistdesc {
+    margin-top:5%;
+    width:80%;
+    margin-left: 5%;
+    float: left;
+}
+.clearfix{
+    clear:both
+}
+
+.profilepic {
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.line-break {
+
+position: absolute;
+height: 0px;
+width:90%;
+padding-left: 30;
+
+border: 1px solid #FFFFFF;
+}
+
+.navbar.scrolled {
+  background-color: #202020 !important;
+  color: white;
+}
+
+nav {
+  background-color: #202020;
+  color: white;
+}
+
+ul > li > a.nav-link.blog {
+  color: white !important;
+}
+
+#navbarDropdownMenuLink.nav-link.dropdown-toggle {
+  color: white;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+  background-color: #202020;
+  color: white;
+}
+
+#navbarDropdownMenuLink.nav-link.dropdown-toggle:hover {
+  background-color: #202020;
+}
+
+.dropdown-menu {
+  background-color: #202020;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  color: #787878 !important;
+  opacity: 1;
+  background-color: #202020;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+section {
+  background-color: #2D2D2D;
+}
+
+.carousel-multi-item .col-12 {
+  float: left;
+  width: 33%;
+  max-width: 100%;
+}
+
+.carousel-multi-item .card img {
+  border-radius: 3px;
+}
+
+.carousel {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.carousel-inner > .carousel-item {
+  -webkit-transition: -webkit-transform 1.5s ease-in-out !important;
+  -webkit-transition: -webkit-transform 2.2s ease-in-out !important;
+  transition: -webkit-transform 2.2s ease-in-out !important;
+  transition: transform 2.2s ease-in-out !important;
+  transition: transform 2.2s ease-in-out, -webkit-transform 2.2s ease-in-out !important;
+}
+
+button {
+  border: none;
+  background: none;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+#more {
+  display: none;
+}
+
+#read-more {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#read-more:hover {
+  color: #787878;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+}
+
+.justify {
+  text-align: justify;
+}
+
 h1 {
   padding-top: 2rem;
   text-align: center;
+  font-weight: 600;
 }
 
 h4 {
   text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding-top: 0.4rem;
+  margin-bottom: 1.5rem;
 }
 
 .quote {
   text-align: left;
   color: #202020;
+}
+
+.square {
+  background-color: #202020;
+  border-radius: 5%;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 33vw;
+  height: 28vw;
+}
+
+.art-square {
+  background-color: #202020;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 25vw;
+  height: 25vw;
+  margin-top: 4rem;
+}
+
+.square:hover {
+  background-color: #DADADA;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.art-square:hover {
+  background-color: #DADADA;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.blurb {
+  position: absolute;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1rem;
+  font-weight: medium;
+  color: #202020;
+  text-align: left;
+  opacity: 0;
+}
+
+.large-text {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: solid #202020;
+  border-radius: 0.4em;
+  padding: 0.4rem 0rem;
+  background-color: #202020;
+  color: white;
+  width: 65%;
+}
+
+.organization {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.organization:hover {
+  opacity: 0.2;
 }
 
 .overlap {
@@ -45,27 +473,61 @@ h4 {
   background-color: #99CCFF;
 }
 
-.art-tile {
+.byline-img {
   width: auto;
-  height: 20%;
-  z-index: 2;
-}
-
-.byline-width {
-  width: auto;
-  padding-top: 2rem;
-  height: 6%;
+  padding-top: 1.4rem;
+  height: 4rem;
   padding-bottom: 0px;
   margin-bottom: 0px;
+  padding-left: 0.5rem;
 }
 
-.art-tile:hover {
-  opacity: 0.3;
+.byline {
+  padding-top: 2.1rem;
+  padding-left: 0.8rem;
+  font-size: 0.8rem;
+  width: 100%;
 }
 
 .button {
   margin-left: auto;
   margin-right: auto;
   z-index: 1;
+}
+
+.button popup {
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+footer {
+  background-color: #202020;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  vertical-align: top;
+  z-index: 1;
+}
+
+@media (min-width: 576px) {
+  .square {
+    height: 25vw;
+    width: 35vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .blurb {
+    opacity: 1;
+  }
+  .blurb:hover {
+    z-index: 1;
+  }
+  .square {
+    height: 20vw;
+    width: 25vw;
+  }
 }
 /*# sourceMappingURL=art.css.map */
