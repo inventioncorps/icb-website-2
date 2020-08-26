@@ -91,13 +91,11 @@
     </nav>
 
     <!-- Title -->
-    <section class="section banner">
-
+    <div id="banner-div">
         <div class="title">
             <h1>art gallery</h1>
             <h4>Purchase digital art to donate to non-profits that aim to uplift communities of color. </h4>
         </div>
-
         <!--Carousel Wrapper-->
         <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel" data-interval="6500">
         
@@ -228,8 +226,18 @@
 
         </div>
         <!--/.Carousel Wrapper-->
-
-    </section>
+    </div>
+    
+    <script>
+        function bannerHeightFunction() {
+            var bannerHeight = (window.innerHeight - 81).toString() + "px";
+            document.getElementById("banner-div").style.height = bannerHeight;
+            document.getElementById("banner-img-desktop").style.height = bannerHeight;
+            document.getElementById("banner-img-mobile").style.height = bannerHeight;
+        };
+        window.onresize = bannerHeightFunction;
+        window.onload = bannerHeightFunction;
+    </script>
 
 
     <!--BLM-SOLIDARITY-->

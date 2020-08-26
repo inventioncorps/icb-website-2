@@ -67,7 +67,7 @@ ul > li > a.nav-link.blog {
 
 // BANNER
 
-section {
+#banner-div {
     background-color: $light-black;
 }
 
@@ -187,7 +187,7 @@ h4 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 0.5rem;
+    font-size: 0.2rem;
     font-weight: medium;
     color: $black;
     text-align: left;
@@ -306,7 +306,7 @@ footer {
 
     .blurb {
         opacity: 1;
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 
     .blurb:hover {
@@ -325,5 +325,9 @@ footer {
     .art-square {
         height: 18vw;
         width: 18vw;
+    }
+
+    .blurb {
+        font-size: 1rem;
     }
 }

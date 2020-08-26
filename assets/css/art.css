@@ -49,7 +49,7 @@ ul > li > a.nav-link.blog {
   color: white;
 }
 
-section {
+#banner-div {
   background-color: #2D2D2D;
 }
 
@@ -167,7 +167,7 @@ h4 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 0.5rem;
+  font-size: 0.2rem;
   font-weight: medium;
   color: #202020;
   text-align: left;
@@ -281,7 +281,7 @@ footer {
 @media (min-width: 992px) {
   .blurb {
     opacity: 1;
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
   .blurb:hover {
     z-index: 1;
@@ -296,6 +296,9 @@ footer {
   .art-square {
     height: 18vw;
     width: 18vw;
+  }
+  .blurb {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=art.css.map */
