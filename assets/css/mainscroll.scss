@@ -22,8 +22,9 @@ hr {
 }
 
 .navy-div{
+    transform: translateY(-10px);
     background-color: $navy;
-    margin-bottom: 6rem;
+    height: 6rem;
 }
 
 .fp-tableCell {
@@ -218,6 +219,10 @@ h1 {
     border-color: white;
 }
 
+#featured-button:hover {
+    color: $navy;
+    background-color: rgba(255, 255, 255, 0.65);
+}
 
 // BLM DISMISSABLE BANNER
 
@@ -250,17 +255,15 @@ h1 {
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 
-
-
     .txt-box {
         width: 60%;
     }
+
 
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-
 
 
 }
