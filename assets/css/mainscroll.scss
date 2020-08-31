@@ -187,7 +187,7 @@ h1 {
 }
 
 .view-text {
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-style: italic;
     font-weight: 500;
     margin-left: 10%;
@@ -195,7 +195,7 @@ h1 {
 }
 
 .blob-person {
-    width: 75vw;
+    width: 60vw;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -240,6 +240,15 @@ h1 {
     font-weight: 500;
 }
 
+// MOBILE 
+
+.mobile-heading {
+    font-size: 2rem;
+}
+
+#blob-person-2 {
+    margin-top: 0;
+}
 
 // MEDIA QUERIES
 
@@ -248,6 +257,14 @@ h1 {
 
     #pillars-img {
         transform: translateY(-80px);
+    }
+
+    .view-text {
+        font-size: 1.4rem;
+    }
+
+    .blob-person {
+        width: 75vw;
     }
 
 }
@@ -259,12 +276,18 @@ h1 {
         width: 60%;
     }
 
+    .blob-person {
+        width: 40vw;
+    }
 
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
 
+    .blob-person {
+        width: 30vw;
+    }
 
 }
 
