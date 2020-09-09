@@ -103,7 +103,7 @@ button {
 .popup-box {
 	position: relative;
 	z-index: 999;
-	top: 50%;
+	top: 55%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	padding: 3rem;
@@ -125,7 +125,7 @@ button {
 		text-decoration: none;
 
 		&:hover {
-			color: white;
+			color: $gray;
 			transition: color 500ms ease;
     	}
 	}

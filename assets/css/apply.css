@@ -92,7 +92,7 @@ button {
 .popup-box {
   position: relative;
   z-index: 999;
-  top: 50%;
+  top: 55%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -117,7 +117,7 @@ button {
 }
 
 .popup-box .popup-close:hover {
-  color: white;
+  color: #787878;
   -webkit-transition: color 500ms ease;
   transition: color 500ms ease;
 }
