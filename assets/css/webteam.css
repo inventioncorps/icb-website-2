@@ -12,6 +12,11 @@ a {
   text-align: center;
 }
 
+.quote > a {
+  color: black;
+  font-style: bold;
+}
+
 .web {
   overflow: auto;
 }
