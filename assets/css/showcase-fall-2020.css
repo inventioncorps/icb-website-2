@@ -1,0 +1,87 @@
+@font-face {
+  font-family: Darker Grotesque;
+  src: url('../font/DarkerGrotesque-ExtraBold.ttf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: Darker Grotesque;
+  src: url('../font/DarkerGrotesque-SemiBold.ttf');
+  font-weight: 600;
+}
+
+body {
+  background-color: #202020;
+}
+
+a {
+  color: white;
+}
+
+footer {
+  background-color: #202020;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  vertical-align: top;
+  z-index: 1;
+}
+
+/* Showcase Projects */
+.showcase-project {
+  font-family: Darker Grotesque;
+  font-size: 96px;
+  border-bottom: 3px solid white;
+  line-height: 130px;
+}
+
+#aila-health {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-weight: 800;
+}
+
+#alemany-farm {
+  color: white;
+  font-weight: 600;
+}
+
+#desi-discourse {
+  text-align: right;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-weight: 800;
+}
+
+#philz {
+  color: white;
+  font-weight: 800;
+}
+
+#resilient-mind {
+  color: white;
+  font-weight: 600;
+}
+
+#syglass {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-weight: 600;
+}
+
+#the-patient-story {
+  color: white;
+  font-weight: 800;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .showcase-project {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
