@@ -32,9 +32,33 @@ section {
   margin-bottom: 150px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   section {
     margin-bottom: 50px;
+  }
+}
+
+/* Showcase Logo */
+#register-now {
+  font-family: Darker Grotesque;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  padding: 5px 45px 10px 45px;
+  margin-top: 50px;
+  position: relative;
+  top: -250px;
+}
+
+#register-now:hover {
+  border: 3px solid #787878;
+}
+
+@media screen and (max-width: 768px) {
+  #register-now {
+    position: initial;
   }
 }
 
@@ -93,7 +117,7 @@ section {
   text-align: center;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .showcase-project {
     font-size: 32px;
     line-height: 40px;
@@ -129,7 +153,7 @@ section {
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   #showcase-schedule {
     max-width: 66%;
   }
@@ -149,6 +173,4 @@ section {
     padding-left: 5px;
     padding-right: 5px;
   }
-
-
 }
