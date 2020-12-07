@@ -6,6 +6,12 @@
 
 @font-face {
   font-family: Darker Grotesque;
+  src: url('../font/DarkerGrotesque-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Darker Grotesque;
   src: url('../font/DarkerGrotesque-SemiBold.ttf');
   font-weight: 600;
 }
@@ -47,9 +53,8 @@ section {
   border: 3px solid #FFFFFF;
   border-radius: 10px;
   padding: 5px 45px 10px 45px;
-  margin-top: 50px;
   position: relative;
-  top: -250px;
+  top: -200px;
 }
 
 #register-now:hover {
@@ -58,7 +63,34 @@ section {
 
 @media screen and (max-width: 768px) {
   #register-now {
+    margin-top: 50px;
     position: initial;
+  }
+}
+
+/* Showcase Introduction */
+#showcase-introduction {
+  font-family: Darker Grotesque;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#showcase-introduction span {
+  font-size: 36px;
+}
+
+@media screen and (max-width: 768px) {
+  #showcase-introduction {
+    font-size: 12px;
+  }
+
+  #showcase-introduction span {
+    font-size: 18px;
   }
 }
 
@@ -172,5 +204,29 @@ section {
     font-size: 16px;
     padding-left: 5px;
     padding-right: 5px;
+  }
+}
+
+/* Showcase Art Introduction */
+#showcase-art-introduction {
+  font-family: Darker Grotesque;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+  max-width: 66%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-top: 3px solid #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  #showcase-art-introduction {
+    padding-top: 17px;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: 12px;
   }
 }
