@@ -1,0 +1,232 @@
+@font-face {
+  font-family: Darker Grotesque;
+  src: url('../font/DarkerGrotesque-ExtraBold.ttf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: Darker Grotesque;
+  src: url('../font/DarkerGrotesque-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Darker Grotesque;
+  src: url('../font/DarkerGrotesque-SemiBold.ttf');
+  font-weight: 600;
+}
+
+body {
+  background-color: #202020;
+}
+
+a {
+  color: #FFFFFF;
+}
+
+footer {
+  background-color: #202020;
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  vertical-align: top;
+  z-index: 1;
+}
+
+section {
+  margin-bottom: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    margin-bottom: 50px;
+  }
+}
+
+/* Showcase Logo */
+#register-now {
+  font-family: Darker Grotesque;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  padding: 5px 45px 10px 45px;
+  position: relative;
+  top: -200px;
+}
+
+#register-now:hover {
+  border: 3px solid #787878;
+}
+
+@media screen and (max-width: 768px) {
+  #register-now {
+    margin-top: 50px;
+    position: initial;
+  }
+}
+
+/* Showcase Introduction */
+#showcase-introduction {
+  font-family: Darker Grotesque;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#showcase-introduction span {
+  font-size: 36px;
+}
+
+@media screen and (max-width: 768px) {
+  #showcase-introduction {
+    font-size: 12px;
+  }
+
+  #showcase-introduction span {
+    font-size: 18px;
+  }
+}
+
+/* Showcase Projects */
+#showcase-projects {
+  max-width: 66%;
+}
+
+.showcase-project {
+  font-family: Darker Grotesque;
+  font-size: 96px;
+  border-bottom: 3px solid #FFFFFF;
+  line-height: 120px;
+}
+
+#aila-health {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFFFFF;
+  font-weight: 800;
+}
+
+#alemany-farm {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+#desi-discourse {
+  text-align: right;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFFFFF;
+  font-weight: 800;
+}
+
+#philz {
+  color: #FFFFFF;
+  font-weight: 800;
+}
+
+#resilient-mind {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+#syglass {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFFFFF;
+  font-weight: 600;
+}
+
+#the-patient-story {
+  color: #FFFFFF;
+  font-weight: 800;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .showcase-project {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+/* Showcase Schedule */
+#showcase-schedule {
+  max-width: 50%;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+}
+
+.showcase-schedule-header {
+  font-family: Darker Grotesque;
+  font-weight: 800;
+  font-size: 24px;
+  color: #A93B31;
+  border-bottom: 3px solid #FFFFFF;
+}
+
+.showcase-schedule-time {
+  font-family: Darker Grotesque;
+  font-weight: 800;
+  font-size: 48px;
+  color: #A93B31;
+}
+
+.showcase-schedule-event {
+  font-family: Darker Grotesque;
+  font-weight: 800;
+  font-size: 48px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  #showcase-schedule {
+    max-width: 66%;
+  }
+  .showcase-schedule-header {
+    font-size: 8px;
+    padding-left: 5px;
+  }
+
+  .showcase-schedule-time {
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .showcase-schedule-event {
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+/* Showcase Art Introduction */
+#showcase-art-introduction {
+  font-family: Darker Grotesque;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+  max-width: 66%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-top: 3px solid #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  #showcase-art-introduction {
+    padding-top: 17px;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: 12px;
+  }
+}
