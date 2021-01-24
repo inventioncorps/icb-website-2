@@ -5,7 +5,9 @@ $yellow: #FEEB96;
 $green: #99CC99;
 $blue: #99CCFF;
 $gray: #C4C4C4;
-$black: #202020;
+$black: #a55a5a;
+$tan: #F7D6A4;
+$beige: #EED0BE;
 
 .topbar {
     background-color: $background;
@@ -42,6 +44,11 @@ $black: #202020;
     width: 13.7rem;
 }
 
+#underline8 {
+    background: $red;
+    width: 17.5rem;
+}
+
 .p1 {
     border-color: $red; //color of first teammember
 }
@@ -59,5 +66,13 @@ $black: #202020;
 }
 
 .p5 {
-    border-color: $gray; //color of fifth teammember
+    border-color: $tan; //color of fifth teammember
+}
+
+.p6 {
+    border-color: $beige; //color of sixth teammember
+}
+
+.p7 {
+    border-color: $background //color of seventh teammember
 }

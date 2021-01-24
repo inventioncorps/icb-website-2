@@ -33,6 +33,11 @@
   width: 13.7rem;
 }
 
+#underline8 {
+  background: #E06B65;
+  width: 17.5rem;
+}
+
 .p1 {
   border-color: #E06B65;
 }
@@ -50,6 +55,14 @@
 }
 
 .p5 {
-  border-color: #C4C4C4;
+  border-color: #F7D6A4;
+}
+
+.p6 {
+  border-color: #EED0BE;
+}
+
+.p7 {
+  border-color: #373737;
 }
 /*# sourceMappingURL=alemany.css.map */

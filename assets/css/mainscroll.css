@@ -195,10 +195,8 @@ h1 {
   margin-bottom: 2rem;
 }
 
-/* Featured Section */
-/*
 .featured {
-  background-image: url(../img/mainscroll/showcase_fall_2020.png);
+  background-image: url(../img/mainscroll/featured-bg.svg);
   background-size: cover;
 }
 
@@ -220,28 +218,6 @@ h1 {
   color: #0D202E;
   background-color: rgba(255, 255, 255, 0.65);
 }
-*/
-
-/* Showcase Section */
-.showcase {
-  color: #FFFFFF;
-}
-
-.showcase hr {
-  background-color: #FFFFFF;
-}
-
-.showcase .button {
-  border-color: #FFFFFF;
-}
-
-.showcase .button:hover {
-  color: #202020;
-  background-color: #FFFFFF;
-  border-color: #FFFFFF;
-}
-
-/* Other */
 
 .alert {
   margin: 0px;
