@@ -70,9 +70,37 @@ $beige: #EED0BE;
 }
 
 .p6 {
-    border-color: $beige; //color of sixth teammember
+    border-color: $background; //color of sixth teammember
 }
 
 .p7 {
-    border-color: $background //color of seventh teammember
+    border-color: $beige //color of seventh teammember
+}
+.pspecial {
+    border-image: linear-gradient(to bottom, $beige 33.3%, $background 33.3%, $background 66.6%, $tan 66.6%); 
+    border-image-slice: 0% 0% 0% 100%;
+    border-top: 0;
+    border-bottom: 0;
+    z-index: -1;
+}
+
+.pspecial2 {
+    border-image: linear-gradient(to bottom, $yellow 25%, $beige 25%, $beige 50%, $background 50%, $background 75%, $tan 75%); 
+    border-image-slice: 0% 0% 0% 100%;
+    border-top: 0;
+    border-bottom: 0;
+    z-index: -1;
+}
+
+.special {
+    border-top: solid white;
+    border-bottom: solid white;
+    border-width: medium;
+    z-index: 1;
+}
+
+@media (min-width: 992px) {
+    .pspecial {
+        border-image-slice: 0% 100% 0% 0%;
+    }
 }

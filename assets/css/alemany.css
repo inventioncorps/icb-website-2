@@ -59,10 +59,43 @@
 }
 
 .p6 {
-  border-color: #EED0BE;
+  border-color: #373737;
 }
 
 .p7 {
-  border-color: #373737;
+  border-color: #EED0BE;
+}
+
+.pspecial {
+  -o-border-image: linear-gradient(to bottom, #EED0BE 33.3%, #373737 33.3%, #373737 66.6%, #F7D6A4 66.6%);
+     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(33.3%, #EED0BE), color-stop(33.3%, #373737), color-stop(66.6%, #373737), color-stop(66.6%, #F7D6A4));
+     border-image: linear-gradient(to bottom, #EED0BE 33.3%, #373737 33.3%, #373737 66.6%, #F7D6A4 66.6%);
+  border-image-slice: 0% 0% 0% 100%;
+  border-top: 0;
+  border-bottom: 0;
+  z-index: -1;
+}
+
+.pspecial2 {
+  -o-border-image: linear-gradient(to bottom, #FEEB96 25%, #EED0BE 25%, #EED0BE 50%, #373737 50%, #373737 75%, #F7D6A4 75%);
+     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #FEEB96), color-stop(25%, #EED0BE), color-stop(50%, #EED0BE), color-stop(50%, #373737), color-stop(75%, #373737), color-stop(75%, #F7D6A4));
+     border-image: linear-gradient(to bottom, #FEEB96 25%, #EED0BE 25%, #EED0BE 50%, #373737 50%, #373737 75%, #F7D6A4 75%);
+  border-image-slice: 0% 0% 0% 100%;
+  border-top: 0;
+  border-bottom: 0;
+  z-index: -1;
+}
+
+.special {
+  border-top: solid white;
+  border-bottom: solid white;
+  border-width: medium;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  .pspecial {
+    border-image-slice: 0% 100% 0% 0%;
+  }
 }
 /*# sourceMappingURL=alemany.css.map */
