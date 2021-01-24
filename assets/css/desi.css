@@ -1,41 +1,41 @@
 .topbar {
-  background-color: #E95633;
+  background-color: #C094C5;
   opacity: 0.8;
 }
 
 #underline1 {
-  background: #E95633;
+  background: #C094C5;
 }
 
 #underline2 {
-  background: #E95633;
+  background: #C094C5;
 }
 
 #underline3 {
-  background: #E95633;
+  background: #C094C5;
 }
 
 #underline4 {
-  background: #E95633;
+  background: #C094C5;
 }
 
 #underline5 {
-  background: #E95633;
+  background: #C094C5;
   width: 13.5rem;
 }
 
 #underline6 {
-  background: #E95633;
+  background: #C094C5;
   width: 13.8rem;
 }
 
 #underline7 {
-  background: #E95633;
+  background: #C094C5;
   width: 15.5rem;
 }
 
 .p1 {
-  border-color: #E06B65;
+  border-color: #202020;
 }
 
 .p2 {
@@ -43,7 +43,7 @@
 }
 
 .p3 {
-  border-color: #99CC99;
+  border-color: #FEEB96;
 }
 
 .p4 {
@@ -51,6 +51,6 @@
 }
 
 .p5 {
-  border-color: #C4C4C4;
+  border-color: #202020;
 }
 /*# sourceMappingURL=desi.css.map */
