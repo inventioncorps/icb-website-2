@@ -1,5 +1,5 @@
 //COLOR SET
-$background: #E95633; //CHANGE to topbar color
+$background: #FFB6B2; // topbar color
 $red: #E06B65;
 $yellow: #FEEB96;
 $green: #99CC99;
@@ -30,35 +30,52 @@ $black: #202020;
 
 #underline5 {
     background: $background;
-    width: 13.5rem;
+    width: 16rem;
 }
 
 #underline6 {
     background: $background;
-    width: 13.8rem;
+    width: 16rem;
 }
 
 #underline7 {
     background: $background;
-    width: 15.5rem;
+    width: 18rem;
 }
 
 .p1 {
-    border-color: $red; //CHANGE to color of first team member
+    border-color: $gray; // color of first team member
 }
 
 .p2 {
-    border-color: $yellow; //CHANGE to color of second team member
+    border-color: $green; // color of second team member
 }
 
 .p3 {
-    border-color: $green; //CHANGE to color of third team member
+    border-color: $yellow; // color of third team member
 }
 
 .p4 {
-    border-color: $blue; //CHANGE to color of fourth team member
+    border-color: $blue; // color of fourth team member
 }
 
-.p5 {
-    border-color: $gray; //CHANGE to color of fifth team member
+.pspecial {
+    border-image: linear-gradient(to bottom, $gray 25%,  $green 25%,$green 50%, $yellow 50%, $yellow 75%, $blue 75%); 
+    border-image-slice: 0% 0% 0% 100%;
+    border-top: 0;
+    border-bottom: 0;
+    z-index: -1;
 }
+
+  .special {
+    border-top: solid white;
+    border-bottom: solid white;
+    border-width: medium;
+    z-index: 1;
+  }
+
+  @media (min-width: 992px) {
+    .pspecial {
+      border-image-slice: 0% 100% 0% 0%;
+    }
+  }

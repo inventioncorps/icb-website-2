@@ -1,56 +1,75 @@
 .topbar {
-  background-color: #E95633;
+  background-color: #FFB6B2;
   opacity: 0.8;
 }
 
 #underline1 {
-  background: #E95633;
+  background: #FFB6B2;
 }
 
 #underline2 {
-  background: #E95633;
+  background: #FFB6B2;
 }
 
 #underline3 {
-  background: #E95633;
+  background: #FFB6B2;
 }
 
 #underline4 {
-  background: #E95633;
+  background: #FFB6B2;
 }
 
 #underline5 {
-  background: #E95633;
-  width: 13.5rem;
+  background: #FFB6B2;
+  width: 16rem;
 }
 
 #underline6 {
-  background: #E95633;
-  width: 13.8rem;
+  background: #FFB6B2;
+  width: 16rem;
 }
 
 #underline7 {
-  background: #E95633;
-  width: 15.5rem;
+  background: #FFB6B2;
+  width: 18rem;
 }
 
 .p1 {
-  border-color: #E06B65;
+  border-color: #C4C4C4;
 }
 
 .p2 {
-  border-color: #FEEB96;
+  border-color: #99CC99;
 }
 
 .p3 {
-  border-color: #99CC99;
+  border-color: #FEEB96;
 }
 
 .p4 {
   border-color: #99CCFF;
 }
 
-.p5 {
-  border-color: #C4C4C4;
+.pspecial {
+  -o-border-image: linear-gradient(to bottom, #C4C4C4 25%, #99CC99 25%, #99CC99 50%, #FEEB96 50%, #FEEB96 75%, #99CCFF 75%);
+     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #C4C4C4), color-stop(25%, #99CC99), color-stop(50%, #99CC99), color-stop(50%, #FEEB96), color-stop(75%, #FEEB96), color-stop(75%, #99CCFF));
+     border-image: linear-gradient(to bottom, #C4C4C4 25%, #99CC99 25%, #99CC99 50%, #FEEB96 50%, #FEEB96 75%, #99CCFF 75%);
+  border-image-slice: 0% 0% 0% 100%;
+  border-top: 0;
+  border-bottom: 0;
+  z-index: -1;
+}
+
+.special {
+  border-top: solid white;
+  border-bottom: solid white;
+  border-width: medium;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  .pspecial {
+    border-image-slice: 0% 100% 0% 0%;
+  }
 }
 /*# sourceMappingURL=resilientmind.css.map */
