@@ -101,13 +101,13 @@ button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  padding: 3rem;
+  padding: 3.2rem;
   width: 80%;
   height: 70%;
   overflow: auto;
   background: white;
   border-radius: 5px;
-  font-size: .8rem;
+  font-size: .9rem;
   text-align: left;
 }
 
