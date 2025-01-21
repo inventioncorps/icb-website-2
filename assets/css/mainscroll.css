@@ -35,6 +35,10 @@ body {
   margin: 0;
 }
 
+.landing_new {
+  background-color: #191919 !important;
+}
+
 .scene {
   width: 100%;
   height: auto;
@@ -54,6 +58,9 @@ body {
 
 .about-content {
   text-align: center;
+  background-color: #FCF7F1;
+  color: black;
+  font-family: Arimo, sans-serif;
 }
 
 p.about-txt {
@@ -138,6 +145,20 @@ p.about-txt {
   -webkit-transform: translate(-55px, 12px);
           transform: translate(-55px, 12px);
 }
+
+#we-are-text-new {
+  font-size: 125px;
+  font-weight: 700;
+  font-family: "black-han-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 0;
+  padding-left: 100px;
+  justify-content: center;
+  text-wrap: wrap;
+
+}
+  
 
 #invention-text {
   position: relative;

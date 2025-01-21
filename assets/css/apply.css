@@ -73,6 +73,10 @@ button {
   background-color: white;
 }
 
+.btn-outline-white {
+  border-radius: 50px; /* Adjust to your preferred roundness */
+}
+
 .popup-bg {
   position: fixed;
   z-index: 998;

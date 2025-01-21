@@ -39,13 +39,14 @@ html.fp-enabled,
     transition: all 0.3s ease-out;
 }
 .fp-section.fp-table, .fp-slide.fp-table {
-    display: table;
+    display: inline-flex;
     table-layout:fixed;
+    vertical-align: text-top;
     width: 100%;
 }
 .fp-tableCell {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: text-top;
     width: 100%;
     height: 100%;
 }

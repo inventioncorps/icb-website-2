@@ -41,6 +41,7 @@ a {
   text-decoration: underline;
 }
 
+
 a:hover {
   text-decoration: none;
   color: #787878;
@@ -67,22 +68,45 @@ a:hover {
   background-color: white !important;
   -webkit-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
-  color: #202020;
+  color: #191919;
+  justify-content: space-between;
+
 }
 
 nav {
   font-weight: 500;
   background-color: white;
-  color: #202020;
+  color: #191919;
+  margin: 0;
+  justify-content: space-between;
+  font-family: 'crossorigin', 'sans-serif';
+
 }
 
+
+.nav-link {
+  display: block;
+  padding: .05rem !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+padding-right: 1rem !important;
+padding-left: 1rem !important;
+justify-content: space-between;
+}
+
+.navbar .btn-outline-white.apply {
+border-radius: 1.25rem !important;
+}
+
+
 a.nav-link.blog {
-  color: #202020 !important;
+  color: #191919 !important;
   margin-right: 30px;
 }
 
 #navbarDropdownMenuLink.nav-link.dropdown-toggle {
-  color: #202020;
+  color: #191919;
   margin-right: 15px;
 }
 
@@ -134,6 +158,14 @@ a.nav-link.blog:hover {
 .navbar-toggler:focus {
   outline: none;
 }
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 3840px;
+}
+
 
 footer {
   background-color: white;
@@ -227,7 +259,7 @@ footer {
   border-style: solid;
   border-color: #202020;
   border-radius: 1em;
-  padding: 0.75em 2em;
+  padding: 0.5em 0.5em;
   margin-top: 0.8rem;
 }
 

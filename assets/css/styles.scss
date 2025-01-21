@@ -71,6 +71,7 @@ a:hover {
     text-align: center;
 }
 
+
 // NAV BAR
 
 .navbar.scrolled {
@@ -84,6 +85,22 @@ nav {
     background-color: white;
     color: $black;
 }
+
+
+.nav-link {
+    display: block;
+    padding: .05rem !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+padding-right: 1.25rem !important;
+padding-left: 1.25rem !important;
+}
+
+.navbar .btn-outline-white.apply {
+border-radius: 1.25rem !important;
+}
+
 
 a.nav-link.blog {
     color: $black !important;
@@ -135,7 +152,7 @@ a.nav-link.blog:hover {
 
 .navbar-toggler {
     border-style: none;
-    padding-top: 15px;
+    padding-top: 0px;
     color: hotpink;
 }
 

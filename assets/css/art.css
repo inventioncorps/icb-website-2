@@ -10,8 +10,24 @@ body {
 }
 
 nav {
-  background-color: #202020;
-  color: white;
+  font-weight: 500;
+  background-color: white;
+  color: black;
+}
+
+
+.nav-link {
+  display: block;
+  padding: .05rem !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+padding-right: 1.25rem !important;
+padding-left: 1.25rem !important;
+}
+
+.navbar .btn-outline-white.apply {
+border-radius: 1.25rem !important;
 }
 
 ul > li > a.nav-link.blog {
@@ -81,6 +97,10 @@ button {
   border: none;
   background: none;
   color: white;
+}
+
+.rounded {
+  border-radius: 50px;
 }
 
 #more {

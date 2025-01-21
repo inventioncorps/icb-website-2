@@ -46,6 +46,13 @@ body {
     margin: 0;
 }
 
+.landing_new{
+    background-color: #191919;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
 .scene {
     width: 100%;
     height: auto;
@@ -141,7 +148,7 @@ p.about-txt {
 }
 
 #we-are-text {
-    font-size: 40px;
+    font-size: 100px;
     font-weight: 700;
     transform: translate(-55px, 12px);
 }

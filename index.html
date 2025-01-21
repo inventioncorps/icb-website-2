@@ -23,6 +23,22 @@
 
   <!-- Custom Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=BioRhyme:wght@200..800&display=swap" rel="stylesheet">
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'sbg8djd',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/bd860f6242.js" crossorigin="anonymous"></script>
   <!-- Bootstrap Styling -->
@@ -36,7 +52,7 @@
   <link rel="stylesheet" href="assets/css/mainscroll.css" type="text/css" />
 </head>
 
-<body>
+<body style="background-color: #191919;">
     <!--Recruitment  Banner
     <div class="blm-banner sticky-top alert alert-warning alert-dismissible fade show" role="alert" class="alert-link">
         Spring 2024 recruitment has begun! Apply <a class="blm-banner underline thicker" target="_blank" href="https://inventioncorps.org/apply.html">here</a>.
@@ -46,67 +62,70 @@
     </div>
     -->
     
-    <!-- Navigation Bar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-        <div class="container">
-            <div class="d-flex flex-grow-1">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logo.svg" width="55" height="55" class="d-inline-block align-top" alt="Invention Corps Logo">
-                    <img src="assets/img/logo-name.svg" width="200" height="55" class="d-inline-block align-top" alt="Invention Corps">
-                </a>
-                <div class="w-100 text-right">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-            </div>
-            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto flex-nowrap">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="our-story.html">
-                                <div class="bottom-border-red">Our Story</div>
-                            </a></li>
-                            <li><a class="dropdown-item" href="members.html">
-                                <div class="bottom-border-red">Members</div>
-                            </a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Work</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="projects.html">
-                                <div class="bottom-border-green">Projects</div>
-                            </a></li>
-                            <li><a class="dropdown-item" href="showcase-fall-2020.html">
-                                <div class="bottom-border-green">Showcase</div>
-                            </a></li>
-                        </ul>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light justify-content-space-between" style="background-color: #191919;">
+        <div class="container d-flex justify-content-space-between">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.svg" width="55" height="55" class="d-inline-block align-top" alt="Invention Corps Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                <ul class="navbar-nav" style="gap: 20px;">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="our-story.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link blog" href="https://medium.com/invention-corps" target="_blank">Blog</a>
+                        <a class="nav-link text-white" href="projects.html">Work</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="apply.html">
-                                <div class="bottom-border-blue">Apply</div>
-                            </a></li>
-                            <li><a class="dropdown-item" href="partner.html">
-                                <div class="bottom-border-blue">Partner</div>
-                            </a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="members.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="partner.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link apply btn btn-outline-white rounded" href="apply.html" style="border: 2px solid white; background-color: white; border-radius: 50%; padding: 5px 10px; color: #191919;">Apply</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <div id="fullpage" style="background-color: #191919;">
 
-    <div id="fullpage">
+        <!-- New Landing Section -->
+        <div class="section landing_new fp-auto-height-responsive row fp-section">
+            <div class="d-flex justify-content-center">
+                <div class="container hidden-mobile" id="title-box">
+                    <div class="container" id="we-are-text-new" style="color: white; text-align: left;">
+                        <div style="font-size: 100px; font-weight: bold;">
+                            INVENTING<br> WAYS TO MAKE <br> A BETTER WORLD.
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center" style="font-family: BioRhyme; font-size: 40px;">
+                            <!-- Left-aligned Image -->
+                            <div class="left-content">
+                                <img class="scene top-scene-img hidden-mobile" data-modifier="150" src="assets/img/mainscroll/Gradient icons.png" 
+                                    style="--translateY: 0px; max-width: 650px; height: auto;">
+                            </div>
+                            <!-- Right-aligned Text -->
+                            <div class="right-content" style="text-align: left; padding-left:30px;">
+                                Invention Corps <br> of Berkeley
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-content" style="background-color: #FCF7F1; color: #000; text-align: left; font-size:50px; font-family: Arimo;">
+                        We are an <u>interdisciplinary </u>group of students <br> driven to create <u>meaningful global impact </u> <br> through <u>human-centered design.</u>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Section -->
 
-        <!-- Landing Section -->
+
+
+    
+        <!--Landing Section-->
         <div class="section landing fp-auto-height-responsive row">
             <div class="d-flex justify-content-center">
                 <div class="container hidden-mobile" id="title-box">
@@ -261,6 +280,7 @@
             </section>
 
     </div>
+
 
     <!-- Footer -->
     <footer id="footer">
